@@ -367,11 +367,10 @@ namespace NDEY.UI
         public bool isOKPackage(string zipFile)
         {
             bool result = false;
-            ZipEntry nextEntry = null;
-            ZipInputStream zis = new ZipInputStream(File.OpenRead(zipFile));
+            ZipFile zis = new ZipFile(zipFile);
             try
             {
-                while ((nextEntry = zis.GetNextEntry()) != null)
+                foreach(ZipEntry nextEntry in zis)
                 {
                     if (nextEntry.IsFile && nextEntry.Name != null && nextEntry.Name.Contains(EntityElement.DBName))
                     {
@@ -382,22 +381,13 @@ namespace NDEY.UI
             }
             catch (Exception ex)
             {
-                if (zis != null)
-                {
-                    try
-                    {
-                        zis.Close();
-                    }
-                    catch (Exception)
-                    {
-                    }
-                }
+                //Catch
             }
             finally
             {
                 if (zis != null)
                 {
-                    ((IDisposable)zis).Dispose();
+                    zis.Close();
                 }
             }
             return result;
