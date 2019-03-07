@@ -34,11 +34,11 @@
             this.btnsave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonPanel25 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel113 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.ofdDialogs = new System.Windows.Forms.OpenFileDialog();
             this.hSkinTableLayoutPanel1 = new NDEY.UI.HSkinTableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblExtFileLabel = new System.Windows.Forms.Label();
             this.btnupload = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.ofdDialogs = new System.Windows.Forms.OpenFileDialog();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel25)).BeginInit();
@@ -119,10 +119,6 @@
             this.kryptonLabel113.TabIndex = 0;
             this.kryptonLabel113.Values.Text = "请依托单位提供与项目密级相应的保密资质复印件。";
             // 
-            // ofdDialogs
-            // 
-            this.ofdDialogs.Filter = "PNG文件|*.png";
-            // 
             // hSkinTableLayoutPanel1
             // 
             this.hSkinTableLayoutPanel1.BorderColor = System.Drawing.Color.Black;
@@ -137,10 +133,10 @@
             this.hSkinTableLayoutPanel1.Location = new System.Drawing.Point(50, 66);
             this.hSkinTableLayoutPanel1.Margin = new System.Windows.Forms.Padding(0, 6, 0, 0);
             this.hSkinTableLayoutPanel1.Name = "hSkinTableLayoutPanel1";
-            this.hSkinTableLayoutPanel1.RowCount = 2;
-            this.hSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.hSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.hSkinTableLayoutPanel1.Size = new System.Drawing.Size(897, 65);
+            this.hSkinTableLayoutPanel1.RowCount = 1;
+            this.hSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.hSkinTableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.hSkinTableLayoutPanel1.Size = new System.Drawing.Size(897, 32);
             this.hSkinTableLayoutPanel1.TabIndex = 6;
             // 
             // label1
@@ -173,6 +169,10 @@
             this.btnupload.TabIndex = 2;
             this.btnupload.Values.Text = "上传";
             this.btnupload.Click += new System.EventHandler(this.btnupload_Click);
+            // 
+            // ofdDialogs
+            // 
+            this.ofdDialogs.Filter = "PNG文件|*.png";
             // 
             // frmExtFileEditor
             // 
