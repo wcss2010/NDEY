@@ -954,8 +954,8 @@ namespace NDEY.UI
 				obj4 = this.resultFormInfo.GetDescription();
 				this.InsertText(application, bookmark, obj4, null);
 				bookmark = "bookmission";
-				this.setprogress(73, "读取第一年研究任务...");
-				fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.rtf"));
+                this.setprogress(73, "读取第一年研究任务...");
+                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.rtf"));
 				if (fileInfo.Exists)
 				{
 					document.Bookmarks[bookmark].Select();
@@ -964,6 +964,20 @@ namespace NDEY.UI
 					object value7 = Missing.Value;
 					application.Selection.Delete(ref value6, ref value7);
 				}
+                this.setprogress(74, "读取保密资质...");
+                if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
+                {
+                    bookmark = "ExtFile1";
+                    document.Bookmarks[bookmark].Select();
+
+                    object miss = System.Reflection.Missing.Value;
+                    object oStart = bookmark;
+                    object linkToFile = false; //图片不为外部链接
+                    object saveWithDocment = true; //图片随文档一起保存
+                    object range = application.ActiveDocument.Bookmarks.get_Item(ref oStart).Range; //图片插入位置
+                    application.ActiveDocument.InlineShapes.AddPicture(Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), ref linkToFile, ref saveWithDocment, ref range);
+                }
+
 				this.setprogress(75, "等待Word完成...");
 			}
 			catch (Exception ex3)
