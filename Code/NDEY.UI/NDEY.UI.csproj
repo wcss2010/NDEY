@@ -95,6 +95,12 @@
     <Compile Include="NDEY.UI.NDEYUserControl\frmContributionInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="NDEY.UI.NDEYUserControl\frmExtFileEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NDEY.UI.NDEYUserControl\frmExtFileEditor.Designer.cs">
+      <DependentUpon>frmExtFileEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\frmIntroduction.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmContributionInfo.resx">
       <DependentUpon>frmContributionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmExtFileEditor.resx">
+      <DependentUpon>frmExtFileEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmIntroduction.resx">
       <DependentUpon>frmIntroduction.cs</DependentUpon>

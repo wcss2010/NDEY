@@ -50,7 +50,9 @@ namespace NDEY.UI
 
 		private KryptonNavigator kryptonNavigator4;
 
-		private KryptonPage tabeducation;
+        private KryptonNavigator kryptonNavigator8;
+
+        private KryptonPage tabeducation;
 
 		private KryptonPage tabworkexperience;
 
@@ -90,7 +92,7 @@ namespace NDEY.UI
 
 		private KryptonManager kryptonManager1;
 
-		private KryptonPage kryptonPage1;
+		private KryptonPage kpInputReadme;
 
 		private KryptonNavigator kryptonNavigator1;
 
@@ -123,7 +125,10 @@ namespace NDEY.UI
 		private bool canSwitch = true;
         private KryptonButton btnUnitManage;
         private UserControl preusercontrol;
+        private KryptonPage kpExtFile1;
+        private KryptonPage kpExtFileSubPage;
         private frmApplyUserInfo frmApplyUserInfo;
+        private frmExtFileEditor frmExtFileEditor;
 
         protected override void Dispose(bool disposing)
 		{
@@ -149,7 +154,7 @@ namespace NDEY.UI
             this.btnquit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnhelp = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.defaulthost = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
-            this.kryptonPage1 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.kpInputReadme = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.kryptonNavigator1 = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.tablepageintroduction = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.tpuserinfo = new ComponentFactory.Krypton.Navigator.KryptonPage();
@@ -181,41 +186,39 @@ namespace NDEY.UI
             this.tprecomd = new ComponentFactory.Krypton.Navigator.KryptonPage();
             this.kryptonDockableNavigator2 = new ComponentFactory.Krypton.Docking.KryptonDockableNavigator();
             this.tablepagerecommend = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.kpExtFile1 = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.kryptonNavigator8 = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
+            this.kpExtFileSubPage = new ComponentFactory.Krypton.Navigator.KryptonPage();
+            this.frmExtFileEditor = new NDEY.UI.NDEYUserControl.frmExtFileEditor();
             this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.maintimer = new System.Windows.Forms.Timer(this.components);
             this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             this.topBanner = new System.Windows.Forms.PictureBox();
-            this.kpcontact = new NDEY.UI.HSkinTableLayoutPanel();
             this.kpcontactinner = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonWrapLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonWrapLabel();
+            this.kpcontact = new NDEY.UI.HSkinTableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaulthost)).BeginInit();
-            this.defaulthost.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).BeginInit();
-            this.kryptonPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kpInputReadme)).BeginInit();
+            this.kpInputReadme.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).BeginInit();
-            this.kryptonNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablepageintroduction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpuserinfo)).BeginInit();
             this.tpuserinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator2)).BeginInit();
-            this.kryptonNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.conapplyuser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpproject)).BeginInit();
             this.tpproject.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator1)).BeginInit();
-            this.kryptonDockableNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablepageprojectbasicinfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpfee)).BeginInit();
             this.tpfee.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator5)).BeginInit();
-            this.kryptonNavigator5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabpagefee)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tppaper)).BeginInit();
             this.tppaper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator3)).BeginInit();
-            this.kryptonNavigator3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabpagecontrbution)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabpageresearchplan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabpageresult)).BeginInit();
@@ -223,7 +226,6 @@ namespace NDEY.UI
             ((System.ComponentModel.ISupportInitialize)(this.tpresume)).BeginInit();
             this.tpresume.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator4)).BeginInit();
-            this.kryptonNavigator4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabeducation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabworkexperience)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabacademic)).BeginInit();
@@ -235,8 +237,12 @@ namespace NDEY.UI
             ((System.ComponentModel.ISupportInitialize)(this.tprecomd)).BeginInit();
             this.tprecomd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator2)).BeginInit();
-            this.kryptonDockableNavigator2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablepagerecommend)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kpExtFile1)).BeginInit();
+            this.kpExtFile1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kpExtFileSubPage)).BeginInit();
+            this.kpExtFileSubPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.topBanner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kpcontactinner)).BeginInit();
             this.kpcontactinner.SuspendLayout();
@@ -262,7 +268,7 @@ namespace NDEY.UI
             // btninit
             // 
             this.btninit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btninit.Location = new System.Drawing.Point(281, 0);
+            this.btninit.Location = new System.Drawing.Point(461, 0);
             this.btninit.Name = "btninit";
             this.btninit.Size = new System.Drawing.Size(111, 40);
             this.btninit.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("btninit.StateCommon.Back.Image")));
@@ -273,7 +279,7 @@ namespace NDEY.UI
             // btnImport
             // 
             this.btnImport.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnImport.Location = new System.Drawing.Point(392, 0);
+            this.btnImport.Location = new System.Drawing.Point(572, 0);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(111, 40);
             this.btnImport.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("btnImport.StateCommon.Back.Image")));
@@ -284,7 +290,7 @@ namespace NDEY.UI
             // btnwordview
             // 
             this.btnwordview.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnwordview.Location = new System.Drawing.Point(503, 0);
+            this.btnwordview.Location = new System.Drawing.Point(683, 0);
             this.btnwordview.Name = "btnwordview";
             this.btnwordview.Size = new System.Drawing.Size(111, 40);
             this.btnwordview.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("btnwordview.StateCommon.Back.Image")));
@@ -307,7 +313,7 @@ namespace NDEY.UI
             // btnExport
             // 
             this.btnExport.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnExport.Location = new System.Drawing.Point(704, 0);
+            this.btnExport.Location = new System.Drawing.Point(794, 0);
             this.btnExport.Name = "btnExport";
             this.btnExport.Size = new System.Drawing.Size(111, 40);
             this.btnExport.StateCommon.Back.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.StateCommon.Back.Image")));
@@ -374,31 +380,32 @@ namespace NDEY.UI
             this.defaulthost.Name = "defaulthost";
             this.defaulthost.NavigatorMode = ComponentFactory.Krypton.Navigator.NavigatorMode.BarRibbonTabGroup;
             this.defaulthost.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
-            this.kryptonPage1,
+            this.kpInputReadme,
             this.tpuserinfo,
             this.tpproject,
             this.tpfee,
             this.tppaper,
             this.tpresume,
-            this.tprecomd});
+            this.tprecomd,
+            this.kpExtFile1});
             this.defaulthost.SelectedIndex = 0;
             this.defaulthost.Size = new System.Drawing.Size(1127, 631);
             this.defaulthost.TabIndex = 2;
             this.defaulthost.Selecting += new System.EventHandler<ComponentFactory.Krypton.Navigator.KryptonPageCancelEventArgs>(this.pagewantChange_Selecting);
             // 
-            // kryptonPage1
+            // kpInputReadme
             // 
-            this.kryptonPage1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
-            this.kryptonPage1.Controls.Add(this.kryptonNavigator1);
-            this.kryptonPage1.Flags = 65534;
-            this.kryptonPage1.ImageSmall = global::Properties.Resource.ATTENTION551;
-            this.kryptonPage1.LastVisibleSet = true;
-            this.kryptonPage1.MinimumSize = new System.Drawing.Size(50, 50);
-            this.kryptonPage1.Name = "kryptonPage1";
-            this.kryptonPage1.Size = new System.Drawing.Size(925, 629);
-            this.kryptonPage1.Text = "        填  写  说  明";
-            this.kryptonPage1.ToolTipTitle = "Page ToolTip";
-            this.kryptonPage1.UniqueName = "88B1B096A3674DA4FD9BB93F495EED68";
+            this.kpInputReadme.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kpInputReadme.Controls.Add(this.kryptonNavigator1);
+            this.kpInputReadme.Flags = 65534;
+            this.kpInputReadme.ImageSmall = global::Properties.Resource.ATTENTION551;
+            this.kpInputReadme.LastVisibleSet = true;
+            this.kpInputReadme.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kpInputReadme.Name = "kryptonPage1";
+            this.kpInputReadme.Size = new System.Drawing.Size(925, 629);
+            this.kpInputReadme.Text = "        填  写  说  明";
+            this.kpInputReadme.ToolTipTitle = "Page ToolTip";
+            this.kpInputReadme.UniqueName = "88B1B096A3674DA4FD9BB93F495EED68";
             // 
             // kryptonNavigator1
             // 
@@ -546,7 +553,6 @@ namespace NDEY.UI
             this.kryptonNavigator5.SelectedIndex = 0;
             this.kryptonNavigator5.Size = new System.Drawing.Size(925, 509);
             this.kryptonNavigator5.TabIndex = 0;
-            this.kryptonNavigator5.Text = "kryptonNavigator5";
             // 
             // tabpagefee
             // 
@@ -829,6 +835,55 @@ namespace NDEY.UI
             this.tablepagerecommend.ToolTipTitle = "Page ToolTip";
             this.tablepagerecommend.UniqueName = "2A9CF08C653B457F7693D064734D304D";
             // 
+            // kpExtFile1
+            // 
+            this.kpExtFile1.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kpExtFile1.Controls.Add(this.kryptonNavigator8);
+            this.kpExtFile1.Flags = 65534;
+            this.kpExtFile1.ImageSmall = ((System.Drawing.Image)(resources.GetObject("kpExtFile1.ImageSmall")));
+            this.kpExtFile1.LastVisibleSet = true;
+            this.kpExtFile1.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kpExtFile1.Name = "kryptonPage2";
+            this.kpExtFile1.Size = new System.Drawing.Size(925, 629);
+            this.kpExtFile1.Text = "        保  密  资  质";
+            this.kpExtFile1.ToolTipTitle = "Page ToolTip";
+            this.kpExtFile1.UniqueName = "AED60046C7DD48024CAB854A778B3EDD";
+            // 
+            // kryptonNavigator8
+            // 
+            this.kryptonNavigator8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonNavigator8.Location = new System.Drawing.Point(0, 0);
+            this.kryptonNavigator8.Name = "kryptonNavigator8";
+            this.kryptonNavigator8.Pages.AddRange(new ComponentFactory.Krypton.Navigator.KryptonPage[] {
+            this.kpExtFileSubPage});
+            this.kryptonNavigator8.SelectedIndex = 0;
+            this.kryptonNavigator8.Size = new System.Drawing.Size(925, 629);
+            this.kryptonNavigator8.TabIndex = 0;
+            // 
+            // kpExtFileSubPage
+            // 
+            this.kpExtFileSubPage.AutoHiddenSlideSize = new System.Drawing.Size(200, 200);
+            this.kpExtFileSubPage.Controls.Add(this.frmExtFileEditor);
+            this.kpExtFileSubPage.Flags = 65534;
+            this.kpExtFileSubPage.LastVisibleSet = true;
+            this.kpExtFileSubPage.MinimumSize = new System.Drawing.Size(50, 50);
+            this.kpExtFileSubPage.Name = "kryptonPage1";
+            this.kpExtFileSubPage.Size = new System.Drawing.Size(923, 599);
+            this.kpExtFileSubPage.StateCommon.Tab.Content.ShortText.Font = new System.Drawing.Font("黑体", 12F);
+            this.kpExtFileSubPage.Text = "保密资质";
+            this.kpExtFileSubPage.TextDescription = "";
+            this.kpExtFileSubPage.TextTitle = "";
+            this.kpExtFileSubPage.ToolTipTitle = "Page ToolTip";
+            this.kpExtFileSubPage.UniqueName = "AB65481115594A9A048849F421AF0811";
+            // 
+            // frmExtFileEditor
+            // 
+            this.frmExtFileEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frmExtFileEditor.Location = new System.Drawing.Point(0, 0);
+            this.frmExtFileEditor.Name = "frmExtFileEditor";
+            this.frmExtFileEditor.Size = new System.Drawing.Size(923, 599);
+            this.frmExtFileEditor.TabIndex = 0;
+            // 
             // buttonSpecAny1
             // 
             this.buttonSpecAny1.UniqueName = "CB556486DAA54590678FC8384AD53700";
@@ -854,14 +909,6 @@ namespace NDEY.UI
             this.topBanner.TabIndex = 0;
             this.topBanner.TabStop = false;
             // 
-            // kpcontact
-            // 
-            this.kpcontact.BorderColor = System.Drawing.Color.Black;
-            this.kpcontact.Location = new System.Drawing.Point(0, 0);
-            this.kpcontact.Name = "kpcontact";
-            this.kpcontact.Size = new System.Drawing.Size(200, 100);
-            this.kpcontact.TabIndex = 0;
-            // 
             // kpcontactinner
             // 
             this.kpcontactinner.Controls.Add(this.kryptonWrapLabel1);
@@ -883,6 +930,14 @@ namespace NDEY.UI
             this.kryptonWrapLabel1.Size = new System.Drawing.Size(0, 16);
             this.kryptonWrapLabel1.StateCommon.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
+            // kpcontact
+            // 
+            this.kpcontact.BorderColor = System.Drawing.Color.Black;
+            this.kpcontact.Location = new System.Drawing.Point(0, 0);
+            this.kpcontact.Name = "kpcontact";
+            this.kpcontact.Size = new System.Drawing.Size(200, 100);
+            this.kpcontact.TabIndex = 0;
+            // 
             // logicform
             // 
             this.BackColor = System.Drawing.Color.White;
@@ -900,32 +955,26 @@ namespace NDEY.UI
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaulthost)).EndInit();
-            this.defaulthost.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).EndInit();
-            this.kryptonPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kpInputReadme)).EndInit();
+            this.kpInputReadme.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).EndInit();
-            this.kryptonNavigator1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablepageintroduction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpuserinfo)).EndInit();
             this.tpuserinfo.ResumeLayout(false);
             this.tpuserinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator2)).EndInit();
-            this.kryptonNavigator2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.conapplyuser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpproject)).EndInit();
             this.tpproject.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator1)).EndInit();
-            this.kryptonDockableNavigator1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablepageprojectbasicinfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tpfee)).EndInit();
             this.tpfee.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator5)).EndInit();
-            this.kryptonNavigator5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabpagefee)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tppaper)).EndInit();
             this.tppaper.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator3)).EndInit();
-            this.kryptonNavigator3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabpagecontrbution)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabpageresearchplan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabpageresult)).EndInit();
@@ -933,7 +982,6 @@ namespace NDEY.UI
             ((System.ComponentModel.ISupportInitialize)(this.tpresume)).EndInit();
             this.tpresume.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator4)).EndInit();
-            this.kryptonNavigator4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabeducation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabworkexperience)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabacademic)).EndInit();
@@ -945,8 +993,12 @@ namespace NDEY.UI
             ((System.ComponentModel.ISupportInitialize)(this.tprecomd)).EndInit();
             this.tprecomd.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonDockableNavigator2)).EndInit();
-            this.kryptonDockableNavigator2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablepagerecommend)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kpExtFile1)).EndInit();
+            this.kpExtFile1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kpExtFileSubPage)).EndInit();
+            this.kpExtFileSubPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.topBanner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kpcontactinner)).EndInit();
             this.kpcontactinner.ResumeLayout(false);
