@@ -11,16 +11,11 @@ using NDEY.BLL.Entity;
 
 namespace NDEY.UI.NDEYUserControl
 {
-    public partial class frmExtFileEditor : UserControl
+    public partial class frmExtFileEditor : BaseControl
     {
         public frmExtFileEditor()
         {
             InitializeComponent();
-
-            if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
-            {
-                lblExtFileLabel.Text = "extFile1.png";
-            }
         }
 
         public void btnupload_Click(object sender, EventArgs args)
@@ -38,6 +33,25 @@ namespace NDEY.UI.NDEYUserControl
             {
                 File.Copy(ofdDialogs.FileName, Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), true);
             }
+        }
+
+        public override void RefreshCall()
+        {
+            base.RefreshCall();
+
+            lblExtFileLabel.Text = string.Empty;
+
+            if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
+            {
+                lblExtFileLabel.Text = "extFile1.png";
+            }
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            this.RefreshCall();
         }
     }
 }

@@ -1159,7 +1159,8 @@ namespace NDEY.UI
 			frmIntroduction.OnSaveCheckPassed += new BaseControl.SavePreCheckPassedHandler(this.item_OnSaveCheckPassed);
 			frmIntroduction.OnSaveCheckDeny += new BaseControl.SavePreCheckDenyHandler(this.item_OnSaveCheckDeny);
 			this.tablepageintroduction.Controls.Add(frmIntroduction);
-		}
+            this._baseControllist.Add(frmExtFileEditor);
+        }
 
 		private void btninit_Click(object sender, EventArgs e)
 		{
