@@ -54,6 +54,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnOK = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetail)).BeginInit();
@@ -183,6 +184,7 @@
             // 
             // panelControl2
             // 
+            this.panelControl2.Controls.Add(this.label1);
             this.panelControl2.Controls.Add(this.leSearchList);
             this.panelControl2.Controls.Add(this.btnAdd);
             this.panelControl2.Controls.Add(this.btnSave);
@@ -314,6 +316,17 @@
             this.btnOK.Values.Text = "确定";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(558, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(205, 20);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "请选择已在科技委备案的帐号！";
+            // 
             // frmUnitSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -330,6 +343,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
+            this.panelControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.leSearchList.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leSearchListView)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -363,5 +377,6 @@
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnCancel;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnOK;
+        private System.Windows.Forms.Label label1;
     }
 }

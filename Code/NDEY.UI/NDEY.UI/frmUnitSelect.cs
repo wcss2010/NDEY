@@ -247,7 +247,8 @@ namespace NDEY.UI
         {
             base.OnClick(e);
 
-            frmUnitSelect selectForm = new frmUnitSelect(EditValue != null ? EditValue.ToString() : string.Empty);
+            frmUnitSelect selectForm = new frmUnitSelect(string.Empty);
+            //frmUnitSelect selectForm = new frmUnitSelect(EditValue != null ? EditValue.ToString() : string.Empty);
             if (selectForm.ShowDialog() == DialogResult.OK)
             {
                 EditValue = selectForm.SelectedUnitInfor.ID;
