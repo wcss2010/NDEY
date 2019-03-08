@@ -116,5 +116,20 @@ namespace NDEY.UI
         {
             cbIsUseElseText.Checked = !cbIsUseElseText.Checked;
         }
+
+        public override string Text
+        {
+            get
+            {
+                return base.Text;
+            }
+
+            set
+            {
+                base.Text = value;
+
+                lblTitle.Text = "先从列表中选，若" + value.Replace("请选择", string.Empty).Replace("!", string.Empty).Replace("！", string.Empty) + "类别不在列表中的，选其它";
+            }
+        }
     }
 }

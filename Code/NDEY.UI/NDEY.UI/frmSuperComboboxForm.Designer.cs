@@ -36,6 +36,7 @@
             this.lblItemList = new System.Windows.Forms.Label();
             this.cbIsUseList = new System.Windows.Forms.CheckBox();
             this.cbIsUseElseText = new System.Windows.Forms.CheckBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbxItemList
@@ -43,7 +44,7 @@
             this.cbxItemList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxItemList.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cbxItemList.FormattingEnabled = true;
-            this.cbxItemList.Location = new System.Drawing.Point(69, 17);
+            this.cbxItemList.Location = new System.Drawing.Point(69, 47);
             this.cbxItemList.Name = "cbxItemList";
             this.cbxItemList.Size = new System.Drawing.Size(391, 28);
             this.cbxItemList.TabIndex = 1;
@@ -51,7 +52,7 @@
             // lblElseText
             // 
             this.lblElseText.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblElseText.Location = new System.Drawing.Point(25, 53);
+            this.lblElseText.Location = new System.Drawing.Point(25, 83);
             this.lblElseText.Name = "lblElseText";
             this.lblElseText.Size = new System.Drawing.Size(40, 23);
             this.lblElseText.TabIndex = 2;
@@ -63,14 +64,14 @@
             // 
             this.txtElseItem.Enabled = false;
             this.txtElseItem.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtElseItem.Location = new System.Drawing.Point(69, 51);
+            this.txtElseItem.Location = new System.Drawing.Point(69, 81);
             this.txtElseItem.Name = "txtElseItem";
             this.txtElseItem.Size = new System.Drawing.Size(391, 26);
             this.txtElseItem.TabIndex = 3;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(69, 88);
+            this.btnOK.Location = new System.Drawing.Point(69, 118);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(63, 29);
             this.btnOK.TabIndex = 4;
@@ -80,7 +81,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(397, 90);
+            this.btnCancel.Location = new System.Drawing.Point(397, 120);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(63, 29);
             this.btnCancel.TabIndex = 4;
@@ -91,7 +92,7 @@
             // lblItemList
             // 
             this.lblItemList.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblItemList.Location = new System.Drawing.Point(21, 19);
+            this.lblItemList.Location = new System.Drawing.Point(21, 49);
             this.lblItemList.Name = "lblItemList";
             this.lblItemList.Size = new System.Drawing.Size(44, 23);
             this.lblItemList.TabIndex = 0;
@@ -104,7 +105,7 @@
             this.cbIsUseList.AutoSize = true;
             this.cbIsUseList.Checked = true;
             this.cbIsUseList.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbIsUseList.Location = new System.Drawing.Point(11, 24);
+            this.cbIsUseList.Location = new System.Drawing.Point(11, 54);
             this.cbIsUseList.Name = "cbIsUseList";
             this.cbIsUseList.Size = new System.Drawing.Size(15, 14);
             this.cbIsUseList.TabIndex = 5;
@@ -114,18 +115,29 @@
             // cbIsUseElseText
             // 
             this.cbIsUseElseText.AutoSize = true;
-            this.cbIsUseElseText.Location = new System.Drawing.Point(11, 58);
+            this.cbIsUseElseText.Location = new System.Drawing.Point(11, 88);
             this.cbIsUseElseText.Name = "cbIsUseElseText";
             this.cbIsUseElseText.Size = new System.Drawing.Size(15, 14);
             this.cbIsUseElseText.TabIndex = 5;
             this.cbIsUseElseText.UseVisualStyleBackColor = true;
             this.cbIsUseElseText.CheckedChanged += new System.EventHandler(this.cbIsUseElseText_CheckedChanged);
             // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(469, 38);
+            this.lblTitle.TabIndex = 6;
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmSuperComboboxForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 131);
+            this.ClientSize = new System.Drawing.Size(469, 154);
+            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.cbIsUseElseText);
             this.Controls.Add(this.cbIsUseList);
             this.Controls.Add(this.btnCancel);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Label lblItemList;
         private System.Windows.Forms.CheckBox cbIsUseList;
         private System.Windows.Forms.CheckBox cbIsUseElseText;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
