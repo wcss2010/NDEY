@@ -234,7 +234,6 @@ namespace NDEY.UI.NDEYUserControl
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel22)).BeginInit();
             this.kryptonPanel22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requesttablehost)).BeginInit();
-            this.requesttablehost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).BeginInit();
             this.kryptonPage1.SuspendLayout();
             this.tableLayoutPanel23.SuspendLayout();
@@ -305,8 +304,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel65.Location = new System.Drawing.Point(13, 7);
             this.kryptonLabel65.Name = "kryptonLabel65";
-            this.kryptonLabel65.Size = new System.Drawing.Size(78, 23);
-            this.kryptonLabel65.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kryptonLabel65.Size = new System.Drawing.Size(84, 23);
+            this.kryptonLabel65.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel65.TabIndex = 0;
             this.kryptonLabel65.Values.Text = "申报方式";
             // 
@@ -326,8 +325,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.rbprofessional.Location = new System.Drawing.Point(128, 7);
             this.rbprofessional.Name = "rbprofessional";
-            this.rbprofessional.Size = new System.Drawing.Size(90, 23);
-            this.rbprofessional.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.rbprofessional.Size = new System.Drawing.Size(96, 23);
+            this.rbprofessional.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.rbprofessional.TabIndex = 1;
             this.rbprofessional.Values.Text = "专家提名";
             this.rbprofessional.CheckedChanged += new System.EventHandler(this.rbprofessional_CheckedChanged);
@@ -337,8 +336,8 @@ namespace NDEY.UI.NDEYUserControl
             this.rbcompany.Checked = true;
             this.rbcompany.Location = new System.Drawing.Point(19, 8);
             this.rbcompany.Name = "rbcompany";
-            this.rbcompany.Size = new System.Drawing.Size(90, 23);
-            this.rbcompany.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.rbcompany.Size = new System.Drawing.Size(96, 23);
+            this.rbcompany.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.rbcompany.TabIndex = 0;
             this.rbcompany.Values.Text = "单位推荐";
             this.rbcompany.CheckedChanged += new System.EventHandler(this.rbcompany_CheckedChanged);
@@ -445,21 +444,21 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("楷体_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(919, 82);
             this.label5.TabIndex = 1;
             this.label5.Text = "单位推荐：\r\n     申报内容填写完整,并保存后，点击右上角的“预览”图标，将导出的Word文档中的推荐意见填写完整，签字盖章后，把推荐意见页扫描制作pdf文件" +
-                "或者jpg图像文件上传到系统中。";
+    "或者jpg图像文件上传到系统中。";
             // 
             // kryptonLabel67
             // 
             this.kryptonLabel67.Location = new System.Drawing.Point(3, 85);
             this.kryptonLabel67.Name = "kryptonLabel67";
-            this.kryptonLabel67.Size = new System.Drawing.Size(45, 23);
-            this.kryptonLabel67.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel67.Size = new System.Drawing.Size(48, 23);
+            this.kryptonLabel67.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel67.TabIndex = 1;
             this.kryptonLabel67.Values.Text = "附件";
             // 
@@ -469,7 +468,7 @@ namespace NDEY.UI.NDEYUserControl
             this.lbcomattpath.Location = new System.Drawing.Point(63, 85);
             this.lbcomattpath.Name = "lbcomattpath";
             this.lbcomattpath.Size = new System.Drawing.Size(703, 33);
-            this.lbcomattpath.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.lbcomattpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbcomattpath.TabIndex = 8;
             this.lbcomattpath.Values.Text = "0";
             this.lbcomattpath.LinkClicked += new System.EventHandler(this.lbcomattpath_LinkClicked);
@@ -648,8 +647,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel71.Location = new System.Drawing.Point(3, 108);
             this.kryptonLabel71.Name = "kryptonLabel71";
-            this.kryptonLabel71.Size = new System.Drawing.Size(86, 23);
-            this.kryptonLabel71.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kryptonLabel71.Size = new System.Drawing.Size(89, 23);
+            this.kryptonLabel71.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel71.TabIndex = 1;
             this.kryptonLabel71.Values.Text = "专家姓名:";
             // 
@@ -657,8 +656,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel73.Location = new System.Drawing.Point(462, 108);
             this.kryptonLabel73.Name = "kryptonLabel73";
-            this.kryptonLabel73.Size = new System.Drawing.Size(86, 23);
-            this.kryptonLabel73.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel73.Size = new System.Drawing.Size(89, 23);
+            this.kryptonLabel73.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel73.TabIndex = 2;
             this.kryptonLabel73.Values.Text = "研究领域:";
             // 
@@ -666,8 +665,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel74.Location = new System.Drawing.Point(3, 143);
             this.kryptonLabel74.Name = "kryptonLabel74";
-            this.kryptonLabel74.Size = new System.Drawing.Size(94, 23);
-            this.kryptonLabel74.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel74.Size = new System.Drawing.Size(93, 23);
+            this.kryptonLabel74.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel74.TabIndex = 3;
             this.kryptonLabel74.Values.Text = "职务/职称:";
             // 
@@ -675,8 +674,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel75.Location = new System.Drawing.Point(462, 143);
             this.kryptonLabel75.Name = "kryptonLabel75";
-            this.kryptonLabel75.Size = new System.Drawing.Size(86, 23);
-            this.kryptonLabel75.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel75.Size = new System.Drawing.Size(89, 23);
+            this.kryptonLabel75.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel75.TabIndex = 4;
             this.kryptonLabel75.Values.Text = "工作单位:";
             // 
@@ -684,8 +683,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel76.Location = new System.Drawing.Point(3, 178);
             this.kryptonLabel76.Name = "kryptonLabel76";
-            this.kryptonLabel76.Size = new System.Drawing.Size(45, 23);
-            this.kryptonLabel76.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel76.Size = new System.Drawing.Size(48, 23);
+            this.kryptonLabel76.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel76.TabIndex = 5;
             this.kryptonLabel76.Values.Text = "附件";
             // 
@@ -693,8 +692,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel98.Location = new System.Drawing.Point(3, 248);
             this.kryptonLabel98.Name = "kryptonLabel98";
-            this.kryptonLabel98.Size = new System.Drawing.Size(78, 23);
-            this.kryptonLabel98.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel98.Size = new System.Drawing.Size(84, 23);
+            this.kryptonLabel98.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel98.TabIndex = 6;
             this.kryptonLabel98.Values.Text = "专家姓名";
             // 
@@ -702,8 +701,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel99.Location = new System.Drawing.Point(462, 248);
             this.kryptonLabel99.Name = "kryptonLabel99";
-            this.kryptonLabel99.Size = new System.Drawing.Size(86, 23);
-            this.kryptonLabel99.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel99.Size = new System.Drawing.Size(89, 23);
+            this.kryptonLabel99.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel99.TabIndex = 7;
             this.kryptonLabel99.Values.Text = "研究领域:";
             // 
@@ -711,8 +710,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel101.Location = new System.Drawing.Point(3, 283);
             this.kryptonLabel101.Name = "kryptonLabel101";
-            this.kryptonLabel101.Size = new System.Drawing.Size(94, 23);
-            this.kryptonLabel101.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel101.Size = new System.Drawing.Size(93, 23);
+            this.kryptonLabel101.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel101.TabIndex = 9;
             this.kryptonLabel101.Values.Text = "职务/职称:";
             // 
@@ -720,8 +719,8 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.kryptonLabel103.Location = new System.Drawing.Point(3, 318);
             this.kryptonLabel103.Name = "kryptonLabel103";
-            this.kryptonLabel103.Size = new System.Drawing.Size(45, 23);
-            this.kryptonLabel103.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel103.Size = new System.Drawing.Size(48, 23);
+            this.kryptonLabel103.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel103.TabIndex = 11;
             this.kryptonLabel103.Values.Text = "附件";
             // 
@@ -731,7 +730,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel105.Location = new System.Drawing.Point(3, 388);
             this.kryptonLabel105.Name = "kryptonLabel105";
             this.kryptonLabel105.Size = new System.Drawing.Size(114, 29);
-            this.kryptonLabel105.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel105.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel105.TabIndex = 13;
             this.kryptonLabel105.Values.Text = "专家姓名";
             // 
@@ -741,7 +740,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel106.Location = new System.Drawing.Point(462, 388);
             this.kryptonLabel106.Name = "kryptonLabel106";
             this.kryptonLabel106.Size = new System.Drawing.Size(114, 29);
-            this.kryptonLabel106.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel106.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel106.TabIndex = 14;
             this.kryptonLabel106.Values.Text = "研究领域:";
             // 
@@ -751,7 +750,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel107.Location = new System.Drawing.Point(3, 423);
             this.kryptonLabel107.Name = "kryptonLabel107";
             this.kryptonLabel107.Size = new System.Drawing.Size(114, 29);
-            this.kryptonLabel107.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel107.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel107.TabIndex = 15;
             this.kryptonLabel107.Values.Text = "职务/职称:";
             // 
@@ -761,7 +760,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel108.Location = new System.Drawing.Point(462, 423);
             this.kryptonLabel108.Name = "kryptonLabel108";
             this.kryptonLabel108.Size = new System.Drawing.Size(114, 29);
-            this.kryptonLabel108.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel108.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel108.TabIndex = 16;
             this.kryptonLabel108.Values.Text = "工作单位:";
             // 
@@ -773,14 +772,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertName1.Name = "txtExpertName1";
             this.txtExpertName1.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertName1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertName1.StateCommon.Border.Color1 = System.Drawing.Color.White;
-            this.txtExpertName1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertName1.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtExpertName1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtExpertName1.TabIndex = 21;
             // 
             // txtExpertArea1
@@ -791,14 +790,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertArea1.Name = "txtExpertArea1";
             this.txtExpertArea1.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertArea1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertArea1.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertArea1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertArea1.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertArea1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertArea1.TabIndex = 22;
             // 
             // txtExpertUnitPosition1
@@ -809,14 +808,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnitPosition1.Name = "txtExpertUnitPosition1";
             this.txtExpertUnitPosition1.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnitPosition1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnitPosition1.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnitPosition1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnitPosition1.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnitPosition1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnitPosition1.TabIndex = 23;
             // 
             // txtExpertUnit1
@@ -827,14 +826,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnit1.Name = "txtExpertUnit1";
             this.txtExpertUnit1.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnit1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit1.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnit1.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnit1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnit1.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnit1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit1.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnit1.TabIndex = 24;
             // 
             // txtExpertName2
@@ -845,14 +844,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertName2.Name = "txtExpertName2";
             this.txtExpertName2.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertName2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertName2.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertName2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertName2.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertName2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertName2.TabIndex = 25;
             // 
             // txtExpertArea2
@@ -863,14 +862,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertArea2.Name = "txtExpertArea2";
             this.txtExpertArea2.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertArea2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertArea2.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertArea2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertArea2.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertArea2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertArea2.TabIndex = 26;
             // 
             // txtExpertUnitPosition2
@@ -881,14 +880,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnitPosition2.Name = "txtExpertUnitPosition2";
             this.txtExpertUnitPosition2.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnitPosition2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnitPosition2.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnitPosition2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnitPosition2.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnitPosition2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnitPosition2.TabIndex = 27;
             // 
             // txtExpertUnit2
@@ -899,14 +898,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnit2.Name = "txtExpertUnit2";
             this.txtExpertUnit2.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnit2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit2.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnit2.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnit2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnit2.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnit2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit2.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnit2.TabIndex = 28;
             // 
             // txtExpertName3
@@ -917,14 +916,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertName3.Name = "txtExpertName3";
             this.txtExpertName3.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertName3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertName3.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertName3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertName3.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertName3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertName3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertName3.TabIndex = 29;
             // 
             // txtExpertArea3
@@ -935,14 +934,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertArea3.Name = "txtExpertArea3";
             this.txtExpertArea3.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertArea3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertArea3.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertArea3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertArea3.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertArea3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertArea3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertArea3.TabIndex = 30;
             // 
             // txtExpertUnitPosition3
@@ -953,14 +952,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnitPosition3.Name = "txtExpertUnitPosition3";
             this.txtExpertUnitPosition3.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnitPosition3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnitPosition3.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnitPosition3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnitPosition3.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnitPosition3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnitPosition3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnitPosition3.TabIndex = 31;
             // 
             // txtExpertUnit3
@@ -971,14 +970,14 @@ namespace NDEY.UI.NDEYUserControl
             this.txtExpertUnit3.Name = "txtExpertUnit3";
             this.txtExpertUnit3.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtExpertUnit3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit3.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtExpertUnit3.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtExpertUnit3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)
-                        | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtExpertUnit3.StateCommon.Content.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.txtExpertUnit3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertUnit3.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtExpertUnit3.TabIndex = 32;
             // 
             // kryptonPanel23
@@ -997,20 +996,20 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("楷体_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(919, 70);
             this.label4.TabIndex = 1;
             this.label4.Text = "专家提名：\r\n    申报内容填写完整，填写一名及以上专家信息，并保存后，点击右上角的“预览”图标，将导出的Word文档中的提名意见填写完整，专家签字后，把提名意" +
-                "见页扫描制作pdf文件或者jpg图像文件上传到系统中。";
+    "见页扫描制作pdf文件或者jpg图像文件上传到系统中。";
             // 
             // kryptonLabel102
             // 
             this.kryptonLabel102.Location = new System.Drawing.Point(462, 283);
             this.kryptonLabel102.Name = "kryptonLabel102";
-            this.kryptonLabel102.Size = new System.Drawing.Size(86, 23);
-            this.kryptonLabel102.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel102.Size = new System.Drawing.Size(89, 23);
+            this.kryptonLabel102.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel102.TabIndex = 10;
             this.kryptonLabel102.Values.Text = "工作单位:";
             // 
@@ -1105,7 +1104,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel109.Location = new System.Drawing.Point(3, 458);
             this.kryptonLabel109.Name = "kryptonLabel109";
             this.kryptonLabel109.Size = new System.Drawing.Size(114, 29);
-            this.kryptonLabel109.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.kryptonLabel109.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel109.TabIndex = 17;
             this.kryptonLabel109.Values.Text = "附件";
             // 
@@ -1115,7 +1114,7 @@ namespace NDEY.UI.NDEYUserControl
             this.lbexp1attpath.Location = new System.Drawing.Point(123, 178);
             this.lbexp1attpath.Name = "lbexp1attpath";
             this.lbexp1attpath.Size = new System.Drawing.Size(333, 29);
-            this.lbexp1attpath.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbexp1attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbexp1attpath.TabIndex = 43;
             this.lbexp1attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp1attpath.LinkClicked += new System.EventHandler(this.lbexp1attpath_LinkClicked);
@@ -1126,7 +1125,7 @@ namespace NDEY.UI.NDEYUserControl
             this.lbexp2attpath.Location = new System.Drawing.Point(123, 318);
             this.lbexp2attpath.Name = "lbexp2attpath";
             this.lbexp2attpath.Size = new System.Drawing.Size(333, 29);
-            this.lbexp2attpath.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.lbexp2attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbexp2attpath.TabIndex = 44;
             this.lbexp2attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp2attpath.LinkClicked += new System.EventHandler(this.lbexp2attpath_LinkClicked);
@@ -1137,7 +1136,7 @@ namespace NDEY.UI.NDEYUserControl
             this.lbexp3attpath.Location = new System.Drawing.Point(123, 458);
             this.lbexp3attpath.Name = "lbexp3attpath";
             this.lbexp3attpath.Size = new System.Drawing.Size(333, 29);
-            this.lbexp3attpath.StateCommon.ShortText.Font = new System.Drawing.Font("仿宋_GB2312", 12F);
+            this.lbexp3attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbexp3attpath.TabIndex = 45;
             this.lbexp3attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp3attpath.LinkClicked += new System.EventHandler(this.lbexp3attpath_LinkClicked);
@@ -1157,7 +1156,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel22.ResumeLayout(false);
             this.kryptonPanel22.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.requesttablehost)).EndInit();
-            this.requesttablehost.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPage1)).EndInit();
             this.kryptonPage1.ResumeLayout(false);
             this.tableLayoutPanel23.ResumeLayout(false);
@@ -1394,9 +1392,14 @@ namespace NDEY.UI.NDEYUserControl
 			{
 				return;
 			}
-			this.issaved = true;
+            this.OnSaveCheckPassedEvent(EventArgs.Empty);
+            this.issaved = true;
 			MessageBox.Show("保存完成!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-		}
+
+            KryptonNavigator kryptonNavigator = (KryptonNavigator)base.Parent.Parent.Parent.Parent.Parent.Parent;
+            kryptonNavigator.SelectedIndex++;
+            kryptonNavigator.SelectedPage.Enabled = true;
+        }
 
 		public override void RefreshCall()
 		{

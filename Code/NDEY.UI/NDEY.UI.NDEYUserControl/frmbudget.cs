@@ -1979,11 +1979,9 @@ namespace NDEY.UI.NDEYUserControl
             {
                 MessageBox.Show(text, "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
-            else
-            {
-                this.OnSaveCheckPassedEvent(EventArgs.Empty);
-            }
-			return text == string.Empty;
+
+            this.OnSaveCheckPassedEvent(EventArgs.Empty);
+            return text == string.Empty;
 		}
 
 		private void SaveProgress()

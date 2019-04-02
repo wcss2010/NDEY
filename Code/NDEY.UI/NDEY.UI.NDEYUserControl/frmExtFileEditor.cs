@@ -32,6 +32,7 @@ namespace NDEY.UI.NDEYUserControl
             if (File.Exists(imgFile))
             {
                 File.Copy(ofdDialogs.FileName, Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), true);
+                MessageBox.Show("保存完成!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
 
