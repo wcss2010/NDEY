@@ -1388,6 +1388,10 @@ namespace NDEY.UI
                         gen1.Append(obj.TalentsPlanDate).Append("年").Append("入选").Append(obj.TalentsPlanName).Append(",");
                     }
                 }
+                if (gen1.ToString().EndsWith(","))
+                {
+                    gen1.Remove(gen1.Length - 1, 1);
+                }
                 gen1.Append(";");
 
                 StringBuilder gen2 = new StringBuilder();
@@ -1436,6 +1440,10 @@ namespace NDEY.UI
                     {
                         gen2.Append("EI论文").Append(eiCount).Append("篇").Append("(").Append(eiOrder).Append(")");
                     }
+                    if (gen2.ToString().EndsWith(","))
+                    {
+                        gen2.Remove(gen2.Length - 1, 1);
+                    }
                     gen2.Append(";");
                 }
 
@@ -1464,7 +1472,11 @@ namespace NDEY.UI
                 foreach (KeyValuePair<string, string[]> kvp in technologyDict)
                 {
                     string[] tempList = kvp.Value;
-                    gen2.Append("获得").Append(kvp.Key).Append("奖").Append(tempList[0]).Append("项(").Append(tempList[1]).Append("),");
+                    gen2.Append("获得").Append(kvp.Key).Append("").Append(tempList[0]).Append("项").Append("(").Append(tempList[1]).Append("),");
+                }
+                if (gen2.ToString().EndsWith(","))
+                {
+                    gen2.Remove(gen2.Length - 1, 1);
                 }
                 gen2.Append(";");
 
@@ -1506,6 +1518,10 @@ namespace NDEY.UI
                     if (gjCount >= 1)
                     {
                         gen2.Append("国家专利").Append(gjCount).Append("项(").Append(gjOrder).Append(")");
+                    }
+                    if (gen2.ToString().EndsWith(","))
+                    {
+                        gen2.Remove(gen2.Length - 1, 1);
                     }
                     gen2.Append(";");
                 }
