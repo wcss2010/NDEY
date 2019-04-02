@@ -31,7 +31,11 @@ namespace NDEY.UI.NDEYUserControl
 
 		private KryptonLabel kryptonLabel29;
 
-		private KryptonTextBox ProjectMRD;
+        private Panel kryptonPanel36;
+
+        private Panel kryptonPanel37;
+
+        private KryptonTextBox txtProjectMRD;
 
 		private KryptonTextBox txtProjectTD;
 
@@ -138,7 +142,7 @@ namespace NDEY.UI.NDEYUserControl
 			ProjectBasicInfo projectBasicInfo = new ProjectBasicInfo();
 			projectBasicInfo.ProjectName = this.txtProjectName.Text;
 			projectBasicInfo.ProjectTD = this.txtProjectTD.Text;
-			projectBasicInfo.ProjectMRD = this.ProjectMRD.Text;
+			projectBasicInfo.ProjectMRD = this.txtProjectMRD.Text;
 			projectBasicInfo.ProjectBaseT = this.txtProjectBaseT.Text;
 			projectBasicInfo.ApplicationArea = this.txtApplicationArea.Text;
 			projectBasicInfo.ProjectLimitStart = this.txtProjectLimitTStart.Value.ToString();
@@ -182,7 +186,7 @@ namespace NDEY.UI.NDEYUserControl
 			{
 				this.txtProjectName.Text = projectBasicInfo.ProjectName;
 				this.txtProjectTD.Text = projectBasicInfo.ProjectTD;
-				this.ProjectMRD.Text = projectBasicInfo.ProjectMRD;
+				this.txtProjectMRD.Text = projectBasicInfo.ProjectMRD;
 				this.txtProjectBaseT.Text = projectBasicInfo.ProjectBaseT;
 				if (string.IsNullOrEmpty(projectBasicInfo.ApplicationArea))
 				{
@@ -252,6 +256,12 @@ namespace NDEY.UI.NDEYUserControl
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProjectBasicInfo));
+            this.kryptonPanel36 = new System.Windows.Forms.Panel();
+            this.txtProjectMRD = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.buttonSpecAny2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPanel37 = new System.Windows.Forms.Panel();
+            this.txtProjectTD = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.hSkinProHost = new NDEY.UI.HSkinTableLayoutPanel();
             this.txtProjectSecret = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
@@ -261,10 +271,6 @@ namespace NDEY.UI.NDEYUserControl
             this.txtApplicationArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtProjectBaseT = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel29 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.ProjectMRD = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.buttonSpecAny2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
-            this.txtProjectTD = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.kryptonPanel14 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.txtProjectName = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -298,6 +304,8 @@ namespace NDEY.UI.NDEYUserControl
             this.txtgen4 = new NDEY.UI.NDEYUserControl.WaterTextbox();
             this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
             this.btnProjectBasicInfoSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel36.SuspendLayout();
+            this.kryptonPanel37.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.hSkinProHost.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtProjectSecret)).BeginInit();
@@ -320,6 +328,82 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel5.SuspendLayout();
             this.tableLayoutPanel27.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // kryptonPanel36
+            // 
+            this.kryptonPanel36.BackColor = System.Drawing.Color.White;
+            this.hSkinProHost.SetColumnSpan(this.kryptonPanel36, 3);
+            this.kryptonPanel36.Controls.Add(this.txtProjectMRD);
+            this.kryptonPanel36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel36.Location = new System.Drawing.Point(213, 83);
+            this.kryptonPanel36.Name = "kryptonPanel36";
+            this.kryptonPanel36.Size = new System.Drawing.Size(575, 34);
+            this.kryptonPanel36.TabIndex = 37;
+            // 
+            // txtProjectMRD
+            // 
+            this.txtProjectMRD.AlwaysActive = false;
+            this.txtProjectMRD.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny2});
+            this.txtProjectMRD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtProjectMRD.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectMRD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+            this.txtProjectMRD.Name = "txtProjectMRD";
+            this.txtProjectMRD.Size = new System.Drawing.Size(200, 26);
+            this.txtProjectMRD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtProjectMRD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtProjectMRD.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtProjectMRD.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtProjectMRD.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtProjectMRD.TabIndex = 26;
+            // 
+            // buttonSpecAny2
+            // 
+            this.buttonSpecAny2.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny2.Image")));
+            this.buttonSpecAny2.Text = "如需填写多项,请用中文顿号隔开";
+            this.buttonSpecAny2.UniqueName = "5031476E31B34E80EFBB356F630C063E";
+            // 
+            // kryptonPanel37
+            // 
+            this.kryptonPanel37.BackColor = System.Drawing.Color.White;
+            this.hSkinProHost.SetColumnSpan(this.kryptonPanel37, 3);
+            this.kryptonPanel37.Controls.Add(this.txtProjectTD);
+            this.kryptonPanel37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel37.Location = new System.Drawing.Point(213, 43);
+            this.kryptonPanel37.Name = "kryptonPanel37";
+            this.kryptonPanel37.Size = new System.Drawing.Size(575, 34);
+            this.kryptonPanel37.TabIndex = 38;
+            // 
+            // txtProjectTD
+            // 
+            this.txtProjectTD.AlwaysActive = false;
+            this.txtProjectTD.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny1});
+            this.txtProjectTD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtProjectTD.Location = new System.Drawing.Point(0, 0);
+            this.txtProjectTD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
+            this.txtProjectTD.Name = "txtProjectTD";
+            this.txtProjectTD.Size = new System.Drawing.Size(200, 26);
+            this.txtProjectTD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtProjectTD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtProjectTD.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtProjectTD.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtProjectTD.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtProjectTD.TabIndex = 21;
+            // 
+            // buttonSpecAny1
+            // 
+            this.buttonSpecAny1.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny1.Image")));
+            this.buttonSpecAny1.Text = "如需填写多项,请用中文顿号隔开";
+            this.buttonSpecAny1.UniqueName = "2A0775047D0946BA4397E82CA61CA9E1";
             // 
             // tableLayoutPanel6
             // 
@@ -356,8 +440,8 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinProHost.Controls.Add(this.txtApplicationArea, 4, 3);
             this.hSkinProHost.Controls.Add(this.txtProjectBaseT, 2, 3);
             this.hSkinProHost.Controls.Add(this.kryptonLabel29, 3, 3);
-            this.hSkinProHost.Controls.Add(this.ProjectMRD, 2, 2);
-            this.hSkinProHost.Controls.Add(this.txtProjectTD, 2, 1);
+            this.hSkinProHost.Controls.Add(this.kryptonPanel36, 2, 2);
+            this.hSkinProHost.Controls.Add(this.kryptonPanel37, 2, 1);
             this.hSkinProHost.Controls.Add(this.kryptonPanel14, 2, 0);
             this.hSkinProHost.Controls.Add(this.kryptonPanel11, 0, 5);
             this.hSkinProHost.Controls.Add(this.kryptonLabel31, 0, 2);
@@ -392,10 +476,10 @@ namespace NDEY.UI.NDEYUserControl
             this.txtProjectSecret.Items.AddRange(new object[] {
             "秘密",
             "机密"});
-            this.txtProjectSecret.Location = new System.Drawing.Point(552, 168);
+            this.txtProjectSecret.Location = new System.Drawing.Point(567, 168);
             this.txtProjectSecret.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtProjectSecret.Name = "txtProjectSecret";
-            this.txtProjectSecret.Size = new System.Drawing.Size(231, 25);
+            this.txtProjectSecret.Size = new System.Drawing.Size(216, 25);
             this.txtProjectSecret.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectSecret.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -410,7 +494,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel1
             // 
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel1.Location = new System.Drawing.Point(423, 174);
+            this.kryptonLabel1.Location = new System.Drawing.Point(438, 174);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -446,10 +530,10 @@ namespace NDEY.UI.NDEYUserControl
             this.txtApplicationArea.Items.AddRange(new object[] {
             "应用基础类",
             "工程技术类"});
-            this.txtApplicationArea.Location = new System.Drawing.Point(552, 128);
+            this.txtApplicationArea.Location = new System.Drawing.Point(567, 128);
             this.txtApplicationArea.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtApplicationArea.Name = "txtApplicationArea";
-            this.txtApplicationArea.Size = new System.Drawing.Size(231, 25);
+            this.txtApplicationArea.Size = new System.Drawing.Size(216, 25);
             this.txtApplicationArea.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtApplicationArea.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -465,10 +549,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtProjectBaseT.AlwaysActive = false;
             this.txtProjectBaseT.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtProjectBaseT.Location = new System.Drawing.Point(182, 128);
+            this.txtProjectBaseT.Location = new System.Drawing.Point(212, 128);
             this.txtProjectBaseT.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtProjectBaseT.Name = "txtProjectBaseT";
-            this.txtProjectBaseT.Size = new System.Drawing.Size(230, 24);
+            this.txtProjectBaseT.Size = new System.Drawing.Size(215, 24);
             this.txtProjectBaseT.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectBaseT.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -483,68 +567,12 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel29
             // 
             this.kryptonLabel29.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel29.Location = new System.Drawing.Point(423, 134);
+            this.kryptonLabel29.Location = new System.Drawing.Point(438, 134);
             this.kryptonLabel29.Name = "kryptonLabel29";
             this.kryptonLabel29.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel29.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel29.TabIndex = 27;
             this.kryptonLabel29.Values.Text = "申报类别";
-            // 
-            // ProjectMRD
-            // 
-            this.ProjectMRD.AlwaysActive = false;
-            this.ProjectMRD.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny2});
-            this.hSkinProHost.SetColumnSpan(this.ProjectMRD, 3);
-            this.ProjectMRD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ProjectMRD.Location = new System.Drawing.Point(182, 88);
-            this.ProjectMRD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
-            this.ProjectMRD.Name = "ProjectMRD";
-            this.ProjectMRD.Size = new System.Drawing.Size(601, 26);
-            this.ProjectMRD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ProjectMRD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ProjectMRD.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.ProjectMRD.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.ProjectMRD.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ProjectMRD.TabIndex = 26;
-            // 
-            // buttonSpecAny2
-            // 
-            this.buttonSpecAny2.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny2.Image")));
-            this.buttonSpecAny2.Text = "如需填写多项,请用中文顿号隔开";
-            this.buttonSpecAny2.UniqueName = "5031476E31B34E80EFBB356F630C063E";
-            // 
-            // txtProjectTD
-            // 
-            this.txtProjectTD.AlwaysActive = false;
-            this.txtProjectTD.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
-            this.buttonSpecAny1});
-            this.hSkinProHost.SetColumnSpan(this.txtProjectTD, 3);
-            this.txtProjectTD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtProjectTD.Location = new System.Drawing.Point(182, 48);
-            this.txtProjectTD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
-            this.txtProjectTD.Name = "txtProjectTD";
-            this.txtProjectTD.Size = new System.Drawing.Size(601, 26);
-            this.txtProjectTD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtProjectTD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtProjectTD.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtProjectTD.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtProjectTD.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtProjectTD.TabIndex = 21;
-            // 
-            // buttonSpecAny1
-            // 
-            this.buttonSpecAny1.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny1.Image")));
-            this.buttonSpecAny1.Text = "如需填写多项,请用中文顿号隔开";
-            this.buttonSpecAny1.UniqueName = "2A0775047D0946BA4397E82CA61CA9E1";
             // 
             // kryptonPanel14
             // 
@@ -552,10 +580,10 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel14.Controls.Add(this.txtProjectName);
             this.kryptonPanel14.Controls.Add(this.kryptonPanel2);
             this.kryptonPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel14.Location = new System.Drawing.Point(181, 1);
+            this.kryptonPanel14.Location = new System.Drawing.Point(211, 1);
             this.kryptonPanel14.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.kryptonPanel14.Name = "kryptonPanel14";
-            this.kryptonPanel14.Size = new System.Drawing.Size(609, 39);
+            this.kryptonPanel14.Size = new System.Drawing.Size(579, 39);
             this.kryptonPanel14.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel14.TabIndex = 25;
             // 
@@ -566,7 +594,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtProjectName.Location = new System.Drawing.Point(0, 10);
             this.txtProjectName.Margin = new System.Windows.Forms.Padding(0);
             this.txtProjectName.Name = "txtProjectName";
-            this.txtProjectName.Size = new System.Drawing.Size(609, 24);
+            this.txtProjectName.Size = new System.Drawing.Size(579, 24);
             this.txtProjectName.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectName.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -583,7 +611,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel2.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel2.Name = "kryptonPanel2";
-            this.kryptonPanel2.Size = new System.Drawing.Size(609, 10);
+            this.kryptonPanel2.Size = new System.Drawing.Size(579, 10);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel2.TabIndex = 1;
             // 
@@ -595,7 +623,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel11.Location = new System.Drawing.Point(1, 201);
             this.kryptonPanel11.Margin = new System.Windows.Forms.Padding(1, 1, 0, 0);
             this.kryptonPanel11.Name = "kryptonPanel11";
-            this.kryptonPanel11.Size = new System.Drawing.Size(179, 39);
+            this.kryptonPanel11.Size = new System.Drawing.Size(209, 39);
             this.kryptonPanel11.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel11.TabIndex = 11;
             // 
@@ -613,7 +641,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel31.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonLabel31.Location = new System.Drawing.Point(83, 94);
             this.kryptonLabel31.Name = "kryptonLabel31";
-            this.kryptonLabel31.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel31.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel31.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel31.TabIndex = 9;
             this.kryptonLabel31.Values.Text = "主要研究方向";
@@ -623,7 +651,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel28.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonLabel28.Location = new System.Drawing.Point(83, 174);
             this.kryptonLabel28.Name = "kryptonLabel28";
-            this.kryptonLabel28.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel28.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel28.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel28.TabIndex = 6;
             this.kryptonLabel28.Values.Text = "研究周期";
@@ -633,7 +661,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel27.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonLabel27.Location = new System.Drawing.Point(83, 134);
             this.kryptonLabel27.Name = "kryptonLabel27";
-            this.kryptonLabel27.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel27.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel27.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel27.TabIndex = 5;
             this.kryptonLabel27.Values.Text = "基地类别";
@@ -643,7 +671,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel26.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonLabel26.Location = new System.Drawing.Point(83, 54);
             this.kryptonLabel26.Name = "kryptonLabel26";
-            this.kryptonLabel26.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel26.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel26.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel26.TabIndex = 4;
             this.kryptonLabel26.Values.Text = "技术方向";
@@ -653,7 +681,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel25.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.kryptonLabel25.Location = new System.Drawing.Point(83, 14);
             this.kryptonLabel25.Name = "kryptonLabel25";
-            this.kryptonLabel25.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel25.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel25.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel25.TabIndex = 1;
             this.kryptonLabel25.Values.Text = "项目名称";
@@ -765,10 +793,10 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel1.Controls.Add(this.txtProjectKeyWord);
             this.kryptonPanel1.Controls.Add(this.kryptonPanel3);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel1.Location = new System.Drawing.Point(183, 201);
+            this.kryptonPanel1.Location = new System.Drawing.Point(213, 201);
             this.kryptonPanel1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 0);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(605, 39);
+            this.kryptonPanel1.Size = new System.Drawing.Size(575, 39);
             this.kryptonPanel1.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel1.TabIndex = 37;
             // 
@@ -779,7 +807,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtProjectKeyWord.Location = new System.Drawing.Point(0, 10);
             this.txtProjectKeyWord.Margin = new System.Windows.Forms.Padding(8);
             this.txtProjectKeyWord.Name = "txtProjectKeyWord";
-            this.txtProjectKeyWord.Size = new System.Drawing.Size(605, 24);
+            this.txtProjectKeyWord.Size = new System.Drawing.Size(575, 24);
             this.txtProjectKeyWord.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectKeyWord.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -796,7 +824,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel3.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel3.Name = "kryptonPanel3";
-            this.kryptonPanel3.Size = new System.Drawing.Size(605, 10);
+            this.kryptonPanel3.Size = new System.Drawing.Size(575, 10);
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel3.TabIndex = 35;
             // 
@@ -877,7 +905,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonLabel6.Location = new System.Drawing.Point(3, 43);
             this.kryptonLabel6.Name = "kryptonLabel6";
-            this.kryptonLabel6.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel6.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel6.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel6.TabIndex = 5;
             this.kryptonLabel6.Values.Text = "研究目标";
@@ -887,7 +915,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonLabel7.Location = new System.Drawing.Point(3, 123);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(94, 23);
+            this.kryptonLabel7.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel7.TabIndex = 6;
             this.kryptonLabel7.Values.Text = "研究内容";
@@ -897,7 +925,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonLabel8.Location = new System.Drawing.Point(3, 203);
             this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(94, 41);
+            this.kryptonLabel8.Size = new System.Drawing.Size(124, 41);
             this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel8.TabIndex = 7;
             this.kryptonLabel8.Values.Text = "主要\r\n创新点";
@@ -907,7 +935,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonLabel9.Location = new System.Drawing.Point(3, 283);
             this.kryptonLabel9.Name = "kryptonLabel9";
-            this.kryptonLabel9.Size = new System.Drawing.Size(94, 41);
+            this.kryptonLabel9.Size = new System.Drawing.Size(124, 41);
             this.kryptonLabel9.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel9.TabIndex = 8;
             this.kryptonLabel9.Values.Text = "预期军事\r\n价值";
@@ -964,6 +992,10 @@ namespace NDEY.UI.NDEYUserControl
             this.Name = "frmProjectBasicInfo";
             this.Size = new System.Drawing.Size(847, 767);
             this.Leave += new System.EventHandler(this.frmProjectBasicInfo_Leave);
+            this.kryptonPanel36.ResumeLayout(false);
+            this.kryptonPanel36.PerformLayout();
+            this.kryptonPanel37.ResumeLayout(false);
+            this.kryptonPanel37.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.hSkinProHost.ResumeLayout(false);
             this.hSkinProHost.PerformLayout();
