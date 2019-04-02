@@ -81,7 +81,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		private KryptonComboBox txtDegree;
 
-		private KryptonComboBox txtJobTitle;
+		private KryptonTextBox txtJobTitle;
 
 		private KryptonTextBox txtUnitPosition;
 
@@ -303,14 +303,14 @@ namespace NDEY.UI.NDEYUserControl
 				{
 					this.txtDegree.Text = userBaseInfo.Degree;
 				}
-				if (string.IsNullOrEmpty(userBaseInfo.JobTitle))
-				{
-					this.txtJobTitle.SelectedIndex = -1;
-				}
-				else
-				{
+				//if (string.IsNullOrEmpty(userBaseInfo.JobTitle))
+				//{
+				//	this.txtJobTitle.SelectedIndex = -1;
+				//}
+				//else
+				//{
 					this.txtJobTitle.Text = userBaseInfo.JobTitle;
-				}
+				//}
 				this.txtUnitPosition.Text = userBaseInfo.UnitPosition;
 				this.txtMainResearch.Text = userBaseInfo.MainResearch;
 				this.txtCardNo.Text = userBaseInfo.CardNo;
@@ -401,7 +401,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel9 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.txtDegree = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.txtJobTitle = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.txtJobTitle = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtUnitPosition = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel11 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel5 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
@@ -472,7 +472,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDegree)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
             this.kryptonPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
@@ -873,38 +872,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtJobTitle.AlwaysActive = false;
             this.txtJobTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtJobTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtJobTitle.DropDownWidth = 77;
-            this.txtJobTitle.Items.AddRange(new object[] {
-            "教授",
-            "副教授",
-            "研究员",
-            "副研究员",
-            "高级讲师",
-            "高级工程师",
-            "高级实验师",
-            "主任医师",
-            "副主任医师",
-            "主任药师",
-            "副主任药师",
-            "主任护师",
-            "副主任护师",
-            "主任技师",
-            "副主任技师",
-            "其他"});
             this.txtJobTitle.Location = new System.Drawing.Point(425, 48);
             this.txtJobTitle.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtJobTitle.Name = "txtJobTitle";
             this.txtJobTitle.Size = new System.Drawing.Size(133, 25);
-            this.txtJobTitle.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.txtJobTitle.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtJobTitle.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Transparent;
-            this.txtJobTitle.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtJobTitle.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtJobTitle.TabIndex = 22;
             // 
             // txtUnitPosition
@@ -1238,8 +1209,6 @@ namespace NDEY.UI.NDEYUserControl
             this.txtUnitProperties.DropDownWidth = 104;
             this.txtUnitProperties.Items.AddRange(new object[] {
             "军队单位",
-            "教育部",
-            "工信部",
             "军工集团",
             "民口高校",
             "民口科研院所",
@@ -1289,30 +1258,33 @@ namespace NDEY.UI.NDEYUserControl
             this.txtUnitForORG.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtUnitForORG.DropDownWidth = 128;
             this.txtUnitForORG.Items.AddRange(new object[] {
+            "陆军",
+            "海军",
+            "空军",
+            "火箭军",
+            "战略支援部队",
+            "联合勤务保障部队",
+            "军委机关直属单位",
+            "军事科学院",
+            "国防大学",
+            "国防科技大学",
+            "武警部队",
+            "教育部",
+            "工信部",
             "中国科学院",
             "中国兵器工业集团公司",
             "中国兵器装备集团公司",
             "中国船舶工业集团公司",
             "中国船舶重工集团公司",
             "中国电子科技集团公司",
-            "中国电子信息产业集团有限公司",
+            "中国电子信息产业集团公司",
             "中国航空发动机集团公司",
             "中国航空工业集团公司",
             "中国航天科工集团公司",
             "中国航天科技集团公司",
             "中国核工业集团公司",
             "中国工程物理研究院",
-            "陆军",
-            "海军",
-            "空军",
-            "火箭军",
-            "战略支援部队",
-            "军事科学院",
-            "国防大学",
-            "国防科技大学",
-            "武警部队",
-            "联合勤务保障部队",
-            "军委机关直属单位"});
+            "其它"});
             this.txtUnitForORG.Location = new System.Drawing.Point(192, 328);
             this.txtUnitForORG.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitForORG.Name = "txtUnitForORG";
@@ -1670,7 +1642,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtSex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDegree)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtJobTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).EndInit();
             this.kryptonPanel5.ResumeLayout(false);
             this.kryptonPanel5.PerformLayout();
