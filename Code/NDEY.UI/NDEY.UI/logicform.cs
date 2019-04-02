@@ -1385,12 +1385,13 @@ namespace NDEY.UI
                             continue;
                         }
 
-                        gen1.Append("于").Append(obj.TalentsPlanDate).Append("年").Append("入选").Append(obj.TalentsPlanName).Append("。");
+                        gen1.Append(obj.TalentsPlanDate).Append("年").Append("入选").Append(obj.TalentsPlanName).Append(",");
                     }
                 }
+                gen1.Append(";");
 
                 StringBuilder gen2 = new StringBuilder();
-                //论文：发表SCI论文几篇，EI论文几篇
+                //论文：发表SCI论文几篇(1,2,3)，EI论文几篇(1,2,3)
                 //获奖：获得XX奖，排名X
                 //专利：获得国防专利X项，国家专利X项
                 IList<RTreatises> list2 = _tTreatisesService.GetRTreatises();
@@ -1398,6 +1399,8 @@ namespace NDEY.UI
                 IList<NDPatent> list4 = _ndPatentService.GetNDPatent();
                 int sciCount = 0;
                 int eiCount = 0;
+                string sciOrder = string.Empty;
+                string eiOrder = string.Empty;
                 foreach (RTreatises obj in list2)
                 {
                     if (obj.RTreatisesCollection != null)
@@ -1410,10 +1413,14 @@ namespace NDEY.UI
                         if (obj.RTreatisesCollection.Equals("SCI"))
                         {
                             sciCount++;
+
+                            sciOrder += obj.RTreatisesAuthor + ",";
                         }
                         else if (obj.RTreatisesCollection.Equals("EI"))
                         {
                             eiCount++;
+
+                            eiOrder += obj.RTreatisesAuthor + ",";
                         }
                     }
                 }
@@ -1423,15 +1430,16 @@ namespace NDEY.UI
                     gen2.Append("发表");
                     if (sciCount >= 1)
                     {
-                        gen2.Append("SCI论文").Append(sciCount).Append("篇").Append(" ");
+                        gen2.Append("SCI论文").Append(sciCount).Append("篇").Append("(").Append(sciOrder).Append(")").Append(",");
                     }
                     if (eiCount >= 1)
                     {
-                        gen2.Append("EI论文").Append(eiCount).Append("篇");
+                        gen2.Append("EI论文").Append(eiCount).Append("篇").Append("(").Append(eiOrder).Append(")");
                     }
-                    gen2.Append("。");
+                    gen2.Append(";");
                 }
 
+                Dictionary<string, string[]> technologyDict = new Dictionary<string, string[]>();
                 foreach (TechnologyAwards obj in list3)
                 {
                     if (obj.TechnologyAwardsTypeLevel != null)
@@ -1441,12 +1449,29 @@ namespace NDEY.UI
                             continue;
                         }
 
-                        gen2.Append("获得").Append(obj.TechnologyAwardsPName).Append("奖,").Append("排名").Append(obj.TechnologyAwardsee).Append("。");
+                        if (technologyDict.ContainsKey(obj.TechnologyAwardsTypeLevel))
+                        {
+                            string[] tempList = technologyDict[obj.TechnologyAwardsTypeLevel];
+                            tempList[0] = (int.Parse(tempList[0]) + 1) + "";
+                            tempList[1] += obj.TechnologyAwardsee + ",";
+                        }
+                        else
+                        {
+                            technologyDict.Add(obj.TechnologyAwardsTypeLevel, new string[] { "1", obj.TechnologyAwardsee + "," });
+                        }
                     }
                 }
+                foreach (KeyValuePair<string, string[]> kvp in technologyDict)
+                {
+                    string[] tempList = kvp.Value;
+                    gen2.Append("获得").Append(kvp.Key).Append("奖").Append(tempList[0]).Append("项(").Append(tempList[1]).Append("),");
+                }
+                gen2.Append(";");
 
                 int gfCount = 0;
+                string gfOrder = string.Empty;
                 int gjCount = 0;
+                string gjOrder = string.Empty;
                 foreach (NDPatent obj in list4)
                 {
                     if (obj.NDPatentType != null)
@@ -1459,10 +1484,14 @@ namespace NDEY.UI
                         if (obj.NDPatentType.Equals("国防"))
                         {
                             gfCount++;
+
+                            gfOrder += obj.NDPatentApplicants + ",";
                         }
                         else if (obj.NDPatentType.Equals("国家"))
                         {
                             gjCount++;
+
+                            gjOrder += obj.NDPatentApplicants + ",";
                         }
                     }
                 }
@@ -1472,13 +1501,13 @@ namespace NDEY.UI
                     gen2.Append("获得");
                     if (gfCount >= 1)
                     {
-                        gen2.Append("国防专利").Append(gfCount).Append("项").Append(" ");
+                        gen2.Append("国防专利").Append(gfCount).Append("项(").Append(gfOrder).Append(")").Append(",");
                     }
                     if (gjCount >= 1)
                     {
-                        gen2.Append("国家专利").Append(gjCount).Append("项");
+                        gen2.Append("国家专利").Append(gjCount).Append("项(").Append(gjOrder).Append(")");
                     }
-                    gen2.Append("。");
+                    gen2.Append(";");
                 }
 
                 //填充数据
