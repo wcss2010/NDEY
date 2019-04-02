@@ -506,7 +506,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel104.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel104.Location = new System.Drawing.Point(193, 283);
             this.kryptonPanel104.Name = "kryptonPanel104";
-            this.kryptonPanel104.Size = new System.Drawing.Size(370, 34);
+            this.kryptonPanel104.Size = new System.Drawing.Size(358, 34);
             this.kryptonPanel104.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel104.TabIndex = 48;
             // 
@@ -606,7 +606,7 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39F));
             this.hSkinInputHost.Controls.Add(this.kryptonPanel3, 0, 0);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel19, 5, 8);
@@ -804,11 +804,11 @@ namespace NDEY.UI.NDEYUserControl
             this.txtBirthday.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtBirthday.Location = new System.Drawing.Point(698, 8);
+            this.txtBirthday.Location = new System.Drawing.Point(706, 8);
             this.txtBirthday.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtBirthday.Name = "txtBirthday";
             this.txtBirthday.ShowUpDown = true;
-            this.txtBirthday.Size = new System.Drawing.Size(172, 26);
+            this.txtBirthday.Size = new System.Drawing.Size(164, 26);
             this.txtBirthday.TabIndex = 47;
             // 
             // kryptonLabel8
@@ -872,10 +872,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtJobTitle.AlwaysActive = false;
             this.txtJobTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtJobTitle.Location = new System.Drawing.Point(425, 48);
+            this.txtJobTitle.Location = new System.Drawing.Point(425, 51);
             this.txtJobTitle.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtJobTitle.Name = "txtJobTitle";
-            this.txtJobTitle.Size = new System.Drawing.Size(133, 25);
+            this.txtJobTitle.Size = new System.Drawing.Size(133, 21);
             this.txtJobTitle.TabIndex = 22;
             // 
             // txtUnitPosition
