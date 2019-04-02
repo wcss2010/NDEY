@@ -1975,12 +1975,15 @@ namespace NDEY.UI.NDEYUserControl
 			{
 				text += "请注意，间接经费不超过直接经费减去设备购置费和外协费的20%，正确无误后方能上报。\r\n";
 			}
-			if (text != string.Empty)
-			{
-				MessageBox.Show(text, "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-			}
-			this.OnSaveCheckPassedEvent(EventArgs.Empty);
-			return true;
+            if (text != string.Empty)
+            {
+                MessageBox.Show(text, "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+                this.OnSaveCheckPassedEvent(EventArgs.Empty);
+            }
+			return text == string.Empty;
 		}
 
 		private void SaveProgress()
