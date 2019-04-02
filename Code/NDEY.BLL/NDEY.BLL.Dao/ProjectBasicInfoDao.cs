@@ -42,7 +42,7 @@ namespace NDEY.BLL.Dao
 				else
 				{
 					projectBasicInfo.ProjectLimitStart = DateTime.Now.Year.ToString();
-					projectBasicInfo.ProjectLimitEnd = DateTime.Now.Year.ToString();
+					projectBasicInfo.ProjectLimitEnd = (DateTime.Now.Year + 4).ToString();
 				}
 			}
 			return projectBasicInfo;

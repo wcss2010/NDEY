@@ -196,9 +196,12 @@ namespace NDEY.UI.NDEYUserControl
 				{
 					this.txtApplicationArea.Text = projectBasicInfo.ApplicationArea;
 				}
-				this.txtProjectLimitTStart.Value = decimal.Parse(projectBasicInfo.ProjectLimitStart);
-				this.txtProjectLimitTEnd.Value = decimal.Parse(projectBasicInfo.ProjectLimitEnd);
-				if (string.IsNullOrEmpty(projectBasicInfo.ProjectSecret))
+                //this.txtProjectLimitTStart.Value = decimal.Parse(projectBasicInfo.ProjectLimitStart);
+                //this.txtProjectLimitTEnd.Value = decimal.Parse(projectBasicInfo.ProjectLimitEnd);
+                this.txtProjectLimitTStart.Value = 2020;
+                this.txtProjectLimitTEnd.Value = 2024;
+
+                if (string.IsNullOrEmpty(projectBasicInfo.ProjectSecret))
 				{
 					this.txtProjectSecret.SelectedIndex = 1;
 				}
