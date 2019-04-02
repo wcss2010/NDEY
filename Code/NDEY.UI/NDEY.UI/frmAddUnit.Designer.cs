@@ -109,8 +109,33 @@
             this.txtUnitType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtUnitType.FormattingEnabled = true;
             this.txtUnitType.Items.AddRange(new object[] {
-            "航天科技委",
-            "航空科技委"});
+            "陆军",
+            "海军",
+            "空军",
+            "火箭军",
+            "战略支援部队",
+            "联合勤务保障部队",
+            "军委机关直属单位",
+            "军事科学院",
+            "国防大学",
+            "国防科技大学",
+            "武警部队",
+            "教育部",
+            "工信部",
+            "中国科学院",
+            "中国兵器工业集团公司",
+            "中国兵器装备集团公司",
+            "中国船舶工业集团公司",
+            "中国船舶重工集团公司",
+            "中国电子科技集团公司",
+            "中国电子信息产业集团公司",
+            "中国航空发动机集团公司",
+            "中国航空工业集团公司",
+            "中国航天科工集团公司",
+            "中国航天科技集团公司",
+            "中国核工业集团公司",
+            "中国工程物理研究院",
+            "其它"});
             this.txtUnitType.Location = new System.Drawing.Point(79, 87);
             this.txtUnitType.Name = "txtUnitType";
             this.txtUnitType.Size = new System.Drawing.Size(300, 22);
