@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace NDEY.UI.NDEYUserControl
 {
-	public class frmbudget : BaseControl
+	public class frmBudget : BaseControl
 	{
 		private IContainer components;
 
@@ -1691,7 +1691,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		}
 
-		public frmbudget()
+		public frmBudget()
 		{
 			this.InitializeComponent();
 		}

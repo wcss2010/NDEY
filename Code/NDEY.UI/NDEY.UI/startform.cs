@@ -6,13 +6,13 @@ using System.Windows.Forms;
 
 namespace NDEY.UI
 {
-	public class startform : BaseForm
+	public class startForm : BaseForm
 	{
 		private IContainer components;
 
 		private PictureBox pictureBox1;
 
-		public startform()
+		public startForm()
 		{
 			this.InitializeComponent();
 		}

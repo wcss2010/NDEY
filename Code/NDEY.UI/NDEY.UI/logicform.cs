@@ -14,7 +14,7 @@ using System.Text;
 
 namespace NDEY.UI
 {
-	public class logicform : Form
+	public class logicForm : Form
 	{
 		private IContainer components;
 
@@ -142,7 +142,7 @@ namespace NDEY.UI
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(logicform));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(logicForm));
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.btninit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnImport = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -1007,7 +1007,7 @@ namespace NDEY.UI
 
 		}
 
-		public logicform()
+		public logicForm()
 		{
 			this.InitializeComponent();
 		}
@@ -1063,7 +1063,7 @@ namespace NDEY.UI
 			frmApplyUserInfo.Dock = DockStyle.Fill;
 			this.conapplyuser.Controls.Add(frmApplyUserInfo);
 			this._baseControllist.Add(frmApplyUserInfo);
-			frmbudget frmbudget = new frmbudget();
+			frmBudget frmbudget = new frmBudget();
 			frmbudget.Dock = DockStyle.Fill;
 			frmbudget.ImeMode = ImeMode.Close;
 			frmbudget.OnSaveCheckPassed += new BaseControl.SavePreCheckPassedHandler(this.item_OnSaveCheckPassed);
@@ -1088,7 +1088,7 @@ namespace NDEY.UI
 			frmResearchPlanInfo.OnSaveCheckDeny += new BaseControl.SavePreCheckDenyHandler(this.item_OnSaveCheckDeny);
 			this.tabpageresearchplan.Controls.Add(frmResearchPlanInfo);
 			this._baseControllist.Add(frmResearchPlanInfo);
-			frmresultInfo frmresultInfo = new frmresultInfo();
+			frmResultInfo frmresultInfo = new frmResultInfo();
 			frmresultInfo.Dock = DockStyle.Fill;
 			frmresultInfo.OnSaveCheckPassed += new BaseControl.SavePreCheckPassedHandler(this.item_OnSaveCheckPassed);
 			frmresultInfo.OnSaveCheckDeny += new BaseControl.SavePreCheckDenyHandler(this.item_OnSaveCheckDeny);
@@ -1106,7 +1106,7 @@ namespace NDEY.UI
 			frmRecommendInfo.OnSaveCheckDeny += new BaseControl.SavePreCheckDenyHandler(this.item_OnSaveCheckDeny);
 			this.tablepagerecommend.Controls.Add(frmRecommendInfo);
 			this._baseControllist.Add(frmRecommendInfo);
-			frmresume_education frmresume_education = new frmresume_education();
+			frmResumeEducation frmresume_education = new frmResumeEducation();
 			frmresume_education.Dock = DockStyle.Fill;
 			frmresume_education.OnSaveCheckPassed += new BaseControl.SavePreCheckPassedHandler(this.item_OnSaveCheckPassed);
 			frmresume_education.OnSaveCheckDeny += new BaseControl.SavePreCheckDenyHandler(this.item_OnSaveCheckDeny);
@@ -1258,7 +1258,7 @@ namespace NDEY.UI
 
 		private void btnhelp_Click(object sender, EventArgs e)
 		{
-			frmhelp frmhelp = new frmhelp();
+			frmHelp frmhelp = new frmHelp();
 			frmhelp.ShowDialog();
 		}
 

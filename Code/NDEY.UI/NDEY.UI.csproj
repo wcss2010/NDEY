@@ -92,7 +92,7 @@
     <Compile Include="NDEY.UI.NDEYUserControl\frmApplyUserInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NDEY.UI.NDEYUserControl\frmbudget.cs">
+    <Compile Include="NDEY.UI.NDEYUserControl\frmBudget.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\frmContributionInfo.cs">
@@ -125,10 +125,10 @@
     <Compile Include="NDEY.UI.NDEYUserControl\frmResearchPlanInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NDEY.UI.NDEYUserControl\frmresultInfo.cs">
+    <Compile Include="NDEY.UI.NDEYUserControl\frmResultInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="NDEY.UI.NDEYUserControl\frmresume_education.cs">
+    <Compile Include="NDEY.UI.NDEYUserControl\frmResumeEducation.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\frmRTreatises.cs">
@@ -184,7 +184,7 @@
     <Compile Include="NDEY.UI\frmExportWord.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NDEY.UI\frmhelp.cs">
+    <Compile Include="NDEY.UI\frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NDEY.UI\frmLoading.cs">
@@ -196,11 +196,11 @@
     <Compile Include="NDEY.UI\HSkinTableLayoutPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="NDEY.UI\logicform.cs">
+    <Compile Include="NDEY.UI\logicForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NDEY.UI\Program.cs" />
-    <Compile Include="NDEY.UI\startform.cs">
+    <Compile Include="NDEY.UI\startForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -217,8 +217,8 @@
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmApplyUserInfo.resx">
       <DependentUpon>frmApplyUserInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmbudget.resx">
-      <DependentUpon>frmbudget.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmBudget.resx">
+      <DependentUpon>frmBudget.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmContributionInfo.resx">
       <DependentUpon>frmContributionInfo.cs</DependentUpon>
@@ -247,11 +247,11 @@
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmResearchPlanInfo.resx">
       <DependentUpon>frmResearchPlanInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmresultInfo.resx">
-      <DependentUpon>frmresultInfo.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmResultInfo.resx">
+      <DependentUpon>frmResultInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmresume_education.resx">
-      <DependentUpon>frmresume_education.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmResumeEducation.resx">
+      <DependentUpon>frmResumeEducation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmRTreatises.resx">
       <DependentUpon>frmRTreatises.cs</DependentUpon>
@@ -277,8 +277,8 @@
     <EmbeddedResource Include="NDEY.UI\frmExportWord.resx">
       <DependentUpon>frmExportWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI\frmhelp.resx">
-      <DependentUpon>frmhelp.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI\frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI\frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
@@ -292,11 +292,11 @@
     <EmbeddedResource Include="NDEY.UI\frmUnitSelect.resx">
       <DependentUpon>frmUnitSelect.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI\logicform.resx">
-      <DependentUpon>logicform.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI\logicForm.resx">
+      <DependentUpon>logicForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI\startform.resx">
-      <DependentUpon>startform.cs</DependentUpon>
+    <EmbeddedResource Include="NDEY.UI\startForm.resx">
+      <DependentUpon>startForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resource.resx">

@@ -14,7 +14,7 @@ namespace NDEY.UI
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			startform startform = new startform();
+			startForm startform = new startForm();
 			startform.Show();
 			Program.context = new ApplicationContext();
 			Program.context.Tag = startform;
@@ -47,10 +47,10 @@ namespace NDEY.UI
 			Application.Idle -= new EventHandler(Program.Application_Idle);
 			if (Program.context.MainForm == null)
 			{
-				logicform logicform = new logicform();
+				logicForm logicform = new logicForm();
 				Program.context.MainForm = logicform;
 				logicform.initcontent();
-				startform startform = (startform)Program.context.Tag;
+				startForm startform = (startForm)Program.context.Tag;
 				startform.Close();
 				logicform.Show();
 			}

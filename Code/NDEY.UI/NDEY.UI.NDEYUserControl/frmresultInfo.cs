@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace NDEY.UI.NDEYUserControl
 {
-	public class frmresultInfo : BaseControl
+	public class frmResultInfo : BaseControl
 	{
 		private IContainer components;
 
@@ -72,7 +72,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmresultInfo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmResultInfo));
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
             this.btnResultSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -372,7 +372,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		}
 
-		public frmresultInfo()
+		public frmResultInfo()
 		{
 			this.InitializeComponent();
 		}

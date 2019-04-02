@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace NDEY.UI.NDEYUserControl
 {
-	public class frmresume_education : BaseControl
+	public class frmResumeEducation : BaseControl
 	{
 		private EducationInfoService _educationInfoService = new EducationInfoService();
 
@@ -63,7 +63,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		private DataGridViewImageColumn delete;
 
-		public frmresume_education()
+		public frmResumeEducation()
 		{
 			this.InitializeComponent();
 		}
@@ -250,7 +250,7 @@ namespace NDEY.UI.NDEYUserControl
 		private void InitializeComponent()
 		{
 			DataGridViewCellStyle dataGridViewCellStyle = new DataGridViewCellStyle();
-			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(frmresume_education));
+			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(frmResumeEducation));
 			DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
 			DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
 			this.buttonSpecAny1 = new ButtonSpecAny();

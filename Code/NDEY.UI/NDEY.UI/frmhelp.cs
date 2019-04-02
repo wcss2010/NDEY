@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace NDEY.UI
 {
-	public class frmhelp : KryptonForm
+	public class frmHelp : KryptonForm
 	{
 		private IContainer components;
 
@@ -26,7 +26,7 @@ namespace NDEY.UI
 
 		private void InitializeComponent()
 		{
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmhelp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHelp));
             this.txtRich = new System.Windows.Forms.RichTextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
@@ -75,7 +75,7 @@ namespace NDEY.UI
 
 		}
 
-		public frmhelp()
+		public frmHelp()
 		{
 			this.InitializeComponent();
 		}
