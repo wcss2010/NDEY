@@ -352,7 +352,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtProjectMRD.Location = new System.Drawing.Point(0, 0);
             this.txtProjectMRD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtProjectMRD.Name = "txtProjectMRD";
-            this.txtProjectMRD.Size = new System.Drawing.Size(200, 26);
+            this.txtProjectMRD.Size = new System.Drawing.Size(575, 26);
             this.txtProjectMRD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectMRD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -390,7 +390,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtProjectTD.Location = new System.Drawing.Point(0, 0);
             this.txtProjectTD.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtProjectTD.Name = "txtProjectTD";
-            this.txtProjectTD.Size = new System.Drawing.Size(200, 26);
+            this.txtProjectTD.Size = new System.Drawing.Size(575, 26);
             this.txtProjectTD.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtProjectTD.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1032,5 +1032,18 @@ namespace NDEY.UI.NDEYUserControl
             this.ResumeLayout(false);
 
 		}
-	}
+
+        private void txtProjectLimitTEnd_ValueChanged(object sender, EventArgs args)
+        {
+            if (txtProjectLimitTStart.Value - txtProjectLimitTEnd.Value < 4)
+            {
+                txtProjectLimitTEnd.Value = txtProjectLimitTStart.Value + 4;
+            }
+        }
+
+        private void txtProjectLimitTStart_ValueChanged(object sender, EventArgs args)
+        {
+            txtProjectLimitTEnd.Value = txtProjectLimitTStart.Value + 4;
+        }
+    }
 }
