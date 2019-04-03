@@ -10,17 +10,27 @@ namespace NDEY.UI.Utility
 		public static bool RunWordInstCheck(out string msg)
 		{
 			msg = "";
-			try
+
+            if (FileOp.myProcess != null)
+            {
+                try
+                {
+                    if (!FileOp.myProcess.HasExited)
+                    {
+                        FileOp.myProcess.Kill();
+                        FileOp.myProcess.WaitForExit();
+                    }
+                }
+                catch (Exception ex)
+                { }
+                finally
+                {
+                    FileOp.myProcess = null;
+                }
+            }
+
+            try
 			{
-				if (FileOp.myProcess != null)
-				{
-					if (!FileOp.myProcess.HasExited)
-					{
-						FileOp.myProcess.Kill();
-						FileOp.myProcess.WaitForExit();
-					}
-					FileOp.myProcess = null;
-				}
 				Process[] processesByName = Process.GetProcessesByName("winword");
 				Process[] array = processesByName;
 				for (int i = 0; i < array.Length; i++)
