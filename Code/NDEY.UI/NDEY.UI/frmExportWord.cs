@@ -967,6 +967,12 @@ namespace NDEY.UI
 					object value7 = Missing.Value;
 					application.Selection.Delete(ref value6, ref value7);
 				}
+
+                extFileTableRowNum++;
+                extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
+                extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = "保密资质复印件";
+                extFileTable.Cell(extFileTableRowNum + 1, 3).Range.Text = "保密资质";
+
                 //this.setprogress(74, "读取保密资质...");
                 //if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
                 //{
@@ -981,7 +987,7 @@ namespace NDEY.UI
                 //    application.ActiveDocument.InlineShapes.AddPicture(Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), ref linkToFile, ref saveWithDocment, ref range);
                 //}
 
-				this.setprogress(75, "等待Word完成...");
+                this.setprogress(75, "等待Word完成...");
 			}
 			catch (Exception ex3)
 			{
