@@ -706,12 +706,12 @@ namespace NDEY.UI
 				bookmark = "ProjectRFA2_1Rm";
 				obj4 = this.pbudgetinfo.ProjectRFA2_1rm;
 				this.InsertText(application, bookmark, obj4, null, (this.pbudgetinfo.ProjectRFA2_1rm.Length > 14) ? 10.5f : 12f);
-				Table table = document.Tables[13];
-				int num = 0;
+				Table extFileTable = document.Tables[13];
+				int extFileTableRowNum = 0;
 				if (this.rinfo.ApplicationType == "专家提名")
 				{
 					this.setprogress(45, "读取推荐意见...");
-					table = document.Tables[15];
+					extFileTable = document.Tables[15];
 					bookmark = "ExpertName1";
 					obj4 = this.rmdinfo.ExperInfoList[0].ExpertName;
 					this.InsertText(application, bookmark, obj4, null);
@@ -750,7 +750,7 @@ namespace NDEY.UI
 					this.InsertText(application, bookmark, obj4, null);
 				}
 				this.setprogress(50, "读取个人简历...");
-				Table table2 = document.Tables[4];
+				Table dataTable = document.Tables[4];
 				if (this.eduinfolist != null)
 				{
 					int i = 0;
@@ -759,16 +759,16 @@ namespace NDEY.UI
 					{
 						if (i > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(i + 2, 1).Range.Text = this.eduinfolist[i].EducationDate;
-						table2.Cell(i + 2, 2).Range.Text = this.eduinfolist[i].EducationOrg;
-						table2.Cell(i + 2, 3).Range.Text = this.eduinfolist[i].EducationMajor;
-						table2.Cell(i + 2, 4).Range.Text = this.eduinfolist[i].EducationDegree;
+						dataTable.Cell(i + 2, 1).Range.Text = this.eduinfolist[i].EducationDate;
+						dataTable.Cell(i + 2, 2).Range.Text = this.eduinfolist[i].EducationOrg;
+						dataTable.Cell(i + 2, 3).Range.Text = this.eduinfolist[i].EducationMajor;
+						dataTable.Cell(i + 2, 4).Range.Text = this.eduinfolist[i].EducationDegree;
 						i++;
 					}
 				}
-				table2 = document.Tables[5];
+				dataTable = document.Tables[5];
 				if (this.workinfolist != null)
 				{
 					int j = 0;
@@ -777,15 +777,15 @@ namespace NDEY.UI
 					{
 						if (j > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(j + 2, 1).Range.Text = this.workinfolist[j].WorkExperienceDate;
-						table2.Cell(j + 2, 2).Range.Text = this.workinfolist[j].WorkExperienceOrg;
-						table2.Cell(j + 2, 3).Range.Text = this.workinfolist[j].WorkExperienceContent;
+						dataTable.Cell(j + 2, 1).Range.Text = this.workinfolist[j].WorkExperienceDate;
+						dataTable.Cell(j + 2, 2).Range.Text = this.workinfolist[j].WorkExperienceOrg;
+						dataTable.Cell(j + 2, 3).Range.Text = this.workinfolist[j].WorkExperienceContent;
 						j++;
 					}
 				}
-				table2 = document.Tables[6];
+				dataTable = document.Tables[6];
 				if (this.acainfolist != null)
 				{
 					int k = 0;
@@ -794,15 +794,15 @@ namespace NDEY.UI
 					{
 						if (k > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(k + 2, 1).Range.Text = this.acainfolist[k].AcademicPostDate;
-						table2.Cell(k + 2, 2).Range.Text = this.acainfolist[k].AcademicPostOrg;
-						table2.Cell(k + 2, 3).Range.Text = this.acainfolist[k].AcademicPostContent;
+						dataTable.Cell(k + 2, 1).Range.Text = this.acainfolist[k].AcademicPostDate;
+						dataTable.Cell(k + 2, 2).Range.Text = this.acainfolist[k].AcademicPostOrg;
+						dataTable.Cell(k + 2, 3).Range.Text = this.acainfolist[k].AcademicPostContent;
 						k++;
 					}
 				}
-				table2 = document.Tables[7];
+				dataTable = document.Tables[7];
 				if (this.talentlist != null)
 				{
 					int l = 0;
@@ -811,15 +811,15 @@ namespace NDEY.UI
 					{
 						if (l > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(l + 2, 1).Range.Text = this.talentlist[l].TalentsPlanDate + "年";
-						table2.Cell(l + 2, 2).Range.Text = ((this.talentlist[l].TalentsPlanRA == string.Empty) ? this.talentlist[l].TalentsPlanName : (this.talentlist[l].TalentsPlanName + "," + this.talentlist[l].TalentsPlanRA));
-						table2.Cell(l + 2, 3).Range.Text = this.talentlist[l].TalentsPlanOutlay;
+						dataTable.Cell(l + 2, 1).Range.Text = this.talentlist[l].TalentsPlanDate + "年";
+						dataTable.Cell(l + 2, 2).Range.Text = ((this.talentlist[l].TalentsPlanRA == string.Empty) ? this.talentlist[l].TalentsPlanName : (this.talentlist[l].TalentsPlanName + "," + this.talentlist[l].TalentsPlanRA));
+						dataTable.Cell(l + 2, 3).Range.Text = this.talentlist[l].TalentsPlanOutlay;
 						l++;
 					}
 				}
-				table2 = document.Tables[8];
+				dataTable = document.Tables[8];
 				if (this.ndprolist != null)
 				{
 					int m = 0;
@@ -828,19 +828,19 @@ namespace NDEY.UI
 					{
 						if (m > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(m + 2, 1).Range.Text = (m + 1).ToString();
-						table2.Cell(m + 2, 2).Range.Text = this.ndprolist[m].NDProjectName;
-						table2.Cell(m + 2, 3).Range.Text = this.ndprolist[m].NDProjectSource;
-						table2.Cell(m + 2, 4).Range.Text = this.ndprolist[m].NDProjectOutlay;
-						table2.Cell(m + 2, 5).Range.Text = this.ndprolist[m].NDProjectDate;
-						table2.Cell(m + 2, 6).Range.Text = this.ndprolist[m].NDProjectTaskBySelf;
-						table2.Cell(m + 2, 7).Range.Text = this.ndprolist[m].NDProjectUserOrder;
+						dataTable.Cell(m + 2, 1).Range.Text = (m + 1).ToString();
+						dataTable.Cell(m + 2, 2).Range.Text = this.ndprolist[m].NDProjectName;
+						dataTable.Cell(m + 2, 3).Range.Text = this.ndprolist[m].NDProjectSource;
+						dataTable.Cell(m + 2, 4).Range.Text = this.ndprolist[m].NDProjectOutlay;
+						dataTable.Cell(m + 2, 5).Range.Text = this.ndprolist[m].NDProjectDate;
+						dataTable.Cell(m + 2, 6).Range.Text = this.ndprolist[m].NDProjectTaskBySelf;
+						dataTable.Cell(m + 2, 7).Range.Text = this.ndprolist[m].NDProjectUserOrder;
 						m++;
 					}
 				}
-				table2 = document.Tables[9];
+				dataTable = document.Tables[9];
 				if (this.rtlist != null)
 				{
 					int n = 0;
@@ -849,27 +849,27 @@ namespace NDEY.UI
 					{
 						if (n > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(n + 2, 1).Range.Text = (n + 1).ToString();
-						table2.Cell(n + 2, 2).Range.Text = this.rtlist[n].RTreatisesName;
-						table2.Cell(n + 2, 3).Range.Text = this.rtlist[n].RTreatisesTypeExp;
-						table2.Cell(n + 2, 4).Range.Text = this.rtlist[n].RTreatisesRell + "年";
-						table2.Cell(n + 2, 5).Range.Text = this.rtlist[n].RTreatisesJournalTitle;
-						table2.Cell(n + 2, 6).Range.Text = this.rtlist[n].RTreatisesCollection;
-						table2.Cell(n + 2, 7).Range.Text = this.rtlist[n].RTreatisesAuthor;
-						num++;
-						if (num > 1)
+						dataTable.Cell(n + 2, 1).Range.Text = (n + 1).ToString();
+						dataTable.Cell(n + 2, 2).Range.Text = this.rtlist[n].RTreatisesName;
+						dataTable.Cell(n + 2, 3).Range.Text = this.rtlist[n].RTreatisesTypeExp;
+						dataTable.Cell(n + 2, 4).Range.Text = this.rtlist[n].RTreatisesRell + "年";
+						dataTable.Cell(n + 2, 5).Range.Text = this.rtlist[n].RTreatisesJournalTitle;
+						dataTable.Cell(n + 2, 6).Range.Text = this.rtlist[n].RTreatisesCollection;
+						dataTable.Cell(n + 2, 7).Range.Text = this.rtlist[n].RTreatisesAuthor;
+						extFileTableRowNum++;
+						if (extFileTableRowNum > 1)
 						{
-							table.Rows.Add(ref value);
+							extFileTable.Rows.Add(ref value);
 						}
-						table.Cell(num + 1, 1).Range.Text = num.ToString();
-						table.Cell(num + 1, 2).Range.Text = (string.IsNullOrEmpty(this.rtlist[n].RTreatisesPDFOName) ? "缺少附件" : this.rtlist[n].RTreatisesPDFOName);
-						table.Cell(num + 1, 4).Range.Text = "代表性论著--" + this.rtlist[n].RTreatisesTypeExp;
+						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
+						extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.rtlist[n].RTreatisesPDFOName) ? "缺少附件" : this.rtlist[n].RTreatisesPDFOName);
+						extFileTable.Cell(extFileTableRowNum + 1, 4).Range.Text = "代表性论著--" + this.rtlist[n].RTreatisesTypeExp;
 						n++;
 					}
 				}
-				table2 = document.Tables[10];
+				dataTable = document.Tables[10];
 				if (this.techlist != null)
 				{
 					int num2 = 0;
@@ -878,25 +878,25 @@ namespace NDEY.UI
 					{
 						if (num2 > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(num2 + 2, 1).Range.Text = (num2 + 1).ToString();
-						table2.Cell(num2 + 2, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
-						table2.Cell(num2 + 2, 3).Range.Text = this.techlist[num2].TechnologyAwardsTypeLevel;
-						table2.Cell(num2 + 2, 4).Range.Text = this.techlist[num2].TechnologyAwardsYear + "年";
-						table2.Cell(num2 + 2, 5).Range.Text = this.techlist[num2].TechnologyAwardsee;
-						num++;
-						if (num > 1)
+						dataTable.Cell(num2 + 2, 1).Range.Text = (num2 + 1).ToString();
+						dataTable.Cell(num2 + 2, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
+						dataTable.Cell(num2 + 2, 3).Range.Text = this.techlist[num2].TechnologyAwardsTypeLevel;
+						dataTable.Cell(num2 + 2, 4).Range.Text = this.techlist[num2].TechnologyAwardsYear + "年";
+						dataTable.Cell(num2 + 2, 5).Range.Text = this.techlist[num2].TechnologyAwardsee;
+						extFileTableRowNum++;
+						if (extFileTableRowNum > 1)
 						{
-							table.Rows.Add(ref value);
+							extFileTable.Rows.Add(ref value);
 						}
-						table.Cell(num + 1, 1).Range.Text = num.ToString();
-						table.Cell(num + 1, 2).Range.Text = (string.IsNullOrEmpty(this.techlist[num2].TechnologyAwardsPDFOName) ? "缺少附件" : this.techlist[num2].TechnologyAwardsPDFOName);
-						table.Cell(num + 1, 4).Range.Text = "重要科技奖项";
+						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
+						extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.techlist[num2].TechnologyAwardsPDFOName) ? "缺少附件" : this.techlist[num2].TechnologyAwardsPDFOName);
+						extFileTable.Cell(extFileTableRowNum + 1, 4).Range.Text = "重要科技奖项";
 						num2++;
 					}
 				}
-				table2 = document.Tables[11];
+				dataTable = document.Tables[11];
 				if (this.ndpatentlist != null)
 				{
 					int num3 = 0;
@@ -905,25 +905,25 @@ namespace NDEY.UI
 					{
 						if (num3 > 0)
 						{
-							table2.Rows.Add(ref value);
+							dataTable.Rows.Add(ref value);
 						}
-						table2.Cell(num3 + 2, 1).Range.Text = (num3 + 1).ToString();
-						table2.Cell(num3 + 2, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
-						table2.Cell(num3 + 2, 3).Range.Text = this.ndpatentlist[num3].NDPatentNumber;
+						dataTable.Cell(num3 + 2, 1).Range.Text = (num3 + 1).ToString();
+						dataTable.Cell(num3 + 2, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
+						dataTable.Cell(num3 + 2, 3).Range.Text = this.ndpatentlist[num3].NDPatentNumber;
 						DateTime dateTime;
 						if (this.ndpatentlist[num3].NDPatentApprovalYear != string.Empty && DateTime.TryParse(this.ndpatentlist[num3].NDPatentApprovalYear, out dateTime))
 						{
-							table2.Cell(num3 + 2, 4).Range.Text = dateTime.ToString("yyyy.M");
+							dataTable.Cell(num3 + 2, 4).Range.Text = dateTime.ToString("yyyy.M");
 						}
-						table2.Cell(num3 + 2, 5).Range.Text = this.ndpatentlist[num3].NDPatentApplicants;
-						num++;
-						if (num > 1)
+						dataTable.Cell(num3 + 2, 5).Range.Text = this.ndpatentlist[num3].NDPatentApplicants;
+						extFileTableRowNum++;
+						if (extFileTableRowNum > 1)
 						{
-							table.Rows.Add(ref value);
+							extFileTable.Rows.Add(ref value);
 						}
-						table.Cell(num + 1, 1).Range.Text = num.ToString();
-						table.Cell(num + 1, 2).Range.Text = (string.IsNullOrEmpty(this.ndpatentlist[num3].NDPatentPDFOName) ? "缺少附件" : this.ndpatentlist[num3].NDPatentPDFOName);
-						table.Cell(num + 1, 4).Range.Text = "国家及国防专利";
+						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
+						extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.ndpatentlist[num3].NDPatentPDFOName) ? "缺少附件" : this.ndpatentlist[num3].NDPatentPDFOName);
+						extFileTable.Cell(extFileTableRowNum + 1, 4).Range.Text = "国家及国防专利";
 						num3++;
 					}
 				}
