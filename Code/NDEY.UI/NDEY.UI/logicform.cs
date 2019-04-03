@@ -1392,7 +1392,7 @@ namespace NDEY.UI
                 {
                     gen1.Remove(gen1.Length - 1, 1);
                 }
-                gen1.Append(";");
+                gen1.Append("。");
 
                 StringBuilder gen2 = new StringBuilder();
                 //论文：发表SCI论文几篇(1,2,3)，EI论文几篇(1,2,3)
@@ -1523,16 +1523,16 @@ namespace NDEY.UI
                     {
                         gen2.Remove(gen2.Length - 1, 1);
                     }
-                    gen2.Append(";");
+                    gen2.Append("。");
                 }
-
+                
                 //填充数据
                 ProjectBasicInfo pbi = _projectBasicInfoService.GetProjectBasicInfo();
                 if (pbi.ProjectBrief != null)
                 {
                     string[] ttt = pbi.ProjectBrief.Split(new string[] { "|" }, StringSplitOptions.None);
-                    ttt[0] = gen1.ToString();
-                    ttt[1] = gen2.ToString();
+                    ttt[0] = gen1.ToString().Replace(",)", ")");
+                    ttt[1] = gen2.ToString().Replace(",)", ")");
 
                     StringBuilder sb = new StringBuilder();
                     foreach (string t in ttt)
