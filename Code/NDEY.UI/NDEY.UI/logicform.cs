@@ -4,11 +4,9 @@ using ComponentFactory.Krypton.Toolkit;
 using NDEY.BLL.Entity;
 using NDEY.BLL.Service;
 using NDEY.UI.NDEYUserControl;
-using NDEY.UI.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Windows.Forms;
 using System.Text;
 
