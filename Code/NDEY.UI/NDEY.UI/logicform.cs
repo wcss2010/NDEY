@@ -936,16 +936,16 @@ namespace NDEY.UI
             this.kpcontact.Size = new System.Drawing.Size(200, 100);
             this.kpcontact.TabIndex = 0;
             // 
-            // logicform
+            // logicForm
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1127, 671);
             this.Controls.Add(this.defaulthost);
             this.Controls.Add(this.kryptonPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "logicform";
+            this.Name = "logicForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "国防科技卓越青年科学基金申报系统+";
+            this.Text = "国防科技卓越青年科学基金申报系统";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.logicform_Load);
             this.Resize += new System.EventHandler(this.logicform_Resize);

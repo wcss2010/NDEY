@@ -31,6 +31,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <OutputPath>..\..\Release\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>111.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Docking, Version=4.3.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -367,6 +370,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="111.ico" />
     <Content Include="Helper\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

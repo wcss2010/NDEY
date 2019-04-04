@@ -338,9 +338,6 @@
         FB9XjBQdefAXBWZ5NFpzIFYAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="defaulthost.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>541, 91</value>
-  </metadata>
   <data name="kpExtFile1.ImageSmall" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALkAAAA3CAYAAABQF+v0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -458,7 +455,7 @@
 </value>
   </data>
   <metadata name="maintimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>818, 91</value>
+    <value>294, 91</value>
   </metadata>
   <data name="topBanner.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
