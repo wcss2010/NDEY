@@ -506,7 +506,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel104.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel104.Location = new System.Drawing.Point(193, 283);
             this.kryptonPanel104.Name = "kryptonPanel104";
-            this.kryptonPanel104.Size = new System.Drawing.Size(358, 34);
+            this.kryptonPanel104.Size = new System.Drawing.Size(349, 34);
             this.kryptonPanel104.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel104.TabIndex = 48;
             // 
@@ -517,7 +517,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtYTUnitContacts.Location = new System.Drawing.Point(0, 10);
             this.txtYTUnitContacts.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtYTUnitContacts.Name = "txtYTUnitContacts";
-            this.txtYTUnitContacts.Size = new System.Drawing.Size(370, 24);
+            this.txtYTUnitContacts.Size = new System.Drawing.Size(358, 24);
             this.txtYTUnitContacts.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtYTUnitContacts.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -606,7 +606,7 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31F));
-            this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39F));
             this.hSkinInputHost.Controls.Add(this.kryptonPanel3, 0, 0);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel19, 5, 8);
@@ -697,9 +697,9 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel19
             // 
             this.kryptonLabel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel19.Location = new System.Drawing.Point(569, 294);
+            this.kryptonLabel19.Location = new System.Drawing.Point(557, 294);
             this.kryptonLabel19.Name = "kryptonLabel19";
-            this.kryptonLabel19.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabel19.Size = new System.Drawing.Size(144, 23);
             this.kryptonLabel19.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel19.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel19.TabIndex = 18;
@@ -719,10 +719,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtYTIDCard.AlwaysActive = false;
             this.txtYTIDCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtYTIDCard.Location = new System.Drawing.Point(698, 288);
+            this.txtYTIDCard.Location = new System.Drawing.Point(706, 288);
             this.txtYTIDCard.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtYTIDCard.Name = "txtYTIDCard";
-            this.txtYTIDCard.Size = new System.Drawing.Size(172, 24);
+            this.txtYTIDCard.Size = new System.Drawing.Size(164, 24);
             this.txtYTIDCard.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtYTIDCard.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -737,7 +737,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel6
             // 
             this.kryptonLabel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel6.Location = new System.Drawing.Point(331, 14);
+            this.kryptonLabel6.Location = new System.Drawing.Point(325, 14);
             this.kryptonLabel6.Name = "kryptonLabel6";
             this.kryptonLabel6.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel6.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -747,9 +747,9 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel7
             // 
             this.kryptonLabel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel7.Location = new System.Drawing.Point(569, 14);
+            this.kryptonLabel7.Location = new System.Drawing.Point(557, 14);
             this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabel7.Size = new System.Drawing.Size(144, 23);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel7.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel7.TabIndex = 4;
@@ -764,10 +764,10 @@ namespace NDEY.UI.NDEYUserControl
             this.txtSex.Items.AddRange(new object[] {
             "男",
             "女"});
-            this.txtSex.Location = new System.Drawing.Point(425, 8);
+            this.txtSex.Location = new System.Drawing.Point(419, 8);
             this.txtSex.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtSex.Name = "txtSex";
-            this.txtSex.Size = new System.Drawing.Size(133, 25);
+            this.txtSex.Size = new System.Drawing.Size(127, 25);
             this.txtSex.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtSex.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -786,7 +786,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtApplyUserName.Location = new System.Drawing.Point(192, 8);
             this.txtApplyUserName.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtApplyUserName.Name = "txtApplyUserName";
-            this.txtApplyUserName.Size = new System.Drawing.Size(128, 24);
+            this.txtApplyUserName.Size = new System.Drawing.Size(122, 24);
             this.txtApplyUserName.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtApplyUserName.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -804,11 +804,11 @@ namespace NDEY.UI.NDEYUserControl
             this.txtBirthday.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txtBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtBirthday.Location = new System.Drawing.Point(706, 8);
+            this.txtBirthday.Location = new System.Drawing.Point(712, 8);
             this.txtBirthday.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtBirthday.Name = "txtBirthday";
             this.txtBirthday.ShowUpDown = true;
-            this.txtBirthday.Size = new System.Drawing.Size(164, 26);
+            this.txtBirthday.Size = new System.Drawing.Size(158, 26);
             this.txtBirthday.TabIndex = 47;
             // 
             // kryptonLabel8
@@ -824,7 +824,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel9
             // 
             this.kryptonLabel9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel9.Location = new System.Drawing.Point(331, 54);
+            this.kryptonLabel9.Location = new System.Drawing.Point(325, 54);
             this.kryptonLabel9.Name = "kryptonLabel9";
             this.kryptonLabel9.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel9.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -834,9 +834,9 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel10
             // 
             this.kryptonLabel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel10.Location = new System.Drawing.Point(569, 54);
+            this.kryptonLabel10.Location = new System.Drawing.Point(557, 54);
             this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabel10.Size = new System.Drawing.Size(144, 23);
             this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel10.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel10.TabIndex = 9;
@@ -856,7 +856,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtDegree.Location = new System.Drawing.Point(192, 48);
             this.txtDegree.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtDegree.Name = "txtDegree";
-            this.txtDegree.Size = new System.Drawing.Size(128, 25);
+            this.txtDegree.Size = new System.Drawing.Size(122, 25);
             this.txtDegree.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtDegree.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -872,20 +872,29 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtJobTitle.AlwaysActive = false;
             this.txtJobTitle.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtJobTitle.Location = new System.Drawing.Point(425, 51);
+            this.txtJobTitle.Location = new System.Drawing.Point(415, 48);
             this.txtJobTitle.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtJobTitle.Name = "txtJobTitle";
-            this.txtJobTitle.Size = new System.Drawing.Size(133, 21);
+            this.txtJobTitle.Size = new System.Drawing.Size(122, 24);
+            this.txtJobTitle.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtJobTitle.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtJobTitle.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtJobTitle.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtJobTitle.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtJobTitle.TabIndex = 22;
             // 
             // txtUnitPosition
             // 
             this.txtUnitPosition.AlwaysActive = false;
             this.txtUnitPosition.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtUnitPosition.Location = new System.Drawing.Point(698, 48);
+            this.txtUnitPosition.Location = new System.Drawing.Point(706, 48);
             this.txtUnitPosition.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitPosition.Name = "txtUnitPosition";
-            this.txtUnitPosition.Size = new System.Drawing.Size(172, 24);
+            this.txtUnitPosition.Size = new System.Drawing.Size(164, 24);
             this.txtUnitPosition.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtUnitPosition.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1012,7 +1021,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel15
             // 
             this.kryptonLabel15.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel15.Location = new System.Drawing.Point(331, 174);
+            this.kryptonLabel15.Location = new System.Drawing.Point(325, 174);
             this.kryptonLabel15.Name = "kryptonLabel15";
             this.kryptonLabel15.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel15.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1023,9 +1032,9 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel16
             // 
             this.kryptonLabel16.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel16.Location = new System.Drawing.Point(569, 174);
+            this.kryptonLabel16.Location = new System.Drawing.Point(557, 174);
             this.kryptonLabel16.Name = "kryptonLabel16";
-            this.kryptonLabel16.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabel16.Size = new System.Drawing.Size(144, 23);
             this.kryptonLabel16.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel16.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel16.TabIndex = 15;
@@ -1035,10 +1044,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtEmail.AlwaysActive = false;
             this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtEmail.Location = new System.Drawing.Point(698, 168);
+            this.txtEmail.Location = new System.Drawing.Point(706, 168);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(172, 24);
+            this.txtEmail.Size = new System.Drawing.Size(164, 24);
             this.txtEmail.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtEmail.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1054,10 +1063,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtMobilePhone.AlwaysActive = false;
             this.txtMobilePhone.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtMobilePhone.Location = new System.Drawing.Point(425, 168);
+            this.txtMobilePhone.Location = new System.Drawing.Point(419, 168);
             this.txtMobilePhone.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtMobilePhone.Name = "txtMobilePhone";
-            this.txtMobilePhone.Size = new System.Drawing.Size(133, 24);
+            this.txtMobilePhone.Size = new System.Drawing.Size(127, 24);
             this.txtMobilePhone.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtMobilePhone.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1076,7 +1085,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtOfficePhones.Location = new System.Drawing.Point(192, 168);
             this.txtOfficePhones.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtOfficePhones.Name = "txtOfficePhones";
-            this.txtOfficePhones.Size = new System.Drawing.Size(128, 24);
+            this.txtOfficePhones.Size = new System.Drawing.Size(122, 24);
             this.txtOfficePhones.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtOfficePhones.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1182,7 +1191,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel22
             // 
             this.kryptonLabel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel22.Location = new System.Drawing.Point(331, 334);
+            this.kryptonLabel22.Location = new System.Drawing.Point(325, 334);
             this.kryptonLabel22.Name = "kryptonLabel22";
             this.kryptonLabel22.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel22.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1193,9 +1202,9 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel23
             // 
             this.kryptonLabel23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel23.Location = new System.Drawing.Point(569, 334);
+            this.kryptonLabel23.Location = new System.Drawing.Point(557, 334);
             this.kryptonLabel23.Name = "kryptonLabel23";
-            this.kryptonLabel23.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabel23.Size = new System.Drawing.Size(144, 23);
             this.kryptonLabel23.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel23.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel23.TabIndex = 39;
@@ -1213,10 +1222,10 @@ namespace NDEY.UI.NDEYUserControl
             "民口高校",
             "民口科研院所",
             "其它"});
-            this.txtUnitProperties.Location = new System.Drawing.Point(425, 328);
+            this.txtUnitProperties.Location = new System.Drawing.Point(419, 328);
             this.txtUnitProperties.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitProperties.Name = "txtUnitProperties";
-            this.txtUnitProperties.Size = new System.Drawing.Size(133, 25);
+            this.txtUnitProperties.Size = new System.Drawing.Size(127, 25);
             this.txtUnitProperties.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtUnitProperties.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1232,10 +1241,10 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtUnitContactsPhone.AlwaysActive = false;
             this.txtUnitContactsPhone.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtUnitContactsPhone.Location = new System.Drawing.Point(698, 328);
+            this.txtUnitContactsPhone.Location = new System.Drawing.Point(706, 328);
             this.txtUnitContactsPhone.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitContactsPhone.Name = "txtUnitContactsPhone";
-            this.txtUnitContactsPhone.Size = new System.Drawing.Size(172, 24);
+            this.txtUnitContactsPhone.Size = new System.Drawing.Size(164, 24);
             this.txtUnitContactsPhone.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtUnitContactsPhone.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1288,7 +1297,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtUnitForORG.Location = new System.Drawing.Point(192, 328);
             this.txtUnitForORG.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitForORG.Name = "txtUnitForORG";
-            this.txtUnitForORG.Size = new System.Drawing.Size(128, 25);
+            this.txtUnitForORG.Size = new System.Drawing.Size(122, 25);
             this.txtUnitForORG.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtUnitForORG.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1355,7 +1364,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel17
             // 
             this.kryptonLabel17.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel17.Location = new System.Drawing.Point(331, 214);
+            this.kryptonLabel17.Location = new System.Drawing.Point(325, 214);
             this.kryptonLabel17.Name = "kryptonLabel17";
             this.kryptonLabel17.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel17.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1368,10 +1377,10 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel7.Controls.Add(this.txtUnitList);
             this.kryptonPanel7.Controls.Add(this.kryptonPanel12);
             this.kryptonPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel7.Location = new System.Drawing.Point(424, 201);
+            this.kryptonPanel7.Location = new System.Drawing.Point(418, 201);
             this.kryptonPanel7.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.kryptonPanel7.Name = "kryptonPanel7";
-            this.kryptonPanel7.Size = new System.Drawing.Size(453, 39);
+            this.kryptonPanel7.Size = new System.Drawing.Size(459, 39);
             this.kryptonPanel7.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel7.TabIndex = 30;
             // 
@@ -1383,7 +1392,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtUnitList.EditValue = "";
             this.txtUnitList.Location = new System.Drawing.Point(0, 10);
             this.txtUnitList.Name = "txtUnitList";
-            this.txtUnitList.Size = new System.Drawing.Size(453, 29);
+            this.txtUnitList.Size = new System.Drawing.Size(459, 29);
             this.txtUnitList.TabIndex = 30;
             this.txtUnitList.Values.Text = "请选择开户帐号！";
             this.txtUnitList.EditValueChanged += new System.EventHandler(this.txtUnitList_EditValueChanged);
@@ -1393,7 +1402,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel12.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel12.Name = "kryptonPanel12";
-            this.kryptonPanel12.Size = new System.Drawing.Size(453, 10);
+            this.kryptonPanel12.Size = new System.Drawing.Size(459, 10);
             this.kryptonPanel12.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel12.TabIndex = 1;
             // 
@@ -1414,7 +1423,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtYTUnitName.Location = new System.Drawing.Point(192, 208);
             this.txtYTUnitName.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtYTUnitName.Name = "txtYTUnitName";
-            this.txtYTUnitName.Size = new System.Drawing.Size(128, 24);
+            this.txtYTUnitName.Size = new System.Drawing.Size(122, 24);
             this.txtYTUnitName.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtYTUnitName.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1436,7 +1445,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel14.Location = new System.Drawing.Point(191, 201);
             this.kryptonPanel14.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.kryptonPanel14.Name = "kryptonPanel14";
-            this.kryptonPanel14.Size = new System.Drawing.Size(374, 1);
+            this.kryptonPanel14.Size = new System.Drawing.Size(362, 1);
             this.kryptonPanel14.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel14.TabIndex = 46;
             // 
@@ -1447,7 +1456,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtWorkUnit.Location = new System.Drawing.Point(0, 10);
             this.txtWorkUnit.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtWorkUnit.Name = "txtWorkUnit";
-            this.txtWorkUnit.Size = new System.Drawing.Size(374, 24);
+            this.txtWorkUnit.Size = new System.Drawing.Size(362, 24);
             this.txtWorkUnit.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtWorkUnit.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -1464,7 +1473,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel15.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel15.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel15.Name = "kryptonPanel15";
-            this.kryptonPanel15.Size = new System.Drawing.Size(374, 10);
+            this.kryptonPanel15.Size = new System.Drawing.Size(362, 10);
             this.kryptonPanel15.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel15.TabIndex = 1;
             // 
@@ -1473,10 +1482,10 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel9.Controls.Add(this.txtWorkUnitList);
             this.kryptonPanel9.Controls.Add(this.kryptonPanel11);
             this.kryptonPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel9.Location = new System.Drawing.Point(697, 201);
+            this.kryptonPanel9.Location = new System.Drawing.Point(705, 201);
             this.kryptonPanel9.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
             this.kryptonPanel9.Name = "kryptonPanel9";
-            this.kryptonPanel9.Size = new System.Drawing.Size(180, 1);
+            this.kryptonPanel9.Size = new System.Drawing.Size(172, 1);
             this.kryptonPanel9.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel9.TabIndex = 46;
             // 
@@ -1488,7 +1497,7 @@ namespace NDEY.UI.NDEYUserControl
             this.txtWorkUnitList.EditValue = "";
             this.txtWorkUnitList.Location = new System.Drawing.Point(0, 10);
             this.txtWorkUnitList.Name = "txtWorkUnitList";
-            this.txtWorkUnitList.Size = new System.Drawing.Size(180, 29);
+            this.txtWorkUnitList.Size = new System.Drawing.Size(172, 29);
             this.txtWorkUnitList.TabIndex = 30;
             this.txtWorkUnitList.Values.Text = "请选择单位开户帐号！";
             // 
@@ -1497,16 +1506,16 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel11.Dock = System.Windows.Forms.DockStyle.Top;
             this.kryptonPanel11.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel11.Name = "kryptonPanel11";
-            this.kryptonPanel11.Size = new System.Drawing.Size(180, 10);
+            this.kryptonPanel11.Size = new System.Drawing.Size(172, 10);
             this.kryptonPanel11.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel11.TabIndex = 1;
             // 
             // kryptonLabel13
             // 
             this.kryptonLabel13.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel13.Location = new System.Drawing.Point(569, 203);
+            this.kryptonLabel13.Location = new System.Drawing.Point(557, 203);
             this.kryptonLabel13.Name = "kryptonLabel13";
-            this.kryptonLabel13.Size = new System.Drawing.Size(124, 1);
+            this.kryptonLabel13.Size = new System.Drawing.Size(144, 1);
             this.kryptonLabel13.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel13.TabIndex = 45;
             this.kryptonLabel13.Values.Text = "单位开户帐号";
