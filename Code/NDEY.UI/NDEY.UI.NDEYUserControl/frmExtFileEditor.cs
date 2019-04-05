@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using NDEY.BLL.Entity;
@@ -13,6 +7,8 @@ namespace NDEY.UI.NDEYUserControl
 {
     public partial class frmExtFileEditor : BaseControl
     {
+        public static bool IsUploadedExtFile = false;
+
         public frmExtFileEditor()
         {
             InitializeComponent();
@@ -31,7 +27,10 @@ namespace NDEY.UI.NDEYUserControl
             string imgFile = ofdDialogs.FileName;
             if (File.Exists(imgFile))
             {
-                File.Copy(ofdDialogs.FileName, Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), true);
+                File.Copy(imgFile, Path.Combine(EntityElement.FilesStorePath, "extFile_" + new FileInfo(imgFile).Name), true);
+
+                IsUploadedExtFile = true;
+
                 MessageBox.Show("保存完成!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
@@ -41,10 +40,14 @@ namespace NDEY.UI.NDEYUserControl
             base.RefreshCall();
 
             lblExtFileLabel.Text = string.Empty;
-
-            if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
+            string[] filess = Directory.GetFiles(EntityElement.FilesStorePath);
+            foreach (string s in filess)
             {
-                lblExtFileLabel.Text = "extFile1.png";
+                if (s.Contains("extFile_"))
+                {
+                    lblExtFileLabel.Text = s.Replace("extFile_", string.Empty);
+                    IsUploadedExtFile = true;
+                }
             }
         }
 
