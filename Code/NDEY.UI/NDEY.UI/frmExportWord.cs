@@ -600,8 +600,9 @@ namespace NDEY.UI
 					}
 				}
 				bookmark = "ProjectLimitT";
-				obj4 = this.projectinfo.ProjectLimitStart + "年-" + this.projectinfo.ProjectLimitEnd + "年";
-				this.InsertText(application, bookmark, obj4, null);
+                obj4 = "五年";
+                //obj4 = this.projectinfo.ProjectLimitStart + "年-" + this.projectinfo.ProjectLimitEnd + "年";
+                this.InsertText(application, bookmark, obj4, null);
 				this.setprogress(40, "读取经费预算...");
 				bookmark = "ProjectRFAs";
 				obj4 = this.pbudgetinfo.ProjectRFA;
