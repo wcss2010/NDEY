@@ -134,7 +134,6 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.btnnext.Location = new System.Drawing.Point(832, 3);
             this.btnnext.Name = "btnnext";
-            this.btnnext.Size = new System.Drawing.Size(90, 25);
             this.btnnext.TabIndex = 1;
             this.btnnext.Values.Text = "下一页";
             this.btnnext.Click += new System.EventHandler(this.btnnext_Click);
@@ -143,7 +142,6 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.btnsave.Location = new System.Drawing.Point(729, 3);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(90, 25);
             this.btnsave.TabIndex = 0;
             this.btnsave.Values.Text = "保存";
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -240,6 +238,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // patenttype
             // 
+            this.patenttype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.patenttype.DropDownWidth = 121;
             this.patenttype.HeaderText = "专利类型";
             this.patenttype.Items.AddRange(new string[] {
