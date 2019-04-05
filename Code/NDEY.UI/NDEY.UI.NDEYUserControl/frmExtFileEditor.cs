@@ -45,7 +45,7 @@ namespace NDEY.UI.NDEYUserControl
             {
                 if (s.Contains("extFile_"))
                 {
-                    lblExtFileLabel.Text = s.Replace("extFile_", string.Empty);
+                    lblExtFileLabel.Text = new FileInfo(s.Replace("extFile_", string.Empty)).Name;
                     IsUploadedExtFile = true;
                 }
             }

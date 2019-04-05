@@ -55,6 +55,7 @@ namespace NDEY.UI
 		private void btnConfirm_Click(object sender, EventArgs e)
 		{
 			this.lbinfo.Text = "请稍后...";
+            frmExtFileEditor.IsUploadedExtFile = false;
 			this.btnCancel.Enabled = false;
 			this.btnConfirm.Enabled = false;
 			string text = "";
