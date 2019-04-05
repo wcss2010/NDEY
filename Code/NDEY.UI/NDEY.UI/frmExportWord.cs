@@ -717,7 +717,7 @@ namespace NDEY.UI
 				obj4 = this.pbudgetinfo.ProjectRFA2_1rm;
 				this.InsertText(application, bookmark, obj4, null, (this.pbudgetinfo.ProjectRFA2_1rm.Length > 14) ? 10.5f : 12f);
 				Table extFileTable = document.Tables[13];
-				int extFileTableRowNum = 0;
+				int extFileTableRowNum = 1;
 				if (this.rinfo.ApplicationType == "专家提名")
 				{
 					this.setprogress(45, "读取推荐意见...");
@@ -873,10 +873,10 @@ namespace NDEY.UI
 						{
 							extFileTable.Rows.Add(ref value);
 						}
-						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
-                        //extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.rtlist[n].RTreatisesPDFOName) ? "缺少附件" : this.rtlist[n].RTreatisesPDFOName);
-                        extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = this.rtlist[n].RTreatisesName;
-                        extFileTable.Cell(extFileTableRowNum + 1, 3).Range.Text = "代表性论著--" + this.rtlist[n].RTreatisesTypeExp;
+						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = extFileTableRowNum.ToString();
+                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.rtlist[n].RTreatisesPDFOName) ? "缺少附件" : this.rtlist[n].RTreatisesPDFOName);
+                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.rtlist[n].RTreatisesName;
+                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "代表性论著--" + this.rtlist[n].RTreatisesTypeExp;
 						n++;
 					}
 				}
@@ -901,10 +901,10 @@ namespace NDEY.UI
 						{
 							extFileTable.Rows.Add(ref value);
 						}
-						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
-                        //extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.techlist[num2].TechnologyAwardsPDFOName) ? "缺少附件" : this.techlist[num2].TechnologyAwardsPDFOName);
-                        extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
-                        extFileTable.Cell(extFileTableRowNum + 1, 3).Range.Text = "重要科技奖项";
+						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = extFileTableRowNum.ToString();
+                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.techlist[num2].TechnologyAwardsPDFOName) ? "缺少附件" : this.techlist[num2].TechnologyAwardsPDFOName);
+                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
+                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "重要科技奖项";
 						num2++;
 					}
 				}
@@ -933,10 +933,10 @@ namespace NDEY.UI
 						{
 							extFileTable.Rows.Add(ref value);
 						}
-						extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
-                        //extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = (string.IsNullOrEmpty(this.ndpatentlist[num3].NDPatentPDFOName) ? "缺少附件" : this.ndpatentlist[num3].NDPatentPDFOName);
-                        extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
-                        extFileTable.Cell(extFileTableRowNum + 1, 3).Range.Text = "国家及国防专利";
+						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = extFileTableRowNum.ToString();
+                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.ndpatentlist[num3].NDPatentPDFOName) ? "缺少附件" : this.ndpatentlist[num3].NDPatentPDFOName);
+                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
+                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "国家及国防专利";
 						num3++;
 					}
 				}
@@ -979,9 +979,9 @@ namespace NDEY.UI
 				}
 
                 extFileTableRowNum++;
-                extFileTable.Cell(extFileTableRowNum + 1, 1).Range.Text = extFileTableRowNum.ToString();
-                extFileTable.Cell(extFileTableRowNum + 1, 2).Range.Text = "保密资质复印件";
-                extFileTable.Cell(extFileTableRowNum + 1, 3).Range.Text = "保密资质";
+                extFileTable.Cell(extFileTableRowNum, 1).Range.Text = extFileTableRowNum.ToString();
+                extFileTable.Cell(extFileTableRowNum, 2).Range.Text = "保密资质复印件";
+                extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "保密资质";
 
                 //this.setprogress(74, "读取保密资质...");
                 //if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
