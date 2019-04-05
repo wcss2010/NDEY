@@ -332,7 +332,17 @@ namespace NDEY.UI
 						base.UpdateUI(uiDelegate6, this);
 						return;
 					}
-					if (!this.isRecommendInfoCompleted(this.rinfo))
+                    if (NDEYUserControl.frmExtFileEditor.IsUploadedExtFile == false)
+                    {
+                        BaseForm.MethodInvoker uiDelegate6 = delegate
+                        {
+                            MessageBox.Show("保密资质没有上传，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            base.Close();
+                        };
+                        base.UpdateUI(uiDelegate6, this);
+                        return;
+                    }
+                    if (!this.isRecommendInfoCompleted(this.rinfo))
 					{
 						return;
 					}
