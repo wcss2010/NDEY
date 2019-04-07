@@ -1370,6 +1370,7 @@ namespace NDEY.UI
                 RTreatisesService _tTreatisesService = new RTreatisesService();
                 TechnologyAwardsService _technologyAwardsService = new TechnologyAwardsService();
                 NDPatentService _ndPatentService = new NDPatentService();
+                NDProjectService _nDProjectService = new NDProjectService();
 
                 StringBuilder gen1 = new StringBuilder();
                 //人才：入选XX
@@ -1393,12 +1394,37 @@ namespace NDEY.UI
                 gen1.Append("。");
 
                 StringBuilder gen2 = new StringBuilder();
+                //承担X等国防相关代表性项目X项
                 //论文：发表SCI论文几篇(1,2,3)，EI论文几篇(1,2,3)
                 //获奖：获得XX奖，排名X
                 //专利：获得国防专利X项，国家专利X项
+                IList<NDProject> list6 = _nDProjectService.GetNDProject();
                 IList<RTreatises> list2 = _tTreatisesService.GetRTreatises();
                 IList<TechnologyAwards> list3 = _technologyAwardsService.GetTechnologyAwards();
                 IList<NDPatent> list4 = _ndPatentService.GetNDPatent();
+
+                Dictionary<string, int> gftongjiDict = new Dictionary<string, int>();
+                foreach (NDProject obj in list6)
+                {
+                    if (gftongjiDict.ContainsKey(obj.NDProjectName))
+                    {
+                        gftongjiDict[obj.NDProjectName]++;
+                    }
+                    else
+                    {
+                        gftongjiDict[obj.NDProjectName] = 1;
+                    }
+                }
+                foreach (KeyValuePair<string, int> kvp in gftongjiDict)
+                {
+                    gen2.Append("承担").Append(kvp.Key).Append("等国防相关代表性项目").Append(kvp.Value).Append("项").Append(",");
+                }
+                if (gen2.ToString().EndsWith(","))
+                {
+                    gen2.Remove(gen2.Length - 1, 1);
+                }
+                gen2.Append(";");
+
                 int sciCount = 0;
                 int eiCount = 0;
                 string sciOrder = string.Empty;
