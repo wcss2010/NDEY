@@ -33,7 +33,7 @@ Name: "chinesesimp"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\wcss\Desktop\NDEY_SETUP\dotNetFx45_Full_x86_x64.exe"; DestDir: "{tmp}"; Flags: ignoreversion
+Source: "C:\Users\wcss\Desktop\NDEY_SETUP\dotNetFx40_Full_x86_x64.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\vcredist_x86.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.UI.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ComponentFactory.Krypton.Docking.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -94,7 +94,7 @@ ResultCode: Integer;
 Path, dotNetV4RegPath, dotNetV4PackFile: string;
 begin
     dotNetV4RegPath:='SOFTWARE\Microsoft\.NETFramework\policy\v4.0';
-    dotNetV4PackFile:='{tmp}\dotNetFx45_Full_x86_x64.exe';
+    dotNetV4PackFile:='{tmp}\dotNetFx40_Full_x86_x64.exe';
     
     //安装VC2005++运行库
     ExtractTemporaryFile('vcredist_x86.exe');
@@ -106,9 +106,9 @@ begin
     end 
     else begin 
         // Exec(ExpandConstant(wic), '/q /norestart', '', SW_SHOWNORMAL, ewWaitUntilTerminated, ResultCode);  // 安装wic,windows xp系统会需要安装wic
-        if MsgBox('正在安装客户端必备组件.Net Framework 4.5，可能会花费几分钟，请稍后……', mbConfirmation, MB_YESNO) = idYes then begin
+        if MsgBox('正在安装客户端必备组件.Net Framework 4.0，可能会花费几分钟，请稍后……', mbConfirmation, MB_YESNO) = idYes then begin
             Path := ExpandConstant(dotNetV4PackFile);
-            ExtractTemporaryFile('dotNetFx45_Full_x86_x64.exe');
+            ExtractTemporaryFile('dotNetFx40_Full_x86_x64.exe');
             if(FileOrDirExists(Path)) then begin
                 Exec(Path, '/norestart', '', SW_SHOWNORMAL, ewWaitUntilTerminated, ResultCode);
                 Result := true;
