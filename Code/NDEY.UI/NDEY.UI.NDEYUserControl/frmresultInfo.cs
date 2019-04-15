@@ -388,8 +388,8 @@ namespace NDEY.UI.NDEYUserControl
 			ResultFormInfo resultFormInfo = new ResultFormInfo();
 			resultFormInfo.IsCBR1Checked = this.cbr1.Checked;
 			resultFormInfo.IsCBR2Checked = this.cbr2.Checked;
-			resultFormInfo.IsCBR3Checked = this.cbr4.Checked;
-			resultFormInfo.IsCBR4Checked = this.cbr3.Checked;
+			resultFormInfo.IsCBR3Checked = this.cbr3.Checked;
+			resultFormInfo.IsCBR4Checked = this.cbr4.Checked;
 			resultFormInfo.IsCBR5Checked = this.cbr5.Checked;
 			resultFormInfo.IsCBR6Checked = this.cbr6.Checked;
 			resultFormInfo.IsCBR7Checked = this.cbr7.Checked;
@@ -409,8 +409,8 @@ namespace NDEY.UI.NDEYUserControl
 			{
 				this.cbr1.Checked = resultFormInfo.IsCBR1Checked;
 				this.cbr2.Checked = resultFormInfo.IsCBR2Checked;
-				this.cbr4.Checked = resultFormInfo.IsCBR3Checked;
-				this.cbr3.Checked = resultFormInfo.IsCBR4Checked;
+				this.cbr3.Checked = resultFormInfo.IsCBR3Checked;
+				this.cbr4.Checked = resultFormInfo.IsCBR4Checked;
 				this.cbr5.Checked = resultFormInfo.IsCBR5Checked;
 				this.cbr6.Checked = resultFormInfo.IsCBR6Checked;
 				this.cbr7.Checked = resultFormInfo.IsCBR7Checked;
