@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace NDEY.BLL.Entity
 {
@@ -10,16 +11,16 @@ namespace NDEY.BLL.Entity
 			ToZipFile
 		}
 
-		public static string UserPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NDEY";
+        public static string UserPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "NDEY_DATA");
 
-		public static string FilesStorePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NDEY\\Files";
+        public static string FilesStorePath = Path.Combine(UserPath, "Files");
 
-		public static string DBStorePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NDEY\\DB";
+		public static string DBStorePath = Path.Combine(UserPath, "DB");
 
-		public static string TemplatePath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NDEY\\Template";
+		public static string TemplatePath = Path.Combine(UserPath, "Template");
 
 		public static string DBName = "myData.db";
 
-		public static string TempPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\NDEY\\Temp";
+        public static string TempPath = Path.Combine(UserPath, "Temp");
 	}
 }

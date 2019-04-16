@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{90221941-1853-4E2A-8279-3D7FC606A03E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>NDEY.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\Lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NDEY.BLL.Dao\AcademicPostDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\ApplyUserBaseInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\BaseDBDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\DBMgrDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\EducationInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\NDPatentDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\NDProjectDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\ProjectBasicInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\ProjectBudgetInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\RecommendInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\ResultFormInfoDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\RTreatisesDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\TalentsPlanDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\TechnologyAwardsDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\UnitInforDao.cs" />
+    <Compile Include="NDEY.BLL.Dao\WorkExperienceDao.cs" />
+    <Compile Include="NDEY.BLL.Entity\AcademicPost.cs" />
+    <Compile Include="NDEY.BLL.Entity\ApplyUserInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\AttachmentInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\BaseMessage.cs" />
+    <Compile Include="NDEY.BLL.Entity\EducationInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\EntityElement.cs" />
+    <Compile Include="NDEY.BLL.Entity\ExpertInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\NDPatent.cs" />
+    <Compile Include="NDEY.BLL.Entity\NDProject.cs" />
+    <Compile Include="NDEY.BLL.Entity\ProjectBasicInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\ProjectBudgetInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\RecommendInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\ResultFormInfo.cs" />
+    <Compile Include="NDEY.BLL.Entity\RTreatises.cs" />
+    <Compile Include="NDEY.BLL.Entity\TalentsPlan.cs" />
+    <Compile Include="NDEY.BLL.Entity\TechnologyAwards.cs" />
+    <Compile Include="NDEY.BLL.Entity\UnitInfor.cs" />
+    <Compile Include="NDEY.BLL.Entity\WorkExperienceInfo.cs" />
+    <Compile Include="NDEY.BLL.Service\AcademicPostService.cs" />
+    <Compile Include="NDEY.BLL.Service\ApplyUserBaseInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\DBMgrService.cs" />
+    <Compile Include="NDEY.BLL.Service\EducationInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\NDPatentService.cs" />
+    <Compile Include="NDEY.BLL.Service\NDProjectService.cs" />
+    <Compile Include="NDEY.BLL.Service\ProjectBasicInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\ProjectBudgetInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\RecommendInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\ResultFormInfoService.cs" />
+    <Compile Include="NDEY.BLL.Service\RTreatisesService.cs" />
+    <Compile Include="NDEY.BLL.Service\TalentsPlanService.cs" />
+    <Compile Include="NDEY.BLL.Service\TechnologyAwardsService.cs" />
+    <Compile Include="NDEY.BLL.Service\UnitInforService.cs" />
+    <Compile Include="NDEY.BLL.Service\WorkExperienceService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
