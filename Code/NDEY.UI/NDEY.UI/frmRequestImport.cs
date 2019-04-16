@@ -163,6 +163,19 @@ namespace NDEY.UI
 			{
 				if (File.Exists(this._zipfilepath))
 				{
+                    if (!isOKPackage(this._zipfilepath))
+                    {
+                        MessageBox.Show("对不起，申报数据包格式错误！","提示");
+                        if (IsHandleCreated)
+                        {
+                            Invoke(new MethodInvoker(delegate()
+                                {
+                                    Close();
+                                }));
+                        }
+                        return;
+                    }
+
 					this.setprogress(1, "解压缩文件...");
 					DirectoryInfo directoryInfo = new DirectoryInfo(EntityElement.TempPath);
 					FileInfo[] files = directoryInfo.GetFiles();
@@ -350,5 +363,44 @@ namespace NDEY.UI
 		{
 			this.lbmsg.Text = "";
 		}
+
+        public bool isOKPackage(string zipFile)
+        {
+            bool result = false;
+            ZipEntry nextEntry = null;
+            ZipInputStream zis = new ZipInputStream(File.OpenRead(zipFile));
+            try
+            {
+                while ((nextEntry = zis.GetNextEntry()) != null)
+                {
+                    if (nextEntry.IsFile && nextEntry.Name != null && nextEntry.Name.Contains(EntityElement.DBName))
+                    {
+                        result = nextEntry.DateTime > new DateTime(2019, 1, 1, 0, 0, 0);
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                if (zis != null)
+                {
+                    try
+                    {
+                        zis.Close();
+                    }
+                    catch (Exception)
+                    {
+                    }
+                }
+            }
+            finally
+            {
+                if (zis != null)
+                {
+                    ((IDisposable)zis).Dispose();
+                }
+            }
+            return result;
+        }
 	}
 }
