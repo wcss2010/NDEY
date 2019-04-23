@@ -153,14 +153,17 @@
             // 
             // lblExtFileLabel
             // 
+            this.lblExtFileLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblExtFileLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblExtFileLabel.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblExtFileLabel.ForeColor = System.Drawing.Color.Blue;
             this.lblExtFileLabel.Location = new System.Drawing.Point(122, 2);
             this.lblExtFileLabel.Margin = new System.Windows.Forms.Padding(2);
             this.lblExtFileLabel.Name = "lblExtFileLabel";
             this.lblExtFileLabel.Size = new System.Drawing.Size(623, 28);
             this.lblExtFileLabel.TabIndex = 1;
             this.lblExtFileLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblExtFileLabel.Click += new System.EventHandler(this.lblExtFileLabel_Click);
             // 
             // btnupload
             // 

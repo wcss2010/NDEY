@@ -117,18 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="buttonSpecAny2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAABg0lEQVQ4T7WS
-        MUgCURjHH0gtLWJBa4RjNDcJEYG1NIRDtDRaUzRFQ5sQ7UFKNomEIUGQmeKkRUtQZCWVeQ3peadR6tmZ
-        XV/vPT/xzMQa+sEH777v/3v3jnvk/3A9dBFncp0XW/+Z7ceVPUEBf0oBul7G7i/xpPutkVwRkIlI7pX1
-        cNqZbl/WdflSRR2ArWlvE8cd8MnD9rMit+9KGsQLH3wT1iO78hCm2tO7/xwSVY1Lo8dFGDupfQnr9dEZ
-        xtrgkycdN2UuMMZPS7zqOBJloKewYvob3ozBfJC/VrVPjAPMniswd6HgEwCbmQP5OPGKBrR0eNILXuEN
-        ozXm42VYvGqciMEyNGtHC9kSjJZDSdK9nLNE5dVE86YsYwlKEnELRrQp9LbFRBUjDUJSFaK5xu+sE8uq
-        QG/nWk3euB2cCWVabYpc0Xj9BHOoO0B6nPc7qcI7tpsZCed5/QRzmEumAk+tZ0Si2QqvdjCXmNxJ/3Qw
-        DTZ9HWXAFhabi/V0GeaY3En/F3DiGNgbkwonAAAAAElFTkSuQmCC
-</value>
-  </data>
+  <metadata name="ofdDialogs.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>596, 17</value>
+  </metadata>
 </root>
