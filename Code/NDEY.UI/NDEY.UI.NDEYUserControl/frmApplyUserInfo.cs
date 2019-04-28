@@ -209,7 +209,7 @@ namespace NDEY.UI.NDEYUserControl
 				MessageBox.Show("请输入正确的身份证号码！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 				return false;
 			}
-			if (this.txtMobilePhone.Text != string.Empty && !Regex.IsMatch(this.txtMobilePhone.Text, "^1[3|4|5|7|8][0-9]{9}$", RegexOptions.IgnoreCase))
+			if (this.txtMobilePhone.Text != string.Empty && !Regex.IsMatch(this.txtMobilePhone.Text, "^1[3|4|5|7|8|9][0-9]{9}$", RegexOptions.IgnoreCase))
 			{
 				MessageBox.Show("请输入正确的手机号码！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 				return false;
