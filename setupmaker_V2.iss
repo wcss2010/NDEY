@@ -58,6 +58,7 @@ Source: "C:\Users\wcss\Desktop\NDEY_SETUP\DevExpress.XtraPrinting.v15.2.dll"; De
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\DevExpress.XtraTreeList.v15.2.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ICSharpCode.SharpZipLib.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\Microsoft.Office.Interop.Word.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\wcss\Desktop\NDEY_SETUP\Office.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.BLL.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.UI.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.UI.exe.config"; DestDir: "{app}"; Flags: ignoreversion
