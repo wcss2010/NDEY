@@ -34,7 +34,6 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\dotNetFx40_Full_x86_x64.exe"; DestDir: "{tmp}"; Flags: ignoreversion
-Source: "C:\Users\wcss\Desktop\NDEY_SETUP\VBVCRedist_x86_20130709.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\VBVCRedist_x64_20130709.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.UI.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ComponentFactory.Krypton.Docking.dll"; DestDir: "{app}"; Flags: ignoreversion
@@ -99,10 +98,7 @@ begin
     dotNetV4PackFile:='{tmp}\dotNetFx40_Full_x86_x64.exe';
     
     //安装VC2005++运行库
-    ExtractTemporaryFile('VBVCRedist_x86_20130709.exe');
     ExtractTemporaryFile('VBVCRedist_x64_20130709.exe');
-    Path := ExpandConstant('{tmp}\VBVCRedist_x86_20130709.exe');
-    Exec(Path,'','',SW_SHOWNORMAL,ewWaitUntilTerminated, ResultCode);
     Path := ExpandConstant('{tmp}\VBVCRedist_x64_20130709.exe');
     Exec(Path,'','',SW_SHOWNORMAL,ewWaitUntilTerminated, ResultCode);
 
