@@ -407,6 +407,9 @@
     <Content Include="NDEY_DATA\Temp\temp.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Helper\secretPaste.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="NDEY_DATA\DB\myData.db">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
