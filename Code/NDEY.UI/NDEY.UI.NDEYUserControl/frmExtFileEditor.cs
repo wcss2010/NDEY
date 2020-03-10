@@ -24,7 +24,7 @@ namespace NDEY.UI.NDEYUserControl
         {
             base.OnLoad(e);
 
-            dpContent.initEditor("保密资质.doc", string.Empty, EntityElement.UserPath, Path.Combine(Application.StartupPath, Path.Combine("Helper", "secretPaste.doc")), Path.Combine(Application.StartupPath, Path.Combine("Helper", "documentPasteReadme2.rtf")));
+            dpContent.initEditor("保密资质.doc", string.Empty, EntityElement.FilesStorePath, Path.Combine(Application.StartupPath, Path.Combine("Helper", "secretPaste.doc")), Path.Combine(Application.StartupPath, Path.Combine("Helper", "documentPasteReadme2.rtf")));
         }
     }
 }

@@ -163,7 +163,7 @@ namespace NDEY.UI.NDEYUserControl
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
-            dpContent.initEditor(Path.GetFileNameWithoutExtension(rtfFile), string.Empty, EntityElement.UserPath, Path.Combine(Application.StartupPath, Path.Combine("Helper", "emptyPaste.doc")), Path.Combine(Application.StartupPath, Path.Combine("Helper", "documentPasteReadme.rtf")));
+            dpContent.initEditor(Path.GetFileNameWithoutExtension(rtfFile), string.Empty, EntityElement.FilesStorePath, Path.Combine(Application.StartupPath, Path.Combine("Helper", "emptyPaste.doc")), Path.Combine(Application.StartupPath, Path.Combine("Helper", "documentPasteReadme.rtf")));
         }
 
         public override void RefreshCall()
