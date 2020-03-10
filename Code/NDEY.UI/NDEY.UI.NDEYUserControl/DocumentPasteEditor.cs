@@ -16,6 +16,8 @@ namespace NDEY.UI.NDEYUserControl
     /// </summary>
     public partial class DocumentPasteEditor : BaseEditor
     {
+        public event EventHandler EditDocumentEvent;
+
         /// <summary>
         /// 空模板文件
         /// </summary>
@@ -121,6 +123,11 @@ namespace NDEY.UI.NDEYUserControl
 
                 //打开或创建文档
                 openOrCreateWord(EditorName, EmptyTempleteFile, file);
+
+                if (EditDocumentEvent != null)
+                {
+                    EditDocumentEvent(this, new EventArgs());
+                }
             }
         }
 

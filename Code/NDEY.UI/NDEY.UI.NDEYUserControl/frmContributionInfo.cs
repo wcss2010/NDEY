@@ -144,6 +144,7 @@ namespace NDEY.UI.NDEYUserControl
             this.dpContent.Name = "dpContent";
             this.dpContent.Size = new System.Drawing.Size(673, 351);
             this.dpContent.TabIndex = 0;
+            this.dpContent.EditDocumentEvent += new System.EventHandler(this.dpContent_EditDocumentEvent);
             // 
             // frmContributionInfo
             // 
@@ -168,6 +169,13 @@ namespace NDEY.UI.NDEYUserControl
         public override void RefreshCall()
         {
 
+        }
+
+        private void dpContent_EditDocumentEvent(object sender, EventArgs e)
+        {
+            KryptonNavigator kryptonNavigator = (KryptonNavigator)base.Parent.Parent.Parent;
+            kryptonNavigator.SelectedIndex++;
+            kryptonNavigator.SelectedPage.Enabled = true;
         }
 	}
 }
