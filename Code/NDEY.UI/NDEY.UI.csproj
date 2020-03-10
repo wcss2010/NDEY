@@ -35,6 +35,9 @@
     <ApplicationIcon>111.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.Words">
+      <HintPath>..\..\Lib\Aspose.Words.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Docking, Version=4.3.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\Krptton\ComponentFactory.Krypton.Docking.dll</HintPath>
@@ -84,10 +87,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NDEY.UI.NDEYUserControl\AutoHeightLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\BaseControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="NDEY.UI.NDEYUserControl\BaseEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\CalendarColumnYM.cs" />
+    <Compile Include="NDEY.UI.NDEYUserControl\DocumentPasteEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NDEY.UI.NDEYUserControl\DocumentPasteEditor.designer.cs">
+      <DependentUpon>DocumentPasteEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\frmAcademicPost.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +166,7 @@
     <Compile Include="NDEY.UI.NDEYUserControl\WaterTextbox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="NDEY.UI.NDEYUserControl\WordDocument.cs" />
     <Compile Include="NDEY.UI\frmAddUnit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +229,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="NDEY.UI.NDEYUserControl\DocumentPasteEditor.resx">
+      <DependentUpon>DocumentPasteEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\frmAcademicPost.resx">
       <DependentUpon>frmAcademicPost.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +338,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Fonts\simkai_0.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Helper\documentPasteReadme.rtf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Helper\documentPasteReadme2.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Helper\help.rtf">
