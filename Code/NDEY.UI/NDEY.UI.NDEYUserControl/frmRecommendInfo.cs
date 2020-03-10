@@ -45,9 +45,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		private Label label2;
 
-		private TableLayoutPanel tableLayoutPanel21;
-
-		private KryptonButton btnexp2rm;
+        private TableLayoutPanel tableLayoutPanel21;
 
 		private KryptonButton btnexp2sel;
 
@@ -79,6 +77,12 @@ namespace NDEY.UI.NDEYUserControl
 
 		private KryptonLabel kryptonLabel109;
 
+        private KryptonLabel kryptonLabel110;
+
+        private KryptonLabel kryptonLabel111;
+
+        private KryptonLabel kryptonLabel112;
+
 		private KryptonTextBox txtExpertName1;
 
 		private KryptonTextBox txtExpertArea1;
@@ -107,15 +111,11 @@ namespace NDEY.UI.NDEYUserControl
 
 		private KryptonLabel kryptonLabel102;
 
-		private TableLayoutPanel tableLayoutPanel19;
-
-		private KryptonButton btnexp1rm;
+        private TableLayoutPanel tableLayoutPanel19;
 
 		private KryptonButton btnexp1sel;
 
-		private TableLayoutPanel tableLayoutPanel22;
-
-		private KryptonButton btnexp3rm;
+        private TableLayoutPanel tableLayoutPanel22;
 
 		private KryptonButton btnexp3sel;
 
@@ -144,6 +144,14 @@ namespace NDEY.UI.NDEYUserControl
 		private KryptonLinkLabel lbexp2attpath;
 
 		private KryptonLinkLabel lbexp3attpath;
+
+        private KryptonPanel kryptonPanel25;
+        private KryptonPanel kryptonPanel26;
+        private KryptonPanel kryptonPanel27;
+
+        private KryptonComboBox txtExpertWorkType1;
+        private KryptonComboBox txtExpertWorkType2;
+        private KryptonComboBox txtExpertWorkType3;
 
 		private RecommendInfo _rinfo;
 
@@ -185,18 +193,19 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18 = new NDEY.UI.HSkinTableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnexp2rm = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnexp2sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel71 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel73 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel74 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel75 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel76 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel110 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.txtExpertWorkType1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel98 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel99 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel101 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel103 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel111 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.txtExpertWorkType2 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.kryptonLabel105 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel106 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel107 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
@@ -216,17 +225,22 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel23 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.kryptonLabel102 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnexp1rm = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnexp1sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnexp3rm = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.btnexp3sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.kryptonLabel109 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel112 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.txtExpertWorkType3 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.kryptonPanel25 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.lbexp1attpath = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
+            this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnexp1sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel26 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.lbexp2attpath = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
+            this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnexp2sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonPanel27 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.lbexp3attpath = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
+            this.tableLayoutPanel22 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnexp3sel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.tableLayoutPanel16.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel31)).BeginInit();
@@ -244,10 +258,19 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPage2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
-            this.tableLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel23)).BeginInit();
             this.kryptonPanel23.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel25)).BeginInit();
+            this.kryptonPanel25.SuspendLayout();
             this.tableLayoutPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel26)).BeginInit();
+            this.kryptonPanel26.SuspendLayout();
+            this.tableLayoutPanel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel27)).BeginInit();
+            this.kryptonPanel27.SuspendLayout();
             this.tableLayoutPanel22.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -523,16 +546,19 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel18.Controls.Add(this.label3, 0, 9);
             this.tableLayoutPanel18.Controls.Add(this.label2, 0, 5);
-            this.tableLayoutPanel18.Controls.Add(this.tableLayoutPanel21, 3, 8);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel71, 0, 2);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel73, 2, 2);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel74, 0, 3);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel75, 2, 3);
-            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel76, 0, 4);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel76, 2, 4);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel110, 0, 4);
+            this.tableLayoutPanel18.Controls.Add(this.txtExpertWorkType1, 1, 4);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel98, 0, 6);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel99, 2, 6);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel101, 0, 7);
-            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel103, 0, 8);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel103, 2, 8);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel111, 0, 8);
+            this.tableLayoutPanel18.Controls.Add(this.txtExpertWorkType2, 1, 8);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel105, 0, 10);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel106, 2, 10);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel107, 0, 11);
@@ -551,13 +577,13 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.Controls.Add(this.txtExpertUnit3, 3, 11);
             this.tableLayoutPanel18.Controls.Add(this.kryptonPanel23, 0, 0);
             this.tableLayoutPanel18.Controls.Add(this.kryptonLabel102, 2, 7);
-            this.tableLayoutPanel18.Controls.Add(this.tableLayoutPanel19, 3, 4);
-            this.tableLayoutPanel18.Controls.Add(this.tableLayoutPanel22, 3, 12);
             this.tableLayoutPanel18.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel109, 0, 12);
-            this.tableLayoutPanel18.Controls.Add(this.lbexp1attpath, 1, 4);
-            this.tableLayoutPanel18.Controls.Add(this.lbexp2attpath, 1, 8);
-            this.tableLayoutPanel18.Controls.Add(this.lbexp3attpath, 1, 12);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel109, 2, 12);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonLabel112, 0, 12);
+            this.tableLayoutPanel18.Controls.Add(this.txtExpertWorkType3, 1, 12);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonPanel25, 3, 4);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonPanel26, 3, 8);
+            this.tableLayoutPanel18.Controls.Add(this.kryptonPanel27, 3, 12);
             this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel18.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
@@ -608,41 +634,6 @@ namespace NDEY.UI.NDEYUserControl
             this.label2.Text = "专家二";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tableLayoutPanel21
-            // 
-            this.tableLayoutPanel21.ColumnCount = 2;
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel21.Controls.Add(this.btnexp2rm, 1, 0);
-            this.tableLayoutPanel21.Controls.Add(this.btnexp2sel, 0, 0);
-            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel21.Location = new System.Drawing.Point(582, 318);
-            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
-            this.tableLayoutPanel21.RowCount = 1;
-            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel21.Size = new System.Drawing.Size(200, 29);
-            this.tableLayoutPanel21.TabIndex = 35;
-            // 
-            // btnexp2rm
-            // 
-            this.btnexp2rm.Location = new System.Drawing.Point(95, 0);
-            this.btnexp2rm.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnexp2rm.Name = "btnexp2rm";
-            this.btnexp2rm.Size = new System.Drawing.Size(90, 29);
-            this.btnexp2rm.TabIndex = 0;
-            this.btnexp2rm.Values.Text = "移除附件";
-            this.btnexp2rm.Visible = false;
-            // 
-            // btnexp2sel
-            // 
-            this.btnexp2sel.Location = new System.Drawing.Point(0, 0);
-            this.btnexp2sel.Margin = new System.Windows.Forms.Padding(0);
-            this.btnexp2sel.Name = "btnexp2sel";
-            this.btnexp2sel.Size = new System.Drawing.Size(90, 28);
-            this.btnexp2sel.TabIndex = 1;
-            this.btnexp2sel.Values.Text = "选择附件";
-            this.btnexp2sel.Click += new System.EventHandler(this.btnexp2sel_Click);
-            // 
             // kryptonLabel71
             // 
             this.kryptonLabel71.Location = new System.Drawing.Point(3, 108);
@@ -681,12 +672,48 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel76
             // 
-            this.kryptonLabel76.Location = new System.Drawing.Point(3, 178);
+            this.kryptonLabel76.Location = new System.Drawing.Point(462, 178);
             this.kryptonLabel76.Name = "kryptonLabel76";
             this.kryptonLabel76.Size = new System.Drawing.Size(48, 23);
             this.kryptonLabel76.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel76.TabIndex = 5;
             this.kryptonLabel76.Values.Text = "附件";
+            // 
+            // kryptonLabel110
+            // 
+            this.kryptonLabel110.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonLabel110.Location = new System.Drawing.Point(3, 178);
+            this.kryptonLabel110.Name = "kryptonLabel110";
+            this.kryptonLabel110.Size = new System.Drawing.Size(114, 29);
+            this.kryptonLabel110.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.kryptonLabel110.TabIndex = 40;
+            this.kryptonLabel110.Values.Text = "专家类别：";
+            // 
+            // txtExpertWorkType1
+            // 
+            this.txtExpertWorkType1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExpertWorkType1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtExpertWorkType1.DropDownWidth = 333;
+            this.txtExpertWorkType1.Items.AddRange(new object[] {
+            "军队两院院士",
+            "军队科技领军人才",
+            "国防科技专业专家组组长",
+            "特区领域专家组首席",
+            "特区主题专家组首席",
+            "军委科技委领域专家委员会成员"});
+            this.txtExpertWorkType1.Location = new System.Drawing.Point(123, 178);
+            this.txtExpertWorkType1.Name = "kryptonComboBox110";
+            this.txtExpertWorkType1.Size = new System.Drawing.Size(333, 25);
+            this.txtExpertWorkType1.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtExpertWorkType1.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType1.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtExpertWorkType1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtExpertWorkType1.TabIndex = 41;
             // 
             // kryptonLabel98
             // 
@@ -717,12 +744,48 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel103
             // 
-            this.kryptonLabel103.Location = new System.Drawing.Point(3, 318);
+            this.kryptonLabel103.Location = new System.Drawing.Point(462, 318);
             this.kryptonLabel103.Name = "kryptonLabel103";
             this.kryptonLabel103.Size = new System.Drawing.Size(48, 23);
             this.kryptonLabel103.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel103.TabIndex = 11;
             this.kryptonLabel103.Values.Text = "附件";
+            // 
+            // kryptonLabel111
+            // 
+            this.kryptonLabel111.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonLabel111.Location = new System.Drawing.Point(3, 318);
+            this.kryptonLabel111.Name = "kryptonLabel111";
+            this.kryptonLabel111.Size = new System.Drawing.Size(114, 29);
+            this.kryptonLabel111.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.kryptonLabel111.TabIndex = 41;
+            this.kryptonLabel111.Values.Text = "专家类别：";
+            // 
+            // txtExpertWorkType2
+            // 
+            this.txtExpertWorkType2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExpertWorkType2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtExpertWorkType2.DropDownWidth = 121;
+            this.txtExpertWorkType2.Items.AddRange(new object[] {
+            "军队两院院士",
+            "军队科技领军人才",
+            "国防科技专业专家组组长",
+            "特区领域专家组首席",
+            "特区主题专家组首席",
+            "军委科技委领域专家委员会成员"});
+            this.txtExpertWorkType2.Location = new System.Drawing.Point(123, 318);
+            this.txtExpertWorkType2.Name = "kryptonComboBox111";
+            this.txtExpertWorkType2.Size = new System.Drawing.Size(333, 25);
+            this.txtExpertWorkType2.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtExpertWorkType2.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType2.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtExpertWorkType2.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType2.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtExpertWorkType2.TabIndex = 42;
             // 
             // kryptonLabel105
             // 
@@ -1013,77 +1076,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel102.TabIndex = 10;
             this.kryptonLabel102.Values.Text = "工作单位:";
             // 
-            // tableLayoutPanel19
-            // 
-            this.tableLayoutPanel19.ColumnCount = 2;
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel19.Controls.Add(this.btnexp1rm, 1, 0);
-            this.tableLayoutPanel19.Controls.Add(this.btnexp1sel, 0, 0);
-            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel19.Location = new System.Drawing.Point(582, 178);
-            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
-            this.tableLayoutPanel19.RowCount = 1;
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(197, 29);
-            this.tableLayoutPanel19.TabIndex = 34;
-            // 
-            // btnexp1rm
-            // 
-            this.btnexp1rm.Location = new System.Drawing.Point(95, 0);
-            this.btnexp1rm.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnexp1rm.Name = "btnexp1rm";
-            this.btnexp1rm.Size = new System.Drawing.Size(90, 29);
-            this.btnexp1rm.TabIndex = 0;
-            this.btnexp1rm.Values.Text = "移除附件";
-            this.btnexp1rm.Visible = false;
-            // 
-            // btnexp1sel
-            // 
-            this.btnexp1sel.Location = new System.Drawing.Point(0, 0);
-            this.btnexp1sel.Margin = new System.Windows.Forms.Padding(0);
-            this.btnexp1sel.Name = "btnexp1sel";
-            this.btnexp1sel.Size = new System.Drawing.Size(90, 29);
-            this.btnexp1sel.TabIndex = 1;
-            this.btnexp1sel.Values.Text = "选择附件";
-            this.btnexp1sel.Click += new System.EventHandler(this.btnexp1sel_Click);
-            // 
-            // tableLayoutPanel22
-            // 
-            this.tableLayoutPanel22.ColumnCount = 2;
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel22.Controls.Add(this.btnexp3rm, 1, 0);
-            this.tableLayoutPanel22.Controls.Add(this.btnexp3sel, 0, 0);
-            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tableLayoutPanel22.Location = new System.Drawing.Point(582, 458);
-            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
-            this.tableLayoutPanel22.RowCount = 1;
-            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel22.Size = new System.Drawing.Size(200, 29);
-            this.tableLayoutPanel22.TabIndex = 36;
-            // 
-            // btnexp3rm
-            // 
-            this.btnexp3rm.Location = new System.Drawing.Point(95, 0);
-            this.btnexp3rm.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnexp3rm.Name = "btnexp3rm";
-            this.btnexp3rm.Size = new System.Drawing.Size(90, 29);
-            this.btnexp3rm.TabIndex = 0;
-            this.btnexp3rm.Values.Text = "移除附件";
-            this.btnexp3rm.Visible = false;
-            // 
-            // btnexp3sel
-            // 
-            this.btnexp3sel.Location = new System.Drawing.Point(0, 0);
-            this.btnexp3sel.Margin = new System.Windows.Forms.Padding(0);
-            this.btnexp3sel.Name = "btnexp3sel";
-            this.btnexp3sel.Size = new System.Drawing.Size(90, 29);
-            this.btnexp3sel.TabIndex = 1;
-            this.btnexp3sel.Values.Text = "选择附件";
-            this.btnexp3sel.Click += new System.EventHandler(this.btnexp3sel_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -1101,45 +1093,184 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel109
             // 
             this.kryptonLabel109.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel109.Location = new System.Drawing.Point(3, 458);
+            this.kryptonLabel109.Location = new System.Drawing.Point(462, 458);
             this.kryptonLabel109.Name = "kryptonLabel109";
             this.kryptonLabel109.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel109.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.kryptonLabel109.TabIndex = 17;
             this.kryptonLabel109.Values.Text = "附件";
             // 
+            // kryptonLabel112
+            // 
+            this.kryptonLabel112.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonLabel112.Location = new System.Drawing.Point(3, 458);
+            this.kryptonLabel112.Name = "kryptonLabel112";
+            this.kryptonLabel112.Size = new System.Drawing.Size(114, 29);
+            this.kryptonLabel112.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.kryptonLabel112.TabIndex = 42;
+            this.kryptonLabel112.Values.Text = "专家类别：";
+            // 
+            // txtExpertWorkType3
+            // 
+            this.txtExpertWorkType3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtExpertWorkType3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtExpertWorkType3.DropDownWidth = 121;
+            this.txtExpertWorkType3.Items.AddRange(new object[] {
+            "军队两院院士",
+            "军队科技领军人才",
+            "国防科技专业专家组组长",
+            "特区领域专家组首席",
+            "特区主题专家组首席",
+            "军委科技委领域专家委员会成员"});
+            this.txtExpertWorkType3.Location = new System.Drawing.Point(123, 458);
+            this.txtExpertWorkType3.Name = "kryptonComboBox112";
+            this.txtExpertWorkType3.Size = new System.Drawing.Size(333, 25);
+            this.txtExpertWorkType3.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtExpertWorkType3.StateActive.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType3.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtExpertWorkType3.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtExpertWorkType3.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtExpertWorkType3.TabIndex = 43;
+            // 
+            // kryptonPanel25
+            // 
+            this.kryptonPanel25.Controls.Add(this.lbexp1attpath);
+            this.kryptonPanel25.Controls.Add(this.tableLayoutPanel19);
+            this.kryptonPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel25.Location = new System.Drawing.Point(582, 178);
+            this.kryptonPanel25.Name = "kryptonPanel25";
+            this.kryptonPanel25.Size = new System.Drawing.Size(334, 29);
+            this.kryptonPanel25.TabIndex = 40;
+            // 
             // lbexp1attpath
             // 
+            this.lbexp1attpath.AutoSize = false;
             this.lbexp1attpath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbexp1attpath.Location = new System.Drawing.Point(123, 178);
+            this.lbexp1attpath.Location = new System.Drawing.Point(0, 0);
             this.lbexp1attpath.Name = "lbexp1attpath";
-            this.lbexp1attpath.Size = new System.Drawing.Size(333, 29);
+            this.lbexp1attpath.Size = new System.Drawing.Size(235, 29);
             this.lbexp1attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbexp1attpath.TabIndex = 43;
             this.lbexp1attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp1attpath.LinkClicked += new System.EventHandler(this.lbexp1attpath_LinkClicked);
             // 
+            // tableLayoutPanel19
+            // 
+            this.tableLayoutPanel19.ColumnCount = 1;
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel19.Controls.Add(this.btnexp1sel, 0, 0);
+            this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel19.Location = new System.Drawing.Point(235, 0);
+            this.tableLayoutPanel19.Name = "tableLayoutPanel19";
+            this.tableLayoutPanel19.RowCount = 1;
+            this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(99, 29);
+            this.tableLayoutPanel19.TabIndex = 34;
+            // 
+            // btnexp1sel
+            // 
+            this.btnexp1sel.Location = new System.Drawing.Point(0, 0);
+            this.btnexp1sel.Margin = new System.Windows.Forms.Padding(0);
+            this.btnexp1sel.Name = "btnexp1sel";
+            this.btnexp1sel.Size = new System.Drawing.Size(90, 29);
+            this.btnexp1sel.TabIndex = 1;
+            this.btnexp1sel.Values.Text = "选择附件";
+            this.btnexp1sel.Click += new System.EventHandler(this.btnexp1sel_Click);
+            // 
+            // kryptonPanel26
+            // 
+            this.kryptonPanel26.Controls.Add(this.lbexp2attpath);
+            this.kryptonPanel26.Controls.Add(this.tableLayoutPanel21);
+            this.kryptonPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel26.Location = new System.Drawing.Point(582, 318);
+            this.kryptonPanel26.Name = "kryptonPanel26";
+            this.kryptonPanel26.Size = new System.Drawing.Size(334, 29);
+            this.kryptonPanel26.TabIndex = 41;
+            // 
             // lbexp2attpath
             // 
             this.lbexp2attpath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbexp2attpath.Location = new System.Drawing.Point(123, 318);
+            this.lbexp2attpath.Location = new System.Drawing.Point(0, 0);
             this.lbexp2attpath.Name = "lbexp2attpath";
-            this.lbexp2attpath.Size = new System.Drawing.Size(333, 29);
+            this.lbexp2attpath.Size = new System.Drawing.Size(235, 29);
             this.lbexp2attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbexp2attpath.TabIndex = 44;
             this.lbexp2attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp2attpath.LinkClicked += new System.EventHandler(this.lbexp2attpath_LinkClicked);
             // 
+            // tableLayoutPanel21
+            // 
+            this.tableLayoutPanel21.ColumnCount = 1;
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel21.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel21.Controls.Add(this.btnexp2sel, 0, 0);
+            this.tableLayoutPanel21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel21.Location = new System.Drawing.Point(235, 0);
+            this.tableLayoutPanel21.Name = "tableLayoutPanel21";
+            this.tableLayoutPanel21.RowCount = 1;
+            this.tableLayoutPanel21.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel21.Size = new System.Drawing.Size(99, 29);
+            this.tableLayoutPanel21.TabIndex = 35;
+            // 
+            // btnexp2sel
+            // 
+            this.btnexp2sel.Location = new System.Drawing.Point(0, 0);
+            this.btnexp2sel.Margin = new System.Windows.Forms.Padding(0);
+            this.btnexp2sel.Name = "btnexp2sel";
+            this.btnexp2sel.Size = new System.Drawing.Size(90, 28);
+            this.btnexp2sel.TabIndex = 1;
+            this.btnexp2sel.Values.Text = "选择附件";
+            this.btnexp2sel.Click += new System.EventHandler(this.btnexp2sel_Click);
+            // 
+            // kryptonPanel27
+            // 
+            this.kryptonPanel27.Controls.Add(this.lbexp3attpath);
+            this.kryptonPanel27.Controls.Add(this.tableLayoutPanel22);
+            this.kryptonPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonPanel27.Location = new System.Drawing.Point(582, 458);
+            this.kryptonPanel27.Name = "kryptonPanel27";
+            this.kryptonPanel27.Size = new System.Drawing.Size(334, 29);
+            this.kryptonPanel27.TabIndex = 42;
+            // 
             // lbexp3attpath
             // 
             this.lbexp3attpath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbexp3attpath.Location = new System.Drawing.Point(123, 458);
+            this.lbexp3attpath.Location = new System.Drawing.Point(0, 0);
             this.lbexp3attpath.Name = "lbexp3attpath";
-            this.lbexp3attpath.Size = new System.Drawing.Size(333, 29);
+            this.lbexp3attpath.Size = new System.Drawing.Size(235, 29);
             this.lbexp3attpath.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lbexp3attpath.TabIndex = 45;
             this.lbexp3attpath.Values.Text = "kryptonLinkLabel1";
             this.lbexp3attpath.LinkClicked += new System.EventHandler(this.lbexp3attpath_LinkClicked);
+            // 
+            // tableLayoutPanel22
+            // 
+            this.tableLayoutPanel22.ColumnCount = 1;
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel22.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel22.Controls.Add(this.btnexp3sel, 0, 0);
+            this.tableLayoutPanel22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.tableLayoutPanel22.Location = new System.Drawing.Point(235, 0);
+            this.tableLayoutPanel22.Name = "tableLayoutPanel22";
+            this.tableLayoutPanel22.RowCount = 1;
+            this.tableLayoutPanel22.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel22.Size = new System.Drawing.Size(99, 29);
+            this.tableLayoutPanel22.TabIndex = 36;
+            // 
+            // btnexp3sel
+            // 
+            this.btnexp3sel.Location = new System.Drawing.Point(0, 0);
+            this.btnexp3sel.Margin = new System.Windows.Forms.Padding(0);
+            this.btnexp3sel.Name = "btnexp3sel";
+            this.btnexp3sel.Size = new System.Drawing.Size(90, 29);
+            this.btnexp3sel.TabIndex = 1;
+            this.btnexp3sel.Values.Text = "选择附件";
+            this.btnexp3sel.Click += new System.EventHandler(this.btnexp3sel_Click);
             // 
             // frmRecommendInfo
             // 
@@ -1168,10 +1299,21 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel18.ResumeLayout(false);
             this.tableLayoutPanel18.PerformLayout();
-            this.tableLayoutPanel21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel23)).EndInit();
             this.kryptonPanel23.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtExpertWorkType3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel25)).EndInit();
+            this.kryptonPanel25.ResumeLayout(false);
             this.tableLayoutPanel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel26)).EndInit();
+            this.kryptonPanel26.ResumeLayout(false);
+            this.kryptonPanel26.PerformLayout();
+            this.tableLayoutPanel21.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel27)).EndInit();
+            this.kryptonPanel27.ResumeLayout(false);
+            this.kryptonPanel27.PerformLayout();
             this.tableLayoutPanel22.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1199,18 +1341,24 @@ namespace NDEY.UI.NDEYUserControl
 				this.rbcompany.Checked = true;
 			}
 			this.lbcomattpath.Text = this._rinfo.RAttachmentInfo.UploadName;
+
 			this.txtExpertName1.Text = this._rinfo.ExperInfoList[0].ExpertName;
 			this.txtExpertArea1.Text = this._rinfo.ExperInfoList[0].ExpertArea;
+            this.txtExpertWorkType1.SelectedItem = this._rinfo.ExperInfoList[0].ExpertWorkType;
 			this.txtExpertUnitPosition1.Text = this._rinfo.ExperInfoList[0].ExpertUnitPosition;
 			this.txtExpertUnit1.Text = this._rinfo.ExperInfoList[0].ExpertUnit;
 			this.lbexp1attpath.Text = this._rinfo.ExperInfoList[0].EAttachmentInfo.UploadName;
+
 			this.txtExpertName2.Text = this._rinfo.ExperInfoList[1].ExpertName;
 			this.txtExpertArea2.Text = this._rinfo.ExperInfoList[1].ExpertArea;
+            this.txtExpertWorkType2.SelectedItem = this._rinfo.ExperInfoList[1].ExpertWorkType;
 			this.txtExpertUnitPosition2.Text = this._rinfo.ExperInfoList[1].ExpertUnitPosition;
 			this.txtExpertUnit2.Text = this._rinfo.ExperInfoList[1].ExpertUnit;
 			this.lbexp2attpath.Text = this._rinfo.ExperInfoList[1].EAttachmentInfo.UploadName;
+
 			this.txtExpertName3.Text = this._rinfo.ExperInfoList[2].ExpertName;
 			this.txtExpertArea3.Text = this._rinfo.ExperInfoList[2].ExpertArea;
+            this.txtExpertWorkType3.SelectedItem = this._rinfo.ExperInfoList[2].ExpertWorkType;
 			this.txtExpertUnitPosition3.Text = this._rinfo.ExperInfoList[2].ExpertUnitPosition;
 			this.txtExpertUnit3.Text = this._rinfo.ExperInfoList[2].ExpertUnit;
 			this.lbexp3attpath.Text = this._rinfo.ExperInfoList[2].EAttachmentInfo.UploadName;
@@ -1306,6 +1454,7 @@ namespace NDEY.UI.NDEYUserControl
 				recommendInfo.ExperInfoList.Add(new ExpertInfo());
 				recommendInfo.ExperInfoList[0].ExpertName = this.txtExpertName1.Text;
 				recommendInfo.ExperInfoList[0].ExpertArea = this.txtExpertArea1.Text;
+                recommendInfo.ExperInfoList[0].ExpertWorkType = this.txtExpertWorkType1.Text;
 				recommendInfo.ExperInfoList[0].ExpertUnitPosition = this.txtExpertUnitPosition1.Text;
 				recommendInfo.ExperInfoList[0].ExpertUnit = this.txtExpertUnit1.Text;
 				if (this.lbexp1attpath.Text == "")
@@ -1329,6 +1478,7 @@ namespace NDEY.UI.NDEYUserControl
 				recommendInfo.ExperInfoList.Add(new ExpertInfo());
 				recommendInfo.ExperInfoList[1].ExpertName = this.txtExpertName2.Text;
 				recommendInfo.ExperInfoList[1].ExpertArea = this.txtExpertArea2.Text;
+                recommendInfo.ExperInfoList[1].ExpertWorkType = this.txtExpertWorkType2.Text;
 				recommendInfo.ExperInfoList[1].ExpertUnitPosition = this.txtExpertUnitPosition2.Text;
 				recommendInfo.ExperInfoList[1].ExpertUnit = this.txtExpertUnit2.Text;
 				if (this.lbexp2attpath.Text == "")
@@ -1352,6 +1502,7 @@ namespace NDEY.UI.NDEYUserControl
 				recommendInfo.ExperInfoList.Add(new ExpertInfo());
 				recommendInfo.ExperInfoList[2].ExpertName = this.txtExpertName3.Text;
 				recommendInfo.ExperInfoList[2].ExpertArea = this.txtExpertArea3.Text;
+                recommendInfo.ExperInfoList[2].ExpertWorkType = this.txtExpertWorkType3.Text;
 				recommendInfo.ExperInfoList[2].ExpertUnitPosition = this.txtExpertUnitPosition3.Text;
 				recommendInfo.ExperInfoList[2].ExpertUnit = this.txtExpertUnit3.Text;
 				if (this.lbexp3attpath.Text == "")
