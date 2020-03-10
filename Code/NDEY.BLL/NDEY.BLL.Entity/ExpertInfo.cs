@@ -28,6 +28,8 @@ namespace NDEY.BLL.Entity
 			set;
 		}
 
+        public string ExpertWorkType { get; set; }
+
 		public AttachmentInfo EAttachmentInfo
 		{
 			get;
