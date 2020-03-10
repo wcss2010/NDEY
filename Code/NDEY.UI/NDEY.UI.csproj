@@ -411,7 +411,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="NDEY_DATA\DB\myData.db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="NDEY_DATA\Template\申报书0630-dw.doc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

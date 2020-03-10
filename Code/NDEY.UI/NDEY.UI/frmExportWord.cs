@@ -943,7 +943,7 @@ namespace NDEY.UI
 				}
 				bookmark = "jsyy";
 				this.setprogress(60, "读取主要成绩和突出贡献...");
-				FileInfo fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "军事意义.rtf"));
+                FileInfo fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "军事意义.doc"));
 				if (fileInfo.Exists)
 				{
 					document.Bookmarks[bookmark].Select();
@@ -954,7 +954,7 @@ namespace NDEY.UI
 				}
 				bookmark = "zzyj";
 				this.setprogress(65, "读取拟开展的研究工作...");
-				fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "主要研究.rtf"));
+                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "主要研究.doc"));
 				if (fileInfo.Exists)
 				{
 					document.Bookmarks[bookmark].Select();
@@ -969,7 +969,7 @@ namespace NDEY.UI
 				this.InsertText(application, bookmark, obj4, null);
 				bookmark = "bookmission";
                 this.setprogress(73, "读取第一年研究任务...");
-                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.rtf"));
+                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.doc"));
 				if (fileInfo.Exists)
 				{
 					document.Bookmarks[bookmark].Select();
