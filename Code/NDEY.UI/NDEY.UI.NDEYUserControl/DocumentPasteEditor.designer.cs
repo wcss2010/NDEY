@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblInfo = new AutoHeightLabel();
+            this.lblInfo = new NDEY.UI.NDEYUserControl.AutoHeightLabel();
             this.plContent = new System.Windows.Forms.Panel();
             this.txtWordReadme = new System.Windows.Forms.RichTextBox();
             this.plButtons = new System.Windows.Forms.Panel();
@@ -43,7 +43,7 @@
             // lblInfo
             // 
             this.lblInfo.AutoHeight = true;
-            this.lblInfo.BackColor = System.Drawing.SystemColors.Control;
+            this.lblInfo.BackColor = System.Drawing.Color.White;
             this.lblInfo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblInfo.Font = new System.Drawing.Font("仿宋", 15.75F);
@@ -53,6 +53,7 @@
             this.lblInfo.Padding = new System.Windows.Forms.Padding(0, 7, 0, 0);
             this.lblInfo.Size = new System.Drawing.Size(1418, 51);
             this.lblInfo.TabIndex = 0;
+            this.lblInfo.Visible = false;
             // 
             // plContent
             // 
@@ -68,8 +69,8 @@
             // 
             // txtWordReadme
             // 
+            this.txtWordReadme.BackColor = System.Drawing.Color.White;
             this.txtWordReadme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtWordReadme.Enabled = false;
             this.txtWordReadme.Font = new System.Drawing.Font("仿宋", 12F);
             this.txtWordReadme.Location = new System.Drawing.Point(0, 60);
             this.txtWordReadme.Margin = new System.Windows.Forms.Padding(4);
@@ -81,6 +82,7 @@
             // 
             // plButtons
             // 
+            this.plButtons.BackColor = System.Drawing.Color.White;
             this.plButtons.Controls.Add(this.label1);
             this.plButtons.Controls.Add(this.btnEditDocument);
             this.plButtons.Dock = System.Windows.Forms.DockStyle.Top;
@@ -134,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.plMain);
             this.Font = new System.Drawing.Font("仿宋", 12F);
             this.Margin = new System.Windows.Forms.Padding(4);

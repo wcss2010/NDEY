@@ -91,8 +91,7 @@ namespace NDEY.UI.NDEYUserControl
             InitializeComponent();
         }
 
-        public DocumentPasteEditor(string name, string info, string destPath, string templeteFile, string readmeFile)
-            : this()
+        public void initEditor(string name, string info, string destPath, string templeteFile, string readmeFile)
         {
             EditorName = name;
             InfoLabelText = info;

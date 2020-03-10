@@ -346,6 +346,9 @@
     <None Include="Helper\documentPasteReadme2.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Helper\emptyPaste.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Helper\help.rtf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
