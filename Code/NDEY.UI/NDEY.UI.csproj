@@ -398,6 +398,21 @@
     <Content Include="Helper\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="NDEY_DATA\Files\temp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="NDEY_DATA\Temp\temp.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NDEY_DATA\DB\myData.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NDEY_DATA\Template\申报书0630-dw.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="NDEY_DATA\Template\申报书0630-zj.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\DELETE_28.png" />
   </ItemGroup>
   <ItemGroup>
