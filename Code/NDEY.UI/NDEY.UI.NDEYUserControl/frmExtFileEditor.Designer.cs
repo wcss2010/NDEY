@@ -113,11 +113,11 @@
             // 
             this.kryptonLabel113.Location = new System.Drawing.Point(3, 10);
             this.kryptonLabel113.Name = "kryptonLabel113";
-            this.kryptonLabel113.Size = new System.Drawing.Size(463, 27);
+            this.kryptonLabel113.Size = new System.Drawing.Size(756, 27);
             this.kryptonLabel113.StateCommon.LongText.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel113.StateCommon.ShortText.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel113.TabIndex = 0;
-            this.kryptonLabel113.Values.Text = "请依托单位提供与项目密级相应的保密资质复印件。";
+            this.kryptonLabel113.Values.Text = "请依托单位提供与项目密级相应的保密资质复印件（军队单位无需上传保密资质！）。";
             // 
             // hSkinTableLayoutPanel1
             // 
