@@ -251,40 +251,40 @@ namespace NDEY.UI
 					{
 						return;
 					}
-					string text = Path.Combine(EntityElement.FilesStorePath, "军事意义.rtf");
-					long num = 0L;
-					if (File.Exists(text))
-					{
-						FileInfo fileInfo = new FileInfo(text);
-						num = fileInfo.Length;
-					}
-					if (num <= 200L)
-					{
-						BaseForm.MethodInvoker uiDelegate = delegate
-						{
-							MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-							base.Close();
-						};
-						base.UpdateUI(uiDelegate, this);
-						return;
-					}
-					text = Path.Combine(EntityElement.FilesStorePath, "主要研究.rtf");
-					num = 0L;
-					if (File.Exists(text))
-					{
-						FileInfo fileInfo2 = new FileInfo(text);
-						num = fileInfo2.Length;
-					}
-					if (num <= 200L)
-					{
-						BaseForm.MethodInvoker uiDelegate2 = delegate
-						{
-							MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-							base.Close();
-						};
-						base.UpdateUI(uiDelegate2, this);
-						return;
-					}
+                    //string text = Path.Combine(EntityElement.FilesStorePath, "军事意义.rtf");
+                    //long num = 0L;
+                    //if (File.Exists(text))
+                    //{
+                    //    FileInfo fileInfo = new FileInfo(text);
+                    //    num = fileInfo.Length;
+                    //}
+                    //if (num <= 200L)
+                    //{
+                    //    BaseForm.MethodInvoker uiDelegate = delegate
+                    //    {
+                    //        MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    //        base.Close();
+                    //    };
+                    //    base.UpdateUI(uiDelegate, this);
+                    //    return;
+                    //}
+                    //text = Path.Combine(EntityElement.FilesStorePath, "主要研究.rtf");
+                    //num = 0L;
+                    //if (File.Exists(text))
+                    //{
+                    //    FileInfo fileInfo2 = new FileInfo(text);
+                    //    num = fileInfo2.Length;
+                    //}
+                    //if (num <= 200L)
+                    //{
+                    //    BaseForm.MethodInvoker uiDelegate2 = delegate
+                    //    {
+                    //        MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    //        base.Close();
+                    //    };
+                    //    base.UpdateUI(uiDelegate2, this);
+                    //    return;
+                    //}
 					if (!this.resultFormInfo.IsCBR1Checked && !this.resultFormInfo.IsCBR2Checked && !this.resultFormInfo.IsCBR3Checked && !this.resultFormInfo.IsCBR4Checked && !this.resultFormInfo.IsCBR5Checked && !this.resultFormInfo.IsCBR6Checked && !this.resultFormInfo.IsCBR7Checked && !this.resultFormInfo.IsCBR8Checked && !this.resultFormInfo.IsCBR9Checked && !this.resultFormInfo.IsCBR10Checked && !this.resultFormInfo.IsCBR11Checked && !this.resultFormInfo.IsCBR12Checked && !(this.resultFormInfo.CBROtherText != ""))
 					{
 						BaseForm.MethodInvoker uiDelegate3 = delegate
@@ -295,23 +295,23 @@ namespace NDEY.UI
 						base.UpdateUI(uiDelegate3, this);
 						return;
 					}
-					text = Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.rtf");
-					num = 0L;
-					if (File.Exists(text))
-					{
-						FileInfo fileInfo3 = new FileInfo(text);
-						num = fileInfo3.Length;
-					}
-					if (num <= 200L)
-					{
-						BaseForm.MethodInvoker uiDelegate4 = delegate
-						{
-							MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-							base.Close();
-						};
-						base.UpdateUI(uiDelegate4, this);
-						return;
-					}
+                    //text = Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.rtf");
+                    //num = 0L;
+                    //if (File.Exists(text))
+                    //{
+                    //    FileInfo fileInfo3 = new FileInfo(text);
+                    //    num = fileInfo3.Length;
+                    //}
+                    //if (num <= 200L)
+                    //{
+                    //    BaseForm.MethodInvoker uiDelegate4 = delegate
+                    //    {
+                    //        MessageBox.Show("报告正文未填写完成，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    //        base.Close();
+                    //    };
+                    //    base.UpdateUI(uiDelegate4, this);
+                    //    return;
+                    //}
 					if (this.eduinfolist.Count == 0)
 					{
 						BaseForm.MethodInvoker uiDelegate5 = delegate
@@ -332,16 +332,16 @@ namespace NDEY.UI
 						base.UpdateUI(uiDelegate6, this);
 						return;
 					}
-                    if (NDEYUserControl.frmExtFileEditor.IsUploadedExtFile == false)
-                    {
-                        BaseForm.MethodInvoker uiDelegate6 = delegate
-                        {
-                            MessageBox.Show("保密资质没有上传，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                            base.Close();
-                        };
-                        base.UpdateUI(uiDelegate6, this);
-                        return;
-                    }
+                    //if (NDEYUserControl.frmExtFileEditor.IsUploadedExtFile == false)
+                    //{
+                    //    BaseForm.MethodInvoker uiDelegate6 = delegate
+                    //    {
+                    //        MessageBox.Show("保密资质没有上传，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    //        base.Close();
+                    //    };
+                    //    base.UpdateUI(uiDelegate6, this);
+                    //    return;
+                    //}
                     if (!this.isRecommendInfoCompleted(this.rinfo))
 					{
 						return;
