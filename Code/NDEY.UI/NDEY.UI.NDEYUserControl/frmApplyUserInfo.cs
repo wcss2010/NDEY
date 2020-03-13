@@ -679,7 +679,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel19.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel19.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.kryptonLabel19.TabIndex = 18;
-            this.kryptonLabel19.Values.Text = "联系人身份证号码";
+            this.kryptonLabel19.Values.Text = "联系人职务";
             // 
             // kryptonLabel5
             // 

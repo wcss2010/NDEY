@@ -608,7 +608,7 @@ namespace NDEY.UI
 				obj4 = this.pbudgetinfo.ProjectRFA;
                 this.InsertText(application, bookmark, obj4 != null ? obj4 : "0", null);
 				bookmark = "ProjectRFA";
-				this.InsertText(application, bookmark, obj4 != null ? obj4 : "0" + "万", null);
+                this.InsertText(application, bookmark, obj4 != null ? obj4 + "万" : "0" + "万", null);
 				bookmark = "ProjectRFA1";
 				obj4 = this.pbudgetinfo.ProjectRFA1;
 				this.InsertText(application, bookmark, obj4 != null ? obj4 : "0", null);
