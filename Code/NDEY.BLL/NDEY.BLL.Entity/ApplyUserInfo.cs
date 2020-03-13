@@ -96,6 +96,8 @@ namespace NDEY.BLL.Entity
 
         public string UnitNormal { get; set; }
 
+        public string UnitSchool { get; set; }
+
 		public string UnitContacts
 		{
 			get;

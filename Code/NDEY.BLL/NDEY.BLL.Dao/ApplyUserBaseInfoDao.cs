@@ -9,7 +9,7 @@ namespace NDEY.BLL.Dao
 	{
 		public ApplyUserInfo GetUserBaseInfo()
 		{
-			string querystring = "select UserName,WorkUnitID,WorkUnitName,Sex,Birthdate,Degree,JobTitle,UnitPosition,MainResearch,\r\nCardNo,OfficePhones,MobilePhone,EMail,UnitID,UnitName,UnitIDCard,UnitNormal,UnitContacts,UnitAddress,UnitForORG,UnitProperties,UnitContactsPhone from BaseInfor";
+            string querystring = "select UserName,WorkUnitID,WorkUnitName,Sex,Birthdate,Degree,JobTitle,UnitPosition,MainResearch,\r\nCardNo,OfficePhones,MobilePhone,EMail,UnitID,UnitName,UnitIDCard,UnitNormal,UnitSchool,UnitContacts,UnitAddress,UnitForORG,UnitProperties,UnitContactsPhone from BaseInfor";
 			string text = "";
 			DataTable data = base.GetData(querystring, out text);
 			ApplyUserInfo applyUserInfo = null;
@@ -34,6 +34,7 @@ namespace NDEY.BLL.Dao
                 applyUserInfo.UnitName = ((data.Rows[0]["UnitName"] == DBNull.Value) ? "" : data.Rows[0]["UnitName"].ToString());
                 applyUserInfo.UnitIDCard = ((data.Rows[0]["UnitIDCard"] == DBNull.Value) ? "" : data.Rows[0]["UnitIDCard"].ToString());
                 applyUserInfo.UnitNormal = ((data.Rows[0]["UnitNormal"] == DBNull.Value) ? "" : data.Rows[0]["UnitNormal"].ToString());
+                applyUserInfo.UnitSchool = ((data.Rows[0]["UnitSchool"] == DBNull.Value) ? "" : data.Rows[0]["UnitSchool"].ToString());
                 applyUserInfo.UnitContacts = ((data.Rows[0]["UnitContacts"] == DBNull.Value) ? "" : data.Rows[0]["UnitContacts"].ToString());
 				applyUserInfo.UnitForORG = ((data.Rows[0]["UnitForORG"] == DBNull.Value) ? "" : data.Rows[0]["UnitForORG"].ToString());
 				applyUserInfo.UnitProperties = ((data.Rows[0]["UnitProperties"] == DBNull.Value) ? "" : data.Rows[0]["UnitProperties"].ToString());
@@ -49,7 +50,7 @@ namespace NDEY.BLL.Dao
 
 		public bool UpdateUserBaseInfo(ApplyUserInfo userinfo)
 		{
-			string sql = "update BaseInfor set  UserName=@UserName,WorkUnitID=@WorkUnitID,WorkUnitName=@WorkUnitName,Sex=@Sex,Birthdate=@Birthdate,\r\nDegree=@Degree,JobTitle=@JobTitle,UnitPosition=@UnitPosition,MainResearch=@MainResearch,\r\nCardNo=@CardNo,OfficePhones=@OfficePhones,MobilePhone=@MobilePhone,EMail=@EMail,UnitID=@UnitID,UnitName=@UnitName,UnitIDCard=@UnitIDCard,UnitNormal=@UnitNormal,UnitContacts=@UnitContacts,\r\nUnitAddress=@UnitAddress,UnitForORG=@UnitForORG,UnitProperties=@UnitProperties,UnitContactsPhone=@UnitContactsPhone";
+            string sql = "update BaseInfor set  UserName=@UserName,WorkUnitID=@WorkUnitID,WorkUnitName=@WorkUnitName,Sex=@Sex,Birthdate=@Birthdate,\r\nDegree=@Degree,JobTitle=@JobTitle,UnitPosition=@UnitPosition,MainResearch=@MainResearch,\r\nCardNo=@CardNo,OfficePhones=@OfficePhones,MobilePhone=@MobilePhone,EMail=@EMail,UnitID=@UnitID,UnitName=@UnitName,UnitIDCard=@UnitIDCard,UnitNormal=@UnitNormal,UnitSchool=@UnitSchool,UnitContacts=@UnitContacts,\r\nUnitAddress=@UnitAddress,UnitForORG=@UnitForORG,UnitProperties=@UnitProperties,UnitContactsPhone=@UnitContactsPhone";
             SQLiteParameter[] parameters = new SQLiteParameter[]
             {
                 new SQLiteParameter("@UserName", userinfo.ApplyUserName),
@@ -69,6 +70,7 @@ namespace NDEY.BLL.Dao
                 new SQLiteParameter("@UnitName", userinfo.UnitName),
                 new SQLiteParameter("@UnitIDCard", userinfo.UnitIDCard),
                 new SQLiteParameter("@UnitNormal",userinfo.UnitNormal),
+                new SQLiteParameter("@UnitSchool",userinfo.UnitSchool),
                 new SQLiteParameter("@UnitContacts", userinfo.UnitContacts),
                 new SQLiteParameter("@UnitAddress", userinfo.UnitAddress),
                 new SQLiteParameter("@UnitForORG", userinfo.UnitForORG),
@@ -82,7 +84,7 @@ namespace NDEY.BLL.Dao
 
 		public bool AddUserBaseInfo(ApplyUserInfo userinfo)
 		{
-			string sql = "insert into BaseInfor ( UserName,WorkUnitID,WorkUnitName,Sex,Birthdate,Degree,JobTitle,UnitPosition,MainResearch,\r\nCardNo,OfficePhones,MobilePhone,EMail,UnitID,UnitName,UnitIDCard,UnitNormal,UnitContacts,UnitAddress,UnitForORG,UnitProperties,UnitContactsPhone)\r\nvalues ( @UserName,@WorkUnit,@Sex,@Birthdate,@Degree,@JobTitle,@UnitPosition,@MainResearch,@CardNo,@OfficePhones,\r\n@MobilePhone,@EMail,@Unit,@UnitNormal,@UnitContacts,@UnitAddress,@UnitForORG,@UnitProperties,@UnitContactsPhone)";
+            string sql = "insert into BaseInfor ( UserName,WorkUnitID,WorkUnitName,Sex,Birthdate,Degree,JobTitle,UnitPosition,MainResearch,\r\nCardNo,OfficePhones,MobilePhone,EMail,UnitID,UnitName,UnitIDCard,UnitNormal,UnitContacts,UnitAddress,UnitForORG,UnitProperties,UnitContactsPhone)\r\nvalues ( @UserName,@WorkUnit,@Sex,@Birthdate,@Degree,@JobTitle,@UnitPosition,@MainResearch,@CardNo,@OfficePhones,\r\n@MobilePhone,@EMail,@Unit,@UnitNormal,@UnitSchool,@UnitContacts,@UnitAddress,@UnitForORG,@UnitProperties,@UnitContactsPhone)";
             SQLiteParameter[] parameters = new SQLiteParameter[]
             {
                 new SQLiteParameter("@UserName", userinfo.ApplyUserName),
@@ -102,6 +104,7 @@ namespace NDEY.BLL.Dao
                 new SQLiteParameter("@UnitName",userinfo.UnitName),
                 new SQLiteParameter("@UnitIDCard",userinfo.UnitIDCard),
                 new SQLiteParameter("@UnitNormal",userinfo.UnitNormal),
+                new SQLiteParameter("@UnitSchool",userinfo.UnitSchool),
                 new SQLiteParameter("@UnitContacts", userinfo.UnitContacts),
                 new SQLiteParameter("@UnitAddress", userinfo.UnitAddress),
                 new SQLiteParameter("@UnitForORG", userinfo.UnitForORG),
