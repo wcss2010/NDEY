@@ -518,7 +518,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel1.Controls.Add(this.btnexpsave, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 506);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 512);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -603,7 +603,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(919, 506);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(919, 512);
             this.tableLayoutPanel18.TabIndex = 2;
             // 
             // label3

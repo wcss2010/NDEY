@@ -342,6 +342,16 @@ namespace NDEY.UI
                     //    base.UpdateUI(uiDelegate6, this);
                     //    return;
                     //}
+                    if (rinfo.ApplicationType == "专家提名" && (string.IsNullOrEmpty(rinfo.ExperInfoList[0].ExpertWorkType) || string.IsNullOrEmpty(rinfo.ExperInfoList[1].ExpertWorkType) || string.IsNullOrEmpty(rinfo.ExperInfoList[2].ExpertWorkType)))
+                    {
+                        BaseForm.MethodInvoker uiDelegate6 = delegate
+                        {
+                            MessageBox.Show("专家类别没有填写，当前不能上报。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                            base.Close();
+                        };
+                        base.UpdateUI(uiDelegate6, this);
+                        return;
+                    }
                     if (!this.isRecommendInfoCompleted(this.rinfo))
 					{
 						return;
