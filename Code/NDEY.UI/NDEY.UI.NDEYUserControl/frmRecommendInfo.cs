@@ -1364,18 +1364,18 @@ namespace NDEY.UI.NDEYUserControl
 			this.txtExpertUnit3.Text = this._rinfo.ExperInfoList[2].ExpertUnit;
 			this.lbexp3attpath.Text = this._rinfo.ExperInfoList[2].EAttachmentInfo.UploadName;
 
-            if (txtExpertWorkType1.SelectedItem == null)
-            {
-                txtExpertWorkType1.SelectedIndex = 0;
-            }
-            if (txtExpertWorkType2.SelectedItem == null)
-            {
-                txtExpertWorkType2.SelectedIndex = 0;
-            }
-            if (txtExpertWorkType3.SelectedItem == null)
-            {
-                txtExpertWorkType3.SelectedIndex = 0;
-            }
+            //if (txtExpertWorkType1.SelectedItem == null)
+            //{
+            //    txtExpertWorkType1.SelectedIndex = 0;
+            //}
+            //if (txtExpertWorkType2.SelectedItem == null)
+            //{
+            //    txtExpertWorkType2.SelectedIndex = 0;
+            //}
+            //if (txtExpertWorkType3.SelectedItem == null)
+            //{
+            //    txtExpertWorkType3.SelectedIndex = 0;
+            //}
 		}
 
 		private void rbcompany_CheckedChanged(object sender, EventArgs e)
