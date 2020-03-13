@@ -518,7 +518,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel1.Controls.Add(this.btnexpsave, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 491);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 506);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -589,7 +589,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.tableLayoutPanel18.Name = "tableLayoutPanel18";
             this.tableLayoutPanel18.RowCount = 14;
-            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
@@ -603,7 +603,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(919, 491);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(919, 506);
             this.tableLayoutPanel18.TabIndex = 2;
             // 
             // label3
@@ -612,7 +612,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.SetColumnSpan(this.label3, 4);
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("黑体", 12F);
-            this.label3.Location = new System.Drawing.Point(3, 351);
+            this.label3.Location = new System.Drawing.Point(3, 371);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 1, 3, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(913, 34);
@@ -626,7 +626,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.SetColumnSpan(this.label2, 4);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 211);
+            this.label2.Location = new System.Drawing.Point(3, 231);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(913, 33);
@@ -636,7 +636,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel71
             // 
-            this.kryptonLabel71.Location = new System.Drawing.Point(3, 108);
+            this.kryptonLabel71.Location = new System.Drawing.Point(3, 128);
             this.kryptonLabel71.Name = "kryptonLabel71";
             this.kryptonLabel71.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel71.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -645,7 +645,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel73
             // 
-            this.kryptonLabel73.Location = new System.Drawing.Point(462, 108);
+            this.kryptonLabel73.Location = new System.Drawing.Point(462, 128);
             this.kryptonLabel73.Name = "kryptonLabel73";
             this.kryptonLabel73.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel73.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -654,7 +654,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel74
             // 
-            this.kryptonLabel74.Location = new System.Drawing.Point(3, 143);
+            this.kryptonLabel74.Location = new System.Drawing.Point(3, 163);
             this.kryptonLabel74.Name = "kryptonLabel74";
             this.kryptonLabel74.Size = new System.Drawing.Size(93, 23);
             this.kryptonLabel74.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -663,7 +663,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel75
             // 
-            this.kryptonLabel75.Location = new System.Drawing.Point(462, 143);
+            this.kryptonLabel75.Location = new System.Drawing.Point(462, 163);
             this.kryptonLabel75.Name = "kryptonLabel75";
             this.kryptonLabel75.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel75.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -672,7 +672,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel76
             // 
-            this.kryptonLabel76.Location = new System.Drawing.Point(462, 178);
+            this.kryptonLabel76.Location = new System.Drawing.Point(462, 198);
             this.kryptonLabel76.Name = "kryptonLabel76";
             this.kryptonLabel76.Size = new System.Drawing.Size(48, 23);
             this.kryptonLabel76.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -682,7 +682,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel110
             // 
             this.kryptonLabel110.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel110.Location = new System.Drawing.Point(3, 178);
+            this.kryptonLabel110.Location = new System.Drawing.Point(3, 198);
             this.kryptonLabel110.Name = "kryptonLabel110";
             this.kryptonLabel110.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel110.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -701,7 +701,7 @@ namespace NDEY.UI.NDEYUserControl
             "特区领域专家组首席",
             "特区主题专家组首席",
             "军委科技委领域专家委员会成员"});
-            this.txtExpertWorkType1.Location = new System.Drawing.Point(123, 178);
+            this.txtExpertWorkType1.Location = new System.Drawing.Point(123, 198);
             this.txtExpertWorkType1.Name = "kryptonComboBox110";
             this.txtExpertWorkType1.Size = new System.Drawing.Size(333, 25);
             this.txtExpertWorkType1.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -717,7 +717,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel98
             // 
-            this.kryptonLabel98.Location = new System.Drawing.Point(3, 248);
+            this.kryptonLabel98.Location = new System.Drawing.Point(3, 268);
             this.kryptonLabel98.Name = "kryptonLabel98";
             this.kryptonLabel98.Size = new System.Drawing.Size(84, 23);
             this.kryptonLabel98.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -726,7 +726,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel99
             // 
-            this.kryptonLabel99.Location = new System.Drawing.Point(462, 248);
+            this.kryptonLabel99.Location = new System.Drawing.Point(462, 268);
             this.kryptonLabel99.Name = "kryptonLabel99";
             this.kryptonLabel99.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel99.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -735,7 +735,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel101
             // 
-            this.kryptonLabel101.Location = new System.Drawing.Point(3, 283);
+            this.kryptonLabel101.Location = new System.Drawing.Point(3, 303);
             this.kryptonLabel101.Name = "kryptonLabel101";
             this.kryptonLabel101.Size = new System.Drawing.Size(93, 23);
             this.kryptonLabel101.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -744,7 +744,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             // kryptonLabel103
             // 
-            this.kryptonLabel103.Location = new System.Drawing.Point(462, 318);
+            this.kryptonLabel103.Location = new System.Drawing.Point(462, 338);
             this.kryptonLabel103.Name = "kryptonLabel103";
             this.kryptonLabel103.Size = new System.Drawing.Size(48, 23);
             this.kryptonLabel103.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -754,7 +754,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel111
             // 
             this.kryptonLabel111.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel111.Location = new System.Drawing.Point(3, 318);
+            this.kryptonLabel111.Location = new System.Drawing.Point(3, 338);
             this.kryptonLabel111.Name = "kryptonLabel111";
             this.kryptonLabel111.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel111.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -773,7 +773,7 @@ namespace NDEY.UI.NDEYUserControl
             "特区领域专家组首席",
             "特区主题专家组首席",
             "军委科技委领域专家委员会成员"});
-            this.txtExpertWorkType2.Location = new System.Drawing.Point(123, 318);
+            this.txtExpertWorkType2.Location = new System.Drawing.Point(123, 338);
             this.txtExpertWorkType2.Name = "kryptonComboBox111";
             this.txtExpertWorkType2.Size = new System.Drawing.Size(333, 25);
             this.txtExpertWorkType2.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -790,7 +790,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel105
             // 
             this.kryptonLabel105.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel105.Location = new System.Drawing.Point(3, 388);
+            this.kryptonLabel105.Location = new System.Drawing.Point(3, 408);
             this.kryptonLabel105.Name = "kryptonLabel105";
             this.kryptonLabel105.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel105.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -800,7 +800,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel106
             // 
             this.kryptonLabel106.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel106.Location = new System.Drawing.Point(462, 388);
+            this.kryptonLabel106.Location = new System.Drawing.Point(462, 408);
             this.kryptonLabel106.Name = "kryptonLabel106";
             this.kryptonLabel106.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel106.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -810,7 +810,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel107
             // 
             this.kryptonLabel107.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel107.Location = new System.Drawing.Point(3, 423);
+            this.kryptonLabel107.Location = new System.Drawing.Point(3, 443);
             this.kryptonLabel107.Name = "kryptonLabel107";
             this.kryptonLabel107.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel107.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -820,7 +820,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel108
             // 
             this.kryptonLabel108.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel108.Location = new System.Drawing.Point(462, 423);
+            this.kryptonLabel108.Location = new System.Drawing.Point(462, 443);
             this.kryptonLabel108.Name = "kryptonLabel108";
             this.kryptonLabel108.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel108.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -831,7 +831,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertName1.AlwaysActive = false;
             this.txtExpertName1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertName1.Location = new System.Drawing.Point(123, 108);
+            this.txtExpertName1.Location = new System.Drawing.Point(123, 128);
             this.txtExpertName1.Name = "txtExpertName1";
             this.txtExpertName1.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -849,7 +849,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertArea1.AlwaysActive = false;
             this.txtExpertArea1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertArea1.Location = new System.Drawing.Point(582, 108);
+            this.txtExpertArea1.Location = new System.Drawing.Point(582, 128);
             this.txtExpertArea1.Name = "txtExpertArea1";
             this.txtExpertArea1.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -867,7 +867,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnitPosition1.AlwaysActive = false;
             this.txtExpertUnitPosition1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnitPosition1.Location = new System.Drawing.Point(123, 143);
+            this.txtExpertUnitPosition1.Location = new System.Drawing.Point(123, 163);
             this.txtExpertUnitPosition1.Name = "txtExpertUnitPosition1";
             this.txtExpertUnitPosition1.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -885,7 +885,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnit1.AlwaysActive = false;
             this.txtExpertUnit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnit1.Location = new System.Drawing.Point(582, 143);
+            this.txtExpertUnit1.Location = new System.Drawing.Point(582, 163);
             this.txtExpertUnit1.Name = "txtExpertUnit1";
             this.txtExpertUnit1.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit1.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -903,7 +903,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertName2.AlwaysActive = false;
             this.txtExpertName2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertName2.Location = new System.Drawing.Point(123, 248);
+            this.txtExpertName2.Location = new System.Drawing.Point(123, 268);
             this.txtExpertName2.Name = "txtExpertName2";
             this.txtExpertName2.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -921,7 +921,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertArea2.AlwaysActive = false;
             this.txtExpertArea2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertArea2.Location = new System.Drawing.Point(582, 248);
+            this.txtExpertArea2.Location = new System.Drawing.Point(582, 268);
             this.txtExpertArea2.Name = "txtExpertArea2";
             this.txtExpertArea2.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -939,7 +939,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnitPosition2.AlwaysActive = false;
             this.txtExpertUnitPosition2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnitPosition2.Location = new System.Drawing.Point(123, 283);
+            this.txtExpertUnitPosition2.Location = new System.Drawing.Point(123, 303);
             this.txtExpertUnitPosition2.Name = "txtExpertUnitPosition2";
             this.txtExpertUnitPosition2.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -957,7 +957,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnit2.AlwaysActive = false;
             this.txtExpertUnit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnit2.Location = new System.Drawing.Point(582, 283);
+            this.txtExpertUnit2.Location = new System.Drawing.Point(582, 303);
             this.txtExpertUnit2.Name = "txtExpertUnit2";
             this.txtExpertUnit2.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit2.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -975,7 +975,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertName3.AlwaysActive = false;
             this.txtExpertName3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertName3.Location = new System.Drawing.Point(123, 388);
+            this.txtExpertName3.Location = new System.Drawing.Point(123, 408);
             this.txtExpertName3.Name = "txtExpertName3";
             this.txtExpertName3.Size = new System.Drawing.Size(333, 24);
             this.txtExpertName3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -993,7 +993,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertArea3.AlwaysActive = false;
             this.txtExpertArea3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertArea3.Location = new System.Drawing.Point(582, 388);
+            this.txtExpertArea3.Location = new System.Drawing.Point(582, 408);
             this.txtExpertArea3.Name = "txtExpertArea3";
             this.txtExpertArea3.Size = new System.Drawing.Size(334, 24);
             this.txtExpertArea3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1011,7 +1011,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnitPosition3.AlwaysActive = false;
             this.txtExpertUnitPosition3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnitPosition3.Location = new System.Drawing.Point(123, 423);
+            this.txtExpertUnitPosition3.Location = new System.Drawing.Point(123, 443);
             this.txtExpertUnitPosition3.Name = "txtExpertUnitPosition3";
             this.txtExpertUnitPosition3.Size = new System.Drawing.Size(333, 24);
             this.txtExpertUnitPosition3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1029,7 +1029,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtExpertUnit3.AlwaysActive = false;
             this.txtExpertUnit3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtExpertUnit3.Location = new System.Drawing.Point(582, 423);
+            this.txtExpertUnit3.Location = new System.Drawing.Point(582, 443);
             this.txtExpertUnit3.Name = "txtExpertUnit3";
             this.txtExpertUnit3.Size = new System.Drawing.Size(334, 24);
             this.txtExpertUnit3.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1051,7 +1051,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel23.Location = new System.Drawing.Point(0, 0);
             this.kryptonPanel23.Margin = new System.Windows.Forms.Padding(0);
             this.kryptonPanel23.Name = "kryptonPanel23";
-            this.kryptonPanel23.Size = new System.Drawing.Size(919, 70);
+            this.kryptonPanel23.Size = new System.Drawing.Size(919, 90);
             this.kryptonPanel23.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel23.TabIndex = 33;
             // 
@@ -1062,14 +1062,15 @@ namespace NDEY.UI.NDEYUserControl
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(919, 70);
+            this.label4.Size = new System.Drawing.Size(919, 90);
             this.label4.TabIndex = 1;
-            this.label4.Text = "专家提名：\r\n    申报内容填写完整，填写一名及以上专家信息，并保存后，点击右上角的“预览”图标，将导出的Word文档中的提名意见填写完整，专家签字后，把提名意" +
-    "见页扫描制作pdf文件或者jpg图像文件上传到系统中。";
+            this.label4.Text = "专家提名：\r\n    申报内容填写完整，填写全部专家信息，并保存后，点击右上角的“预览”图标，将导出的Word文档中的提名意见填写完整，专家签字后，把提名意见页扫" +
+    "描制作pdf文件或者jpg图像文件上传到系统中。仅有以下专家具备提名资格：军队两院院士,军队科技领军人才,国防科技专业专家组组长,特区领域专家组首席,特区主题专" +
+    "家组首席,军委科技委领域专家委员会成员！";
             // 
             // kryptonLabel102
             // 
-            this.kryptonLabel102.Location = new System.Drawing.Point(462, 283);
+            this.kryptonLabel102.Location = new System.Drawing.Point(462, 303);
             this.kryptonLabel102.Name = "kryptonLabel102";
             this.kryptonLabel102.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel102.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -1082,7 +1083,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel18.SetColumnSpan(this.label1, 4);
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 71);
+            this.label1.Location = new System.Drawing.Point(3, 91);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 1, 3, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(913, 34);
@@ -1093,7 +1094,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel109
             // 
             this.kryptonLabel109.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel109.Location = new System.Drawing.Point(462, 458);
+            this.kryptonLabel109.Location = new System.Drawing.Point(462, 478);
             this.kryptonLabel109.Name = "kryptonLabel109";
             this.kryptonLabel109.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel109.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -1103,7 +1104,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel112
             // 
             this.kryptonLabel112.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel112.Location = new System.Drawing.Point(3, 458);
+            this.kryptonLabel112.Location = new System.Drawing.Point(3, 478);
             this.kryptonLabel112.Name = "kryptonLabel112";
             this.kryptonLabel112.Size = new System.Drawing.Size(114, 29);
             this.kryptonLabel112.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -1122,7 +1123,7 @@ namespace NDEY.UI.NDEYUserControl
             "特区领域专家组首席",
             "特区主题专家组首席",
             "军委科技委领域专家委员会成员"});
-            this.txtExpertWorkType3.Location = new System.Drawing.Point(123, 458);
+            this.txtExpertWorkType3.Location = new System.Drawing.Point(123, 478);
             this.txtExpertWorkType3.Name = "kryptonComboBox112";
             this.txtExpertWorkType3.Size = new System.Drawing.Size(333, 25);
             this.txtExpertWorkType3.StateActive.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -1141,7 +1142,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel25.Controls.Add(this.lbexp1attpath);
             this.kryptonPanel25.Controls.Add(this.tableLayoutPanel19);
             this.kryptonPanel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel25.Location = new System.Drawing.Point(582, 178);
+            this.kryptonPanel25.Location = new System.Drawing.Point(582, 198);
             this.kryptonPanel25.Name = "kryptonPanel25";
             this.kryptonPanel25.Size = new System.Drawing.Size(334, 29);
             this.kryptonPanel25.TabIndex = 40;
@@ -1187,7 +1188,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel26.Controls.Add(this.lbexp2attpath);
             this.kryptonPanel26.Controls.Add(this.tableLayoutPanel21);
             this.kryptonPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel26.Location = new System.Drawing.Point(582, 318);
+            this.kryptonPanel26.Location = new System.Drawing.Point(582, 338);
             this.kryptonPanel26.Name = "kryptonPanel26";
             this.kryptonPanel26.Size = new System.Drawing.Size(334, 29);
             this.kryptonPanel26.TabIndex = 41;
@@ -1232,7 +1233,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel27.Controls.Add(this.lbexp3attpath);
             this.kryptonPanel27.Controls.Add(this.tableLayoutPanel22);
             this.kryptonPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel27.Location = new System.Drawing.Point(582, 458);
+            this.kryptonPanel27.Location = new System.Drawing.Point(582, 478);
             this.kryptonPanel27.Name = "kryptonPanel27";
             this.kryptonPanel27.Size = new System.Drawing.Size(334, 29);
             this.kryptonPanel27.TabIndex = 42;
@@ -1362,6 +1363,19 @@ namespace NDEY.UI.NDEYUserControl
 			this.txtExpertUnitPosition3.Text = this._rinfo.ExperInfoList[2].ExpertUnitPosition;
 			this.txtExpertUnit3.Text = this._rinfo.ExperInfoList[2].ExpertUnit;
 			this.lbexp3attpath.Text = this._rinfo.ExperInfoList[2].EAttachmentInfo.UploadName;
+
+            if (txtExpertWorkType1.SelectedItem == null)
+            {
+                txtExpertWorkType1.SelectedIndex = 0;
+            }
+            if (txtExpertWorkType2.SelectedItem == null)
+            {
+                txtExpertWorkType2.SelectedIndex = 0;
+            }
+            if (txtExpertWorkType3.SelectedItem == null)
+            {
+                txtExpertWorkType3.SelectedIndex = 0;
+            }
 		}
 
 		private void rbcompany_CheckedChanged(object sender, EventArgs e)
