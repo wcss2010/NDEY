@@ -69,6 +69,8 @@ namespace NDEY.UI.NDEYUserControl
 
         private KryptonLabel kryptonLabe100;
 
+        private KryptonLabel kryptonLabe108;
+
         private KryptonLabel kryptonLabel19;
 
         private KryptonTextBox txtApplyUserName;
@@ -88,6 +90,8 @@ namespace NDEY.UI.NDEYUserControl
         private KryptonPanel kryptonPanel104;
 
         private KryptonTextBox txtYTUnitContacts;
+
+        private KryptonTextBox txtYTUnitSchool;
 
         private KryptonTextBox txtEmail;
 
@@ -123,12 +127,15 @@ namespace NDEY.UI.NDEYUserControl
 
         private KryptonPanel kryptonPanel10;
 
+        private KryptonPanel kryptonPanel118;
+
         private KryptonTextBox txtUnitNormal;
 
         private KryptonPanel kryptonPanel12;
 
         private KryptonPanel kryptonPanel101;
         private KryptonPanel kryptonPanel106;
+        private KryptonPanel kryptonPanel119;
 
         private KryptonTextBox txtUnitAddress;
 
@@ -157,6 +164,7 @@ namespace NDEY.UI.NDEYUserControl
         private KryptonTextBox txtYTIDCard;
         private ButtonSpecAny buttonSpecAny1;
         private ButtonSpecAny buttonSpecAny2;
+        private ButtonSpecAny buttonSpecAny3;
         private KryptonPanel kryptonPanel17;
 
         public event frmApplyUserInfo.DisableNextPageHandler OnDisable;
@@ -238,6 +246,7 @@ namespace NDEY.UI.NDEYUserControl
             applyUserInfo.UnitName = txtYTUnitName.Text;
             applyUserInfo.UnitIDCard = txtYTIDCard.Text;
             applyUserInfo.UnitNormal = this.txtUnitNormal.Text;
+            applyUserInfo.UnitSchool = txtYTUnitSchool.Text;
             applyUserInfo.UnitContacts = this.txtYTUnitContacts.Text;
             applyUserInfo.UnitForORG = this.txtUnitForORG.Text;
             applyUserInfo.UnitProperties = this.txtUnitProperties.Text;
@@ -312,6 +321,7 @@ namespace NDEY.UI.NDEYUserControl
 
                 //this.txtUnitList.EditValue = userBaseInfo.UnitID;
                 this.txtYTUnitName.Text = userBaseInfo.UnitName;
+                this.txtYTUnitSchool.Text = userBaseInfo.UnitSchool;
                 this.txtYTIDCard.Text = userBaseInfo.UnitIDCard;
                 this.txtUnitNormal.Text = userBaseInfo.UnitNormal;
 
@@ -370,6 +380,10 @@ namespace NDEY.UI.NDEYUserControl
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmApplyUserInfo));
             this.kryptonPanel104 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.txtYTUnitContacts = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.kryptonPanel118 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
+            this.txtYTUnitSchool = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.buttonSpecAny3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.kryptonPanel119 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.btnApplyUserInfoSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -409,6 +423,7 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel4 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel18 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabe100 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabe108 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel102 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.txtUnitNormal = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.buttonSpecAny2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
@@ -445,6 +460,9 @@ namespace NDEY.UI.NDEYUserControl
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel104)).BeginInit();
             this.kryptonPanel104.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel118)).BeginInit();
+            this.kryptonPanel118.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel119)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel25.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
@@ -484,7 +502,7 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.SetColumnSpan(this.kryptonPanel104, 3);
             this.kryptonPanel104.Controls.Add(this.txtYTUnitContacts);
             this.kryptonPanel104.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel104.Location = new System.Drawing.Point(193, 283);
+            this.kryptonPanel104.Location = new System.Drawing.Point(193, 323);
             this.kryptonPanel104.Name = "kryptonPanel104";
             this.kryptonPanel104.Size = new System.Drawing.Size(349, 34);
             this.kryptonPanel104.StateCommon.Color1 = System.Drawing.Color.White;
@@ -509,6 +527,56 @@ namespace NDEY.UI.NDEYUserControl
             this.txtYTUnitContacts.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtYTUnitContacts.TabIndex = 31;
             // 
+            // kryptonPanel118
+            // 
+            this.hSkinInputHost.SetColumnSpan(this.kryptonPanel118, 5);
+            this.kryptonPanel118.Controls.Add(this.txtYTUnitSchool);
+            this.kryptonPanel118.Controls.Add(this.kryptonPanel119);
+            this.kryptonPanel118.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonPanel118.Location = new System.Drawing.Point(191, 281);
+            this.kryptonPanel118.Margin = new System.Windows.Forms.Padding(1, 1, 1, 0);
+            this.kryptonPanel118.Name = "kryptonPanel102";
+            this.kryptonPanel118.Size = new System.Drawing.Size(686, 39);
+            this.kryptonPanel118.StateCommon.Color1 = System.Drawing.Color.White;
+            this.kryptonPanel118.TabIndex = 30;
+            // 
+            // txtYTUnitSchool
+            // 
+            this.txtYTUnitSchool.AlwaysActive = false;
+            this.txtYTUnitSchool.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecAny[] {
+            this.buttonSpecAny3});
+            this.txtYTUnitSchool.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtYTUnitSchool.Location = new System.Drawing.Point(0, 10);
+            this.txtYTUnitSchool.Margin = new System.Windows.Forms.Padding(8);
+            this.txtYTUnitSchool.Name = "txtYTUnitSchool";
+            this.txtYTUnitSchool.Size = new System.Drawing.Size(686, 26);
+            this.txtYTUnitSchool.StateActive.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.txtYTUnitSchool.StateActive.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtYTUnitSchool.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txtYTUnitSchool.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtYTUnitSchool.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtYTUnitSchool.TabIndex = 2;
+            // 
+            // buttonSpecAny3
+            // 
+            this.buttonSpecAny3.ColorMap = System.Drawing.Color.Transparent;
+            this.buttonSpecAny3.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny3.Image")));
+            this.buttonSpecAny3.Text = "若单位是大学，填写到所属学院，否则填写无";
+            this.buttonSpecAny3.UniqueName = "9CA7A7940F314DC88B99D7C3BD7D4DC9E";
+            // 
+            // kryptonPanel119
+            // 
+            this.kryptonPanel119.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kryptonPanel119.Location = new System.Drawing.Point(0, 0);
+            this.kryptonPanel119.Name = "kryptonPanel119";
+            this.kryptonPanel119.Size = new System.Drawing.Size(686, 10);
+            this.kryptonPanel119.StateCommon.Color1 = System.Drawing.Color.White;
+            this.kryptonPanel119.TabIndex = 1;
+            // 
             // tableLayoutPanel7
             // 
             this.tableLayoutPanel7.ColumnCount = 3;
@@ -527,7 +595,6 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(978, 591);
             this.tableLayoutPanel7.TabIndex = 4;
             // 
@@ -538,7 +605,7 @@ namespace NDEY.UI.NDEYUserControl
             this.tableLayoutPanel25.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tableLayoutPanel25.Controls.Add(this.btnApplyUserInfoSave, 1, 0);
             this.tableLayoutPanel25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel25.Location = new System.Drawing.Point(53, 479);
+            this.tableLayoutPanel25.Location = new System.Drawing.Point(53, 520);
             this.tableLayoutPanel25.Name = "tableLayoutPanel25";
             this.tableLayoutPanel25.RowCount = 1;
             this.tableLayoutPanel25.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -589,9 +656,9 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
             this.hSkinInputHost.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39F));
             this.hSkinInputHost.Controls.Add(this.kryptonPanel3, 0, 0);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel19, 5, 8);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel19, 5, 9);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel5, 1, 0);
-            this.hSkinInputHost.Controls.Add(this.txtYTIDCard, 6, 8);
+            this.hSkinInputHost.Controls.Add(this.txtYTIDCard, 6, 9);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel6, 3, 0);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel7, 5, 0);
             this.hSkinInputHost.Controls.Add(this.txtSex, 4, 0);
@@ -615,26 +682,28 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.Controls.Add(this.txtOfficePhones, 2, 4);
             this.hSkinInputHost.Controls.Add(this.kryptonPanel4, 0, 6);
             this.hSkinInputHost.Controls.Add(this.kryptonLabe100, 0, 7);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabe108, 0, 8);
+            this.hSkinInputHost.Controls.Add(this.kryptonPanel118, 1, 8);
             this.hSkinInputHost.Controls.Add(this.kryptonPanel102, 1, 7);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel21, 1, 9);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel22, 3, 9);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel23, 5, 9);
-            this.hSkinInputHost.Controls.Add(this.txtUnitProperties, 4, 9);
-            this.hSkinInputHost.Controls.Add(this.txtUnitContactsPhone, 6, 9);
-            this.hSkinInputHost.Controls.Add(this.txtUnitForORG, 2, 9);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel20, 1, 10);
-            this.hSkinInputHost.Controls.Add(this.kryptonPanel8, 2, 10);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel21, 1, 10);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel22, 3, 10);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel23, 5, 10);
+            this.hSkinInputHost.Controls.Add(this.txtUnitProperties, 4, 10);
+            this.hSkinInputHost.Controls.Add(this.txtUnitContactsPhone, 6, 10);
+            this.hSkinInputHost.Controls.Add(this.txtUnitForORG, 2, 10);
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel20, 1, 11);
+            this.hSkinInputHost.Controls.Add(this.kryptonPanel8, 2, 11);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel2, 1, 6);
             this.hSkinInputHost.Controls.Add(this.kryptonPanel17, 2, 6);
             this.hSkinInputHost.Controls.Add(this.kryptonPanel14, 2, 5);
             this.hSkinInputHost.Controls.Add(this.kryptonLabel1, 1, 5);
-            this.hSkinInputHost.Controls.Add(this.kryptonLabel24, 1, 8);
-            this.hSkinInputHost.Controls.Add(this.kryptonPanel104, 2, 8);
-            this.hSkinInputHost.Dock = System.Windows.Forms.DockStyle.Top;
+            this.hSkinInputHost.Controls.Add(this.kryptonLabel24, 1, 9);
+            this.hSkinInputHost.Controls.Add(this.kryptonPanel104, 2, 9);
+            this.hSkinInputHost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.hSkinInputHost.Location = new System.Drawing.Point(50, 74);
             this.hSkinInputHost.Margin = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.hSkinInputHost.Name = "hSkinInputHost";
-            this.hSkinInputHost.RowCount = 11;
+            this.hSkinInputHost.RowCount = 12;
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
@@ -646,7 +715,8 @@ namespace NDEY.UI.NDEYUserControl
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.hSkinInputHost.Size = new System.Drawing.Size(878, 400);
+            this.hSkinInputHost.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.hSkinInputHost.Size = new System.Drawing.Size(878, 441);
             this.hSkinInputHost.TabIndex = 2;
             // 
             // kryptonPanel3
@@ -673,7 +743,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel19
             // 
             this.kryptonLabel19.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel19.Location = new System.Drawing.Point(548, 294);
+            this.kryptonLabel19.Location = new System.Drawing.Point(548, 334);
             this.kryptonLabel19.Name = "kryptonLabel19";
             this.kryptonLabel19.Size = new System.Drawing.Size(159, 23);
             this.kryptonLabel19.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -695,7 +765,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtYTIDCard.AlwaysActive = false;
             this.txtYTIDCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtYTIDCard.Location = new System.Drawing.Point(712, 288);
+            this.txtYTIDCard.Location = new System.Drawing.Point(712, 328);
             this.txtYTIDCard.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtYTIDCard.Name = "txtYTIDCard";
             this.txtYTIDCard.Size = new System.Drawing.Size(158, 24);
@@ -1104,6 +1174,16 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabe100.TabIndex = 17;
             this.kryptonLabe100.Values.Text = "单位常用名";
             // 
+            // kryptonLabe108
+            // 
+            this.kryptonLabe108.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.kryptonLabe108.Location = new System.Drawing.Point(63, 294);
+            this.kryptonLabe108.Name = "kryptonLabe108";
+            this.kryptonLabe108.Size = new System.Drawing.Size(124, 23);
+            this.kryptonLabe108.StateCommon.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.kryptonLabe108.TabIndex = 17;
+            this.kryptonLabe108.Values.Text = "所属院系";
+            // 
             // kryptonPanel102
             // 
             this.hSkinInputHost.SetColumnSpan(this.kryptonPanel102, 5);
@@ -1157,7 +1237,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel21
             // 
             this.kryptonLabel21.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel21.Location = new System.Drawing.Point(63, 334);
+            this.kryptonLabel21.Location = new System.Drawing.Point(63, 374);
             this.kryptonLabel21.Name = "kryptonLabel21";
             this.kryptonLabel21.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel21.StateNormal.ShortText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1167,7 +1247,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel22
             // 
             this.kryptonLabel22.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel22.Location = new System.Drawing.Point(321, 334);
+            this.kryptonLabel22.Location = new System.Drawing.Point(321, 374);
             this.kryptonLabel22.Name = "kryptonLabel22";
             this.kryptonLabel22.Size = new System.Drawing.Size(89, 23);
             this.kryptonLabel22.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1178,7 +1258,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel23
             // 
             this.kryptonLabel23.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel23.Location = new System.Drawing.Point(548, 334);
+            this.kryptonLabel23.Location = new System.Drawing.Point(548, 374);
             this.kryptonLabel23.Name = "kryptonLabel23";
             this.kryptonLabel23.Size = new System.Drawing.Size(159, 23);
             this.kryptonLabel23.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1198,7 +1278,7 @@ namespace NDEY.UI.NDEYUserControl
             "民口高校",
             "民口科研院所",
             "其它"});
-            this.txtUnitProperties.Location = new System.Drawing.Point(415, 328);
+            this.txtUnitProperties.Location = new System.Drawing.Point(415, 368);
             this.txtUnitProperties.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitProperties.Name = "txtUnitProperties";
             this.txtUnitProperties.Size = new System.Drawing.Size(122, 25);
@@ -1217,7 +1297,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.txtUnitContactsPhone.AlwaysActive = false;
             this.txtUnitContactsPhone.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtUnitContactsPhone.Location = new System.Drawing.Point(712, 328);
+            this.txtUnitContactsPhone.Location = new System.Drawing.Point(712, 368);
             this.txtUnitContactsPhone.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitContactsPhone.Name = "txtUnitContactsPhone";
             this.txtUnitContactsPhone.Size = new System.Drawing.Size(158, 24);
@@ -1269,7 +1349,7 @@ namespace NDEY.UI.NDEYUserControl
             "中国电子信息产业集团有限公司",
             "中国工程物理研究院",
             "其它"});
-            this.txtUnitForORG.Location = new System.Drawing.Point(192, 328);
+            this.txtUnitForORG.Location = new System.Drawing.Point(192, 368);
             this.txtUnitForORG.Margin = new System.Windows.Forms.Padding(2, 8, 8, 8);
             this.txtUnitForORG.Name = "txtUnitForORG";
             this.txtUnitForORG.Size = new System.Drawing.Size(118, 25);
@@ -1287,7 +1367,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel20
             // 
             this.kryptonLabel20.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel20.Location = new System.Drawing.Point(63, 375);
+            this.kryptonLabel20.Location = new System.Drawing.Point(63, 416);
             this.kryptonLabel20.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.kryptonLabel20.Name = "kryptonLabel20";
             this.kryptonLabel20.Size = new System.Drawing.Size(124, 23);
@@ -1301,10 +1381,10 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel8.Controls.Add(this.txtUnitAddress);
             this.kryptonPanel8.Controls.Add(this.kryptonPanel13);
             this.kryptonPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonPanel8.Location = new System.Drawing.Point(191, 361);
+            this.kryptonPanel8.Location = new System.Drawing.Point(191, 401);
             this.kryptonPanel8.Margin = new System.Windows.Forms.Padding(1);
             this.kryptonPanel8.Name = "kryptonPanel8";
-            this.kryptonPanel8.Size = new System.Drawing.Size(686, 38);
+            this.kryptonPanel8.Size = new System.Drawing.Size(686, 39);
             this.kryptonPanel8.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel8.TabIndex = 44;
             // 
@@ -1385,7 +1465,7 @@ namespace NDEY.UI.NDEYUserControl
             // 
             this.buttonSpecAny1.ColorMap = System.Drawing.Color.Transparent;
             this.buttonSpecAny1.Image = ((System.Drawing.Image)(resources.GetObject("buttonSpecAny1.Image")));
-            this.buttonSpecAny1.Text = "单位名称应为法人单位名称，若单位是大学，填写到所属学院";
+            this.buttonSpecAny1.Text = "单位名称应为法人单位名称";
             this.buttonSpecAny1.UniqueName = "9CA7A7940F314DC88B99D7C0BD7D4DD9F";
             // 
             // kryptonPanel101
@@ -1451,7 +1531,7 @@ namespace NDEY.UI.NDEYUserControl
             // kryptonLabel24
             // 
             this.kryptonLabel24.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonLabel24.Location = new System.Drawing.Point(63, 294);
+            this.kryptonLabel24.Location = new System.Drawing.Point(63, 334);
             this.kryptonLabel24.Name = "kryptonLabel24";
             this.kryptonLabel24.Size = new System.Drawing.Size(124, 23);
             this.kryptonLabel24.StateCommon.ShortText.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1543,6 +1623,10 @@ namespace NDEY.UI.NDEYUserControl
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel104)).EndInit();
             this.kryptonPanel104.ResumeLayout(false);
             this.kryptonPanel104.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel118)).EndInit();
+            this.kryptonPanel118.ResumeLayout(false);
+            this.kryptonPanel118.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel119)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel25.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
