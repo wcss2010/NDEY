@@ -120,8 +120,7 @@ namespace NDEY.UI
 
 		private IList<BaseControl> _baseControllist = new List<BaseControl>();
 
-		private bool canSwitch = true;
-        private KryptonButton btnUnitManage;
+        private bool canSwitch = true;
         private UserControl preusercontrol;
         private KryptonPage kpExtFile1;
         private KryptonPage kpExtFileSubPage;
@@ -148,7 +147,6 @@ namespace NDEY.UI
             this.btnSave = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnExport = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lbcurtime = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
-            this.btnUnitManage = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnquit = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btnhelp = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.defaulthost = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
@@ -254,7 +252,6 @@ namespace NDEY.UI
             this.kryptonPanel1.Controls.Add(this.btnSave);
             this.kryptonPanel1.Controls.Add(this.btnExport);
             this.kryptonPanel1.Controls.Add(this.lbcurtime);
-            this.kryptonPanel1.Controls.Add(this.btnUnitManage);
             this.kryptonPanel1.Controls.Add(this.btnquit);
             this.kryptonPanel1.Controls.Add(this.btnhelp);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -328,19 +325,6 @@ namespace NDEY.UI
             this.lbcurtime.StateCommon.ShortText.Font = new System.Drawing.Font("楷体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lbcurtime.TabIndex = 4;
             this.lbcurtime.Values.Text = "欢迎您！";
-            // 
-            // btnUnitManage
-            // 
-            this.btnUnitManage.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnUnitManage.Location = new System.Drawing.Point(815, 0);
-            this.btnUnitManage.Name = "btnUnitManage";
-            this.btnUnitManage.Size = new System.Drawing.Size(90, 40);
-            this.btnUnitManage.StateCommon.Content.LongText.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUnitManage.StateCommon.Content.ShortText.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnUnitManage.TabIndex = 26;
-            this.btnUnitManage.Values.Text = "单位管理";
-            this.btnUnitManage.Visible = false;
-            this.btnUnitManage.Click += new System.EventHandler(this.btnUnitManage_Click);
             // 
             // btnquit
             // 
@@ -1351,14 +1335,6 @@ namespace NDEY.UI
 			int num2 = base.ClientSize.Height - this.kpcontact.Height;
 			this.kpcontact.Top = num + (num2 - num) / 4;
 		}
-
-        private void btnUnitManage_Click(object sender, EventArgs e)
-        {
-            frmUnitSelect unitManage = new frmUnitSelect();
-            unitManage.ShowDialog();
-
-            frmApplyUserInfo.RefreshUnitList();
-        }
 
         private void BuildMemoText()
         {

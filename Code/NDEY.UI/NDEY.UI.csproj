@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <AssemblyName>NDEY.UI</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <WarningLevel>4</WarningLevel>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -73,20 +73,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\Krptton\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Printing.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.XtraEditors.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v15.2, Version=15.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
@@ -182,23 +168,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="NDEY.UI.NDEYUserControl\WordDocument.cs" />
-    <Compile Include="NDEY.UI\frmAddUnit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NDEY.UI\frmAddUnit.Designer.cs">
-      <DependentUpon>frmAddUnit.cs</DependentUpon>
-    </Compile>
     <Compile Include="NDEY.UI\frmSuperComboboxForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NDEY.UI\frmSuperComboboxForm.Designer.cs">
       <DependentUpon>frmSuperComboboxForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NDEY.UI\frmUnitSelect.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NDEY.UI\frmUnitSelect.Designer.cs">
-      <DependentUpon>frmUnitSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -304,9 +278,6 @@
     <EmbeddedResource Include="NDEY.UI\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI\frmAddUnit.resx">
-      <DependentUpon>frmAddUnit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI\frmClear.resx">
       <DependentUpon>frmClear.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,16 +296,12 @@
     <EmbeddedResource Include="NDEY.UI\frmSuperComboboxForm.resx">
       <DependentUpon>frmSuperComboboxForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NDEY.UI\frmUnitSelect.resx">
-      <DependentUpon>frmUnitSelect.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI\logicForm.resx">
       <DependentUpon>logicForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NDEY.UI\startForm.resx">
       <DependentUpon>startForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>

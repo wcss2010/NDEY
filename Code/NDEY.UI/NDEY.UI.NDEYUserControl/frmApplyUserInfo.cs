@@ -9,7 +9,6 @@ using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using DevExpress.XtraGrid.Views.Grid;
 
 namespace NDEY.UI.NDEYUserControl
 {
@@ -143,17 +142,6 @@ namespace NDEY.UI.NDEYUserControl
 
         private DateTimePicker txtBirthday;
 
-        //private DevExpress.XtraGrid.Views.Grid.GridView txtWorkUnitListView;
-        private DevExpress.XtraGrid.Columns.GridColumn gcID;
-        private DevExpress.XtraGrid.Columns.GridColumn gcUnitName;
-        private DevExpress.XtraGrid.Columns.GridColumn gcUnitType;
-        //private DevExpress.XtraGrid.Views.Grid.GridView txtUnitListView;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private KryptonLabel kryptonLabel1;
         private KryptonTextBox txtWorkUnit;
         private KryptonPanel kryptonPanel14;
@@ -449,15 +437,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel24 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPanel12 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.gcID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcUnitName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gcUnitType = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel104)).BeginInit();
             this.kryptonPanel104.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel118)).BeginInit();
@@ -1547,72 +1526,6 @@ namespace NDEY.UI.NDEYUserControl
             this.kryptonPanel12.Size = new System.Drawing.Size(463, 10);
             this.kryptonPanel12.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel12.TabIndex = 1;
-            // 
-            // gcID
-            // 
-            this.gcID.FieldName = "ID";
-            this.gcID.Name = "gcID";
-            // 
-            // gcUnitName
-            // 
-            this.gcUnitName.Caption = "单位名称";
-            this.gcUnitName.FieldName = "UnitName";
-            this.gcUnitName.Name = "gcUnitName";
-            this.gcUnitName.Visible = true;
-            this.gcUnitName.VisibleIndex = 0;
-            // 
-            // gcUnitType
-            // 
-            this.gcUnitType.Caption = "单位类型";
-            this.gcUnitType.FieldName = "UnitType";
-            this.gcUnitType.Name = "gcUnitType";
-            this.gcUnitType.Visible = true;
-            this.gcUnitType.VisibleIndex = 1;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.FieldName = "ID";
-            this.gridColumn1.Name = "gridColumn1";
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "单位名称";
-            this.gridColumn2.FieldName = "UnitName";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 0;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.Caption = "单位类型";
-            this.gridColumn3.FieldName = "UnitType";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 1;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.Caption = "开户名称";
-            this.gridColumn4.FieldName = "UnitBankUser";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 2;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.Caption = "开户行名称";
-            this.gridColumn5.FieldName = "UnitBankName";
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.Caption = "账号";
-            this.gridColumn6.FieldName = "UnitBankNo";
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 4;
             // 
             // frmApplyUserInfo
             // 
