@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDEY.UI", "NDEY.UI\NDEY.UI.csproj", "{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NDEY.BLL", "NDEY.BLL\NDEY.BLL.csproj", "{90221941-1853-4E2A-8279-3D7FC606A03E}"
@@ -22,7 +20,8 @@ Global
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Debug|x86.ActiveCfg = Debug|x86
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Debug|x86.Build.0 = Debug|x86
-		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|Any CPU.ActiveCfg = Release|x86
+		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{AAA0E76E-3C6A-4DB2-B2E1-34BB4323480D}.Release|x86.ActiveCfg = Release|x86
