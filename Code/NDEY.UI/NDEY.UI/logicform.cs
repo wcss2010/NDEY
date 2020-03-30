@@ -1531,12 +1531,18 @@ namespace NDEY.UI
                 if (pbi.ProjectBrief != null)
                 {
                     string[] ttt = pbi.ProjectBrief.Split(new string[] { "|" }, StringSplitOptions.None);
-                    ttt[0] = gen1.ToString().Replace(",)", ")");
-                    ttt[1] = gen2.ToString().Replace(",)", ")");
+                    ttt[0] = gen1.ToString().Replace(",)", ")").Replace(",;", ";").Replace(",。", "。").Replace(",,", ",").Replace(";;", ";").Replace("。。", "。");
+                    ttt[1] = gen2.ToString().Replace(",)", ")").Replace(",;", ";").Replace(",。", "。").Replace(",,", ",").Replace(";;", ";").Replace("。。", "。");
 
                     StringBuilder sb = new StringBuilder();
-                    foreach (string t in ttt)
+                    foreach (string tss in ttt)
                     {
+                        string t = tss;
+                        if (tss.StartsWith(",") || tss.StartsWith(";") || tss.StartsWith("。"))
+                        {
+                            t = tss.Trim().Substring(1);
+                        }
+
                         sb.Append(t).Append("|");
                     }
 
