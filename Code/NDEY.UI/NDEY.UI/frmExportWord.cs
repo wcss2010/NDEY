@@ -788,7 +788,7 @@ namespace NDEY.UI
                 foreach (Node node in ncc)
                 {
                     Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
-                    if (t.GetText().Contains("工作单位") && t.GetText().Contains("职务/职称"))
+                    if (t.GetText().Contains("工作单位") && t.GetText().Contains("职务/职称") && t.GetText().Contains("起止年月"))
                     {
                         //创建行
                         for (int k = 0; k < this.workinfolist.Count - 1; k++)
