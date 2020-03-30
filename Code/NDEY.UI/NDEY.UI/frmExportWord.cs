@@ -418,7 +418,7 @@ namespace NDEY.UI
                 base.UpdateUI(uiDelegate, this);
                 return false;
             }
-            string path = this.userinfo.UnitID + "_" + this.userinfo.ApplyUserName + "_项目申报书.doc";
+            string path = this.userinfo.UnitName + "_" + this.userinfo.ApplyUserName + "_项目申报书.doc";
             try
             {
                 if (this.rinfo.ApplicationType == "专家提名")
@@ -711,8 +711,10 @@ namespace NDEY.UI
                 bookmark = "ProjectRFA2_1Rm";
                 obj4 = this.pbudgetinfo.ProjectRFA2_1rm;
                 this.InsertText(application, bookmark, obj4, null, (this.pbudgetinfo.ProjectRFA2_1rm.Length > 14) ? 10.5f : 12f);
+                
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
-                int extFileTableRowNum = 1;
                 if (this.rinfo.ApplicationType == "专家提名")
                 {
                     this.setprogress(45, "读取推荐意见...");
@@ -760,6 +762,9 @@ namespace NDEY.UI
                 //查找所有表格
                 NodeCollection ncc = application.Document.WordDoc.GetChildNodes(NodeType.Table, true);
 
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
+
                 //附件列表
                 int extDocumentCount = 0;
                 List<string[]> extDocumentList = new List<string[]>();
@@ -777,13 +782,16 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.eduinfolist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDate));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationOrg));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationMajor));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDegree));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDate), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationOrg), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationMajor), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDegree), true);
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -798,12 +806,15 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.workinfolist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceDate));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceOrg));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceContent));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceDate), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceOrg), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceContent), true);
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -818,12 +829,15 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.acainfolist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostDate));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostOrg));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostContent));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostDate), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostOrg), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostContent), true);
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -838,12 +852,15 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.talentlist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanDate + "年"));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, ((this.talentlist[kk].TalentsPlanRA == string.Empty) ? this.talentlist[kk].TalentsPlanName : (this.talentlist[kk].TalentsPlanName + "," + this.talentlist[kk].TalentsPlanRA))));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanOutlay));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanDate + "年"), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, ((this.talentlist[kk].TalentsPlanRA == string.Empty) ? this.talentlist[kk].TalentsPlanName : (this.talentlist[kk].TalentsPlanName + "," + this.talentlist[kk].TalentsPlanRA))), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanOutlay), true);
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -858,16 +875,19 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.ndprolist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectName));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectSource));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectOutlay));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectDate));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectTaskBySelf));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectUserOrder));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectName), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectSource), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectOutlay), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectDate), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectTaskBySelf), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectUserOrder), true);
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -882,19 +902,22 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.rtlist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesName));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesTypeExp));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesRell + "年"));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesJournalTitle));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesCollection));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesAuthor));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesName), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesTypeExp), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesRell + "年"), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesJournalTitle), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesCollection), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesAuthor), true);
 
                             //作口列表
                             extDocumentList.Add(new string[] { this.rtlist[kk].RTreatisesName, "代表性论著--" + this.rtlist[kk].RTreatisesTypeExp });
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -909,16 +932,19 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.techlist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsPName));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsTypeLevel));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsYear + "年"));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsee));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsPName), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsTypeLevel), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsYear + "年"), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsee), true);
                             //作口列表
                             extDocumentList.Add(new string[] { this.techlist[kk].TechnologyAwardsPName, "重要科技奖项" });
                         }
                     }
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
 
                 foreach (Node node in ncc)
                 {
@@ -933,17 +959,17 @@ namespace NDEY.UI
 
                         for (int kk = 0; kk < this.ndpatentlist.Count; kk++)
                         {
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentName));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentNumber));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentName), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentNumber), true);
 
                             DateTime dateTime;
                             if (this.ndpatentlist[kk].NDPatentApprovalYear != string.Empty && DateTime.TryParse(this.ndpatentlist[kk].NDPatentApprovalYear, out dateTime))
                             {
-                                application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, dateTime.ToString("yyyy.M")));
+                                application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, dateTime.ToString("yyyy.M")), true);
                             }
 
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentApplicants));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentApplicants), true);
                             //作口列表
                             extDocumentList.Add(new string[] { this.ndpatentlist[kk].NDPatentName, "国家及国防专利" });
                         }
@@ -957,6 +983,7 @@ namespace NDEY.UI
                 {
                     application.insertFile(bookmark.ToString(), fileInfo.FullName, true);
                 }
+
                 bookmark = "zzyj";
                 this.setprogress(65, "读取拟开展的研究工作...");
                 fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "拟开展的研究工作.doc"));
@@ -964,10 +991,15 @@ namespace NDEY.UI
                 {
                     application.insertFile(bookmark.ToString(), fileInfo.FullName, true);
                 }
+
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
+
                 bookmark = "bookresult";
                 this.setprogress(70, "读取成果形式...");
                 obj4 = this.resultFormInfo.GetDescription();
                 this.InsertText(application, bookmark, obj4, null);
+
                 bookmark = "bookmission";
                 this.setprogress(73, "读取第一年研究任务...");
                 fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.doc"));
@@ -1001,6 +1033,9 @@ namespace NDEY.UI
                     //application.ActiveDocument.InlineShapes.AddPicture(Path.Combine(EntityElement.FilesStorePath, "extFile1.png"), ref linkToFile, ref saveWithDocment, ref range);
                 }
 
+                application.Document.WordDocBuilder.Font.Size = 12;
+                application.Document.WordDocBuilder.Font.Name = "仿宋_GB2312";
+
                 foreach (Node node in ncc)
                 {
                     Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
@@ -1016,9 +1051,9 @@ namespace NDEY.UI
                         {
                             string[] datas = extDocumentList[kk];
 
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, datas[0]));
-                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, datas[1]));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, datas[0]), true);
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, datas[1]), true);
                         }
                     }
                 }
@@ -1053,12 +1088,14 @@ namespace NDEY.UI
                 return result;
             }
 
-            try
+            if (open)
             {
-                Process.Start(destDocFiless);
+                try
+                {
+                    Process.Start(destDocFiless);
+                }
+                catch (Exception ex) { }
             }
-            catch (Exception ex) { }
-
 
             this.setprogress(80, "");
             return true;
