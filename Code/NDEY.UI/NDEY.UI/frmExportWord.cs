@@ -1050,6 +1050,7 @@ namespace NDEY.UI
                         for (int kk = 0; kk < extDocumentList.Count; kk++)
                         {
                             string[] datas = extDocumentList[kk];
+                            t.Rows[kk + 1].RowFormat.Height = t.Rows[0].RowFormat.Height;
 
                             application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()), true);
                             application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, datas[0]), true);
