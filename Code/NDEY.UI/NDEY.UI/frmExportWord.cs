@@ -955,14 +955,14 @@ namespace NDEY.UI
                 FileInfo fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "主要成绩和突出贡献.doc"));
 				if (fileInfo.Exists)
 				{
-                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, true);
 				}
 				bookmark = "zzyj";
 				this.setprogress(65, "读取拟开展的研究工作...");
                 fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "拟开展的研究工作.doc"));
 				if (fileInfo.Exists)
                 {
-                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, true);
                 }
 				bookmark = "bookresult";
 				this.setprogress(70, "读取成果形式...");
@@ -973,7 +973,7 @@ namespace NDEY.UI
                 fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.doc"));
 				if (fileInfo.Exists)
                 {
-                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, true);
                 }
 
                 extDocumentList.Add(new string[] { "保密资质复印件","保密资质" });
