@@ -36,6 +36,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\vcredist_2005.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\vcredist_2005_x64.exe"; DestDir: "{tmp}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\NDEY.UI.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\wcss\Desktop\NDEY_SETUP\Aspose.Words.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ComponentFactory.Krypton.Docking.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ComponentFactory.Krypton.Navigator.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\wcss\Desktop\NDEY_SETUP\ComponentFactory.Krypton.Toolkit.dll"; DestDir: "{app}"; Flags: ignoreversion
