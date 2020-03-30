@@ -167,7 +167,6 @@
     <Compile Include="NDEY.UI.NDEYUserControl\WaterTextbox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="NDEY.UI.NDEYUserControl\WordDocument.cs" />
     <Compile Include="NDEY.UI\frmSuperComboboxForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +215,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <Compile Include="WordDocument.cs" />
+    <Compile Include="WordUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="NDEY.UI.NDEYUserControl\DocumentPasteEditor.resx">
@@ -339,26 +340,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="Microsoft.Office.Interop.Word">
-      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
-      <VersionMajor>8</VersionMajor>
-      <VersionMinor>4</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <Private>True</Private>
-    </COMReference>
-    <COMReference Include="Office">
-      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
-      <VersionMajor>99</VersionMajor>
-      <VersionMinor>1</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <Private>True</Private>
-    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>

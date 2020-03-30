@@ -1,14 +1,17 @@
+using Aspose.Words;
+using Aspose.Words.Tables;
 using ComponentFactory.Krypton.Toolkit;
 using ICSharpCode.SharpZipLib.Checksums;
 using ICSharpCode.SharpZipLib.Zip;
-using Microsoft.Office.Interop.Word;
 using NDEY.BLL.Entity;
 using NDEY.BLL.Service;
 using NDEY.UI.Properties;
 using NDEY.UI.Utility;
+using ProjectContractPlugin.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -438,32 +441,13 @@ namespace NDEY.UI
 				bool result = false;
 				return result;
 			}
-			object obj = Path.Combine(EntityElement.FilesStorePath, path);
-			object obj2 = false;
-			object obj3 = false;
-			object value = Missing.Value;
-			Microsoft.Office.Interop.Word.Application application = null;
-			Document document = null;
+
+            string destDocFiless = Path.Combine(EntityElement.FilesStorePath, path);
+            WordUtility application = new WordUtility();
+            application.Document = new Aspose.Words.WordDocument(destDocFiless);
+
 			try
 			{
-                application = new ApplicationClass();
-				document = application.Documents.Open(ref obj, ref value, ref obj3, ref value, ref value, ref value, ref value, ref value, ref value, ref value, ref value, ref obj2, ref value, ref value, ref value, ref value);
-			}
-			catch (Exception ex2)
-			{
-				Exception ex = ex2;
-				BaseForm.MethodInvoker uiDelegate3 = delegate
-				{
-					MessageBox.Show("Word启动失败，请检查Word是否已经安装以及是否安装有多个版本。\r\n详细错误：" + ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-					this.Close();
-				};
-				base.UpdateUI(uiDelegate3, this);
-				bool result = false;
-				return result;
-			}
-			try
-			{
-				document.Activate();
 				this.setprogress(20, "读取申报信息...");
 				object bookmark = "UserName";
 				object obj4 = this.userinfo.ApplyUserName;
@@ -727,13 +711,13 @@ namespace NDEY.UI
 				bookmark = "ProjectRFA2_1Rm";
 				obj4 = this.pbudgetinfo.ProjectRFA2_1rm;
 				this.InsertText(application, bookmark, obj4, null, (this.pbudgetinfo.ProjectRFA2_1rm.Length > 14) ? 10.5f : 12f);
-				Table extFileTable = document.Tables[13];
-				int extFileTableRowNum = 1;
+
+                int extFileTableRowNum = 1;
 				if (this.rinfo.ApplicationType == "专家提名")
 				{
 					this.setprogress(45, "读取推荐意见...");
-					extFileTable = document.Tables[15];
-					bookmark = "ExpertName1";
+
+                    bookmark = "ExpertName1";
 					obj4 = this.rmdinfo.ExperInfoList[0].ExpertName;
 					this.InsertText(application, bookmark, obj4, null);
 					bookmark = "ExpertArea1";
@@ -770,209 +754,216 @@ namespace NDEY.UI
 					obj4 = this.rmdinfo.ExperInfoList[2].ExpertUnit;
 					this.InsertText(application, bookmark, obj4, null);
 				}
+
 				this.setprogress(50, "读取个人简历...");
-				Table dataTable = document.Tables[4];
-				if (this.eduinfolist != null)
-				{
-					int i = 0;
-					int count = this.eduinfolist.Count;
-					while (i < count)
-					{
-						if (i > 0)
+
+                //查找所有表格
+                NodeCollection ncc = application.Document.WordDoc.GetChildNodes(NodeType.Table, true);
+                
+                //附件列表
+                int extDocumentCount = 0;
+                List<string[]> extDocumentList = new List<string[]>();
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("起止年月") && t.GetText().Contains("校（院）及系名称"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.eduinfolist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for(int kk= 0;kk < this.eduinfolist.Count;kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDate));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc,  this.eduinfolist[kk].EducationOrg));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationMajor));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.eduinfolist[kk].EducationDegree));
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("工作单位") && t.GetText().Contains("职务/职称"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.workinfolist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.workinfolist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceDate));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceOrg));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.workinfolist[kk].WorkExperienceContent));
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("组织/机构") && t.GetText().Contains("任职情况"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.acainfolist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.acainfolist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostDate));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostOrg));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.acainfolist[kk].AcademicPostContent));
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("入选时间") && t.GetText().Contains("人才计划名称/研究方向"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.talentlist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.talentlist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanDate + "年"));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, ((this.talentlist[kk].TalentsPlanRA == string.Empty) ? this.talentlist[kk].TalentsPlanName : (this.talentlist[kk].TalentsPlanName + "," + this.talentlist[kk].TalentsPlanRA))));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.talentlist[kk].TalentsPlanOutlay));
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("项目名称") && t.GetText().Contains("项目来源") && t.GetText().Contains("起止年月") && t.GetText().Contains("主要承担任务"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.ndprolist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.ndprolist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectName));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectSource));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectOutlay));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectDate));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectTaskBySelf));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.ndprolist[kk].NDProjectUserOrder));
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("题目") && t.GetText().Contains("类别") && t.GetText().Contains("年份") && t.GetText().Contains("报告采纳"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.rtlist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.rtlist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesName));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesTypeExp));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesRell + "年"));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesJournalTitle));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[5], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesCollection));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[6], application.Document.newParagraph(application.Document.WordDoc, this.rtlist[kk].RTreatisesAuthor));
+                            
+                            //作口列表
+                            extDocumentList.Add(new string[]{ this.rtlist[kk].RTreatisesName, "代表性论著--" + this.rtlist[kk].RTreatisesTypeExp});                        
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("项目名称") && t.GetText().Contains("奖励类别及等级"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.techlist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.techlist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsPName));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsTypeLevel));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsYear + "年"));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.techlist[kk].TechnologyAwardsee));
+                            //作口列表
+                            extDocumentList.Add(new string[] { this.techlist[kk].TechnologyAwardsPName, "重要科技奖项" });
+                        }
+                    }
+                }
+                
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("专利名称") && t.GetText().Contains("专利号"))
+                    {
+                        //创建行
+                        for (int k = 0; k < this.ndpatentlist.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < this.ndpatentlist.Count; kk++)
+                        {
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentName));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentNumber));
+
+                            DateTime dateTime;
+                            						if (this.ndpatentlist[kk].NDPatentApprovalYear != string.Empty && DateTime.TryParse(this.ndpatentlist[kk].NDPatentApprovalYear, out dateTime))
 						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(i + 2, 1).Range.Text = this.eduinfolist[i].EducationDate;
-						dataTable.Cell(i + 2, 2).Range.Text = this.eduinfolist[i].EducationOrg;
-						dataTable.Cell(i + 2, 3).Range.Text = this.eduinfolist[i].EducationMajor;
-						dataTable.Cell(i + 2, 4).Range.Text = this.eduinfolist[i].EducationDegree;
-						i++;
-					}
-				}
-				dataTable = document.Tables[5];
-				if (this.workinfolist != null)
-				{
-					int j = 0;
-					int count2 = this.workinfolist.Count;
-					while (j < count2)
-					{
-						if (j > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(j + 2, 1).Range.Text = this.workinfolist[j].WorkExperienceDate;
-						dataTable.Cell(j + 2, 2).Range.Text = this.workinfolist[j].WorkExperienceOrg;
-						dataTable.Cell(j + 2, 3).Range.Text = this.workinfolist[j].WorkExperienceContent;
-						j++;
-					}
-				}
-				dataTable = document.Tables[6];
-				if (this.acainfolist != null)
-				{
-					int k = 0;
-					int count3 = this.acainfolist.Count;
-					while (k < count3)
-					{
-						if (k > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(k + 2, 1).Range.Text = this.acainfolist[k].AcademicPostDate;
-						dataTable.Cell(k + 2, 2).Range.Text = this.acainfolist[k].AcademicPostOrg;
-						dataTable.Cell(k + 2, 3).Range.Text = this.acainfolist[k].AcademicPostContent;
-						k++;
-					}
-				}
-				dataTable = document.Tables[7];
-				if (this.talentlist != null)
-				{
-					int l = 0;
-					int count4 = this.talentlist.Count;
-					while (l < count4)
-					{
-						if (l > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(l + 2, 1).Range.Text = this.talentlist[l].TalentsPlanDate + "年";
-						dataTable.Cell(l + 2, 2).Range.Text = ((this.talentlist[l].TalentsPlanRA == string.Empty) ? this.talentlist[l].TalentsPlanName : (this.talentlist[l].TalentsPlanName + "," + this.talentlist[l].TalentsPlanRA));
-						dataTable.Cell(l + 2, 3).Range.Text = this.talentlist[l].TalentsPlanOutlay;
-						l++;
-					}
-				}
-				dataTable = document.Tables[8];
-				if (this.ndprolist != null)
-				{
-					int m = 0;
-					int count5 = this.ndprolist.Count;
-					while (m < count5)
-					{
-						if (m > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(m + 2, 1).Range.Text = (m + 1).ToString();
-						dataTable.Cell(m + 2, 2).Range.Text = this.ndprolist[m].NDProjectName;
-						dataTable.Cell(m + 2, 3).Range.Text = this.ndprolist[m].NDProjectSource;
-						dataTable.Cell(m + 2, 4).Range.Text = this.ndprolist[m].NDProjectOutlay;
-						dataTable.Cell(m + 2, 5).Range.Text = this.ndprolist[m].NDProjectDate;
-						dataTable.Cell(m + 2, 6).Range.Text = this.ndprolist[m].NDProjectTaskBySelf;
-						dataTable.Cell(m + 2, 7).Range.Text = this.ndprolist[m].NDProjectUserOrder;
-						m++;
-					}
-				}
-				dataTable = document.Tables[9];
-				if (this.rtlist != null)
-				{
-					int n = 0;
-					int count6 = this.rtlist.Count;
-					while (n < count6)
-					{
-						if (n > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(n + 2, 1).Range.Text = (n + 1).ToString();
-						dataTable.Cell(n + 2, 2).Range.Text = this.rtlist[n].RTreatisesName;
-                        dataTable.Cell(n + 2, 3).Range.Text = this.rtlist[n].RTreatisesTypeExp;
-						dataTable.Cell(n + 2, 4).Range.Text = this.rtlist[n].RTreatisesRell + "年";
-						dataTable.Cell(n + 2, 5).Range.Text = this.rtlist[n].RTreatisesJournalTitle;
-						dataTable.Cell(n + 2, 6).Range.Text = this.rtlist[n].RTreatisesCollection;
-						dataTable.Cell(n + 2, 7).Range.Text = this.rtlist[n].RTreatisesAuthor;
-						extFileTableRowNum++;
-						if (extFileTableRowNum > 1)
-						{
-							extFileTable.Rows.Add(ref value);
-						}
-						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = (extFileTableRowNum - 1).ToString();
-                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.rtlist[n].RTreatisesPDFOName) ? "缺少附件" : this.rtlist[n].RTreatisesPDFOName);
-                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.rtlist[n].RTreatisesName;
-                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "代表性论著--" + this.rtlist[n].RTreatisesTypeExp;
-						n++;
-					}
-				}
-				dataTable = document.Tables[10];
-				if (this.techlist != null)
-				{
-					int num2 = 0;
-					int count7 = this.techlist.Count;
-					while (num2 < count7)
-					{
-						if (num2 > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(num2 + 2, 1).Range.Text = (num2 + 1).ToString();
-						dataTable.Cell(num2 + 2, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
-                        dataTable.Cell(num2 + 2, 3).Range.Text = this.techlist[num2].TechnologyAwardsTypeLevel;
-						dataTable.Cell(num2 + 2, 4).Range.Text = this.techlist[num2].TechnologyAwardsYear + "年";
-						dataTable.Cell(num2 + 2, 5).Range.Text = this.techlist[num2].TechnologyAwardsee;
-						extFileTableRowNum++;
-						if (extFileTableRowNum > 1)
-						{
-							extFileTable.Rows.Add(ref value);
-						}
-						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = (extFileTableRowNum - 1).ToString();
-                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.techlist[num2].TechnologyAwardsPDFOName) ? "缺少附件" : this.techlist[num2].TechnologyAwardsPDFOName);
-                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.techlist[num2].TechnologyAwardsPName;
-                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "重要科技奖项";
-						num2++;
-					}
-				}
-				dataTable = document.Tables[11];
-				if (this.ndpatentlist != null)
-				{
-					int num3 = 0;
-					int count8 = this.ndpatentlist.Count;
-					while (num3 < count8)
-					{
-						if (num3 > 0)
-						{
-							dataTable.Rows.Add(ref value);
-						}
-						dataTable.Cell(num3 + 2, 1).Range.Text = (num3 + 1).ToString();
-						dataTable.Cell(num3 + 2, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
-                        dataTable.Cell(num3 + 2, 3).Range.Text = this.ndpatentlist[num3].NDPatentNumber;
-						DateTime dateTime;
-						if (this.ndpatentlist[num3].NDPatentApprovalYear != string.Empty && DateTime.TryParse(this.ndpatentlist[num3].NDPatentApprovalYear, out dateTime))
-						{
-							dataTable.Cell(num3 + 2, 4).Range.Text = dateTime.ToString("yyyy.M");
-						}
-						dataTable.Cell(num3 + 2, 5).Range.Text = this.ndpatentlist[num3].NDPatentApplicants;
-						extFileTableRowNum++;
-						if (extFileTableRowNum > 1)
-						{
-							extFileTable.Rows.Add(ref value);
-						}
-						extFileTable.Cell(extFileTableRowNum, 1).Range.Text = (extFileTableRowNum - 1).ToString();
-                        //extFileTable.Cell(extFileTableRowNum, 2).Range.Text = (string.IsNullOrEmpty(this.ndpatentlist[num3].NDPatentPDFOName) ? "缺少附件" : this.ndpatentlist[num3].NDPatentPDFOName);
-                        extFileTable.Cell(extFileTableRowNum, 2).Range.Text = this.ndpatentlist[num3].NDPatentName;
-                        extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "国家及国防专利";
-						num3++;
-					}
-				}
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[3], application.Document.newParagraph(application.Document.WordDoc, dateTime.ToString("yyyy.M")));
+                                                    }
+
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[4], application.Document.newParagraph(application.Document.WordDoc, this.ndpatentlist[kk].NDPatentApplicants));
+                            //作口列表
+                            extDocumentList.Add(new string[] { this.ndpatentlist[kk].NDPatentName, "国家及国防专利" });
+                        }
+                    }
+                }
+
 				bookmark = "jsyy";
 				this.setprogress(60, "读取主要成绩和突出贡献...");
-                FileInfo fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "军事意义.doc"));
+                FileInfo fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "主要成绩和突出贡献.doc"));
 				if (fileInfo.Exists)
 				{
-					document.Bookmarks[bookmark].Select();
-					application.Selection.InsertFile(fileInfo.FullName, ref value, ref value, ref value, ref value);
-					object value2 = Missing.Value;
-					object value3 = Missing.Value;
-					application.Selection.Delete(ref value2, ref value3);
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
 				}
 				bookmark = "zzyj";
 				this.setprogress(65, "读取拟开展的研究工作...");
-                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "主要研究.doc"));
+                fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "拟开展的研究工作.doc"));
 				if (fileInfo.Exists)
-				{
-					document.Bookmarks[bookmark].Select();
-					application.Selection.InsertFile(fileInfo.FullName, ref value, ref value, ref value, ref value);
-					object value4 = Missing.Value;
-					object value5 = Missing.Value;
-					application.Selection.Delete(ref value4, ref value5);
-				}
+                {
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
+                }
 				bookmark = "bookresult";
 				this.setprogress(70, "读取成果形式...");
 				obj4 = this.resultFormInfo.GetDescription();
@@ -981,18 +972,33 @@ namespace NDEY.UI
                 this.setprogress(73, "读取第一年研究任务...");
                 fileInfo = new FileInfo(Path.Combine(EntityElement.FilesStorePath, "第一年研究任务.doc"));
 				if (fileInfo.Exists)
-				{
-					document.Bookmarks[bookmark].Select();
-					application.Selection.InsertFile(fileInfo.FullName, ref value, ref value, ref value, ref value);
-					object value6 = Missing.Value;
-					object value7 = Missing.Value;
-					application.Selection.Delete(ref value6, ref value7);
-				}
+                {
+                    application.insertFile(bookmark.ToString(), fileInfo.FullName, false);
+                }
 
-                extFileTableRowNum++;
-                extFileTable.Cell(extFileTableRowNum, 1).Range.Text = (extFileTableRowNum - 1).ToString();
-                extFileTable.Cell(extFileTableRowNum, 2).Range.Text = "保密资质复印件";
-                extFileTable.Cell(extFileTableRowNum, 3).Range.Text = "保密资质";
+                extDocumentList.Add(new string[] { "保密资质复印件","保密资质" });
+
+                foreach (Node node in ncc)
+                {
+                    Aspose.Words.Tables.Table t = (Aspose.Words.Tables.Table)node;
+                    if (t.GetText().Contains("附件名称") && t.GetText().Contains("附件类型"))
+                    {
+                        //创建行
+                        for (int k = 0; k < extDocumentList.Count - 1; k++)
+                        {
+                            t.Rows.Insert(1, (Aspose.Words.Tables.Row)t.Rows[t.Rows.Count - 2].Clone(true));
+                        }
+
+                        for (int kk = 0; kk < extDocumentList.Count; kk++)
+                        {
+                            string[] datas = extDocumentList[kk];
+
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[0], application.Document.newParagraph(application.Document.WordDoc, (kk + 1).ToString()));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[1], application.Document.newParagraph(application.Document.WordDoc, datas[0]));
+                            application.Document.fillCell(true, t.Rows[kk + 1].Cells[2], application.Document.newParagraph(application.Document.WordDoc, datas[1]));
+                        }
+                    }
+                }
 
                 //this.setprogress(74, "读取保密资质...");
                 //if (File.Exists(Path.Combine(EntityElement.FilesStorePath, "extFile1.png")))
@@ -1018,29 +1024,13 @@ namespace NDEY.UI
 					MessageBox.Show(ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 					this.Close();
 				};
-				base.UpdateUI(uiDelegate4, this);
-				try
-				{
-					if (application != null)
-					{
-						application.NormalTemplate.Saved = true;
-						object obj5 = false;
-						document.Close(ref obj5, ref value, ref value);
-						object missing = Type.Missing;
-						object missing2 = Type.Missing;
-						object missing3 = Type.Missing;
-						application.Quit(ref missing, ref missing2, ref missing3);
-					}
-				}
-				catch (Exception)
-				{
-				}
+				
 				bool result = false;
 				return result;
 			}
 			try
 			{
-				document.Save();
+                application.Document.WordDoc.Save(destDocFiless);
 			}
 			catch (Exception ex4)
 			{
@@ -1050,61 +1040,49 @@ namespace NDEY.UI
 					MessageBox.Show("Word保存失败，操作无法继续，请检查Word能否正常保存文件。\r\n详细错误：" + ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 					this.Close();
 				};
-				base.UpdateUI(uiDelegate5, this);
-				try
-				{
-					if (application != null)
-					{
-						application.NormalTemplate.Saved = true;
-						object obj6 = false;
-						document.Close(ref obj6, ref value, ref value);
-						object missing4 = Type.Missing;
-						object missing5 = Type.Missing;
-						object missing6 = Type.Missing;
-						application.Quit(ref missing4, ref missing5, ref missing6);
-					}
-				}
-				catch (Exception)
-				{
-				}
 				bool result = false;
 				return result;
 			}
-			try
-			{
-				application.NormalTemplate.Saved = true;
-				object obj7 = false;
-				document.Close(ref obj7, ref value, ref value);
-				object missing7 = Type.Missing;
-				object missing8 = Type.Missing;
-				object missing9 = Type.Missing;
-				application.Quit(ref missing7, ref missing8, ref missing9);
-			}
-			catch (Exception ex5)
-			{
-				Exception ex = ex5;
-				BaseForm.MethodInvoker uiDelegate6 = delegate
-				{
-					MessageBox.Show(ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-					this.Close();
-				};
-				base.UpdateUI(uiDelegate6, this);
-				bool result = false;
-				return result;
-			}
-			if (open && !FileOp.OpenFile(Path.Combine(EntityElement.FilesStorePath, path)))
-			{
-				BaseForm.MethodInvoker uiDelegate7 = delegate
-				{
-					MessageBox.Show("报告文件打开失败。", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-					base.Close();
-				};
-				base.UpdateUI(uiDelegate7, this);
-				return false;
-			}
+
+            try
+            {
+                Process.Start(destDocFiless);
+            }
+            catch (Exception ex) { }
+			
+
 			this.setprogress(80, "");
 			return true;
 		}
+
+        private void InsertText(WordUtility application, object bookmark, object obj4, string fontName)
+        {
+            string oldFont = application.Document.WordDocBuilder.Font.Name;
+            if (!string.IsNullOrEmpty(fontName))
+            {
+                application.Document.WordDocBuilder.Font.Name = fontName;
+            }
+
+            application.insertValue(bookmark != null ? bookmark.ToString() : string.Empty, obj4 != null ? obj4.ToString() : string.Empty);
+
+            application.Document.WordDocBuilder.Font.Name = oldFont;
+        }
+
+        private void InsertText(WordUtility application, object bookmark, object obj4, string fontName, double fontSize)
+        {
+            double oldSize = application.Document.WordDocBuilder.Font.Size;
+            string oldFont = application.Document.WordDocBuilder.Font.Name;
+            if (!string.IsNullOrEmpty(fontName))
+            {
+                application.Document.WordDocBuilder.Font.Name = fontName;
+            }
+            application.Document.WordDocBuilder.Font.Size = fontSize;
+
+            application.insertValue(bookmark != null ? bookmark.ToString() : string.Empty, obj4 != null ? obj4.ToString() : string.Empty);
+
+            application.Document.WordDocBuilder.Font.Name = oldFont;
+            application.Document.WordDocBuilder.Font.Size = oldSize;
+        }
 
 		private void ToZip()
 		{
@@ -1157,33 +1135,6 @@ namespace NDEY.UI
 				this.lbmsg.Text = msg;
 			};
 			base.UpdateUI(uiDelegate, this);
-		}
-
-		private void InsertText(Microsoft.Office.Interop.Word.Application app, object bookmark, object text, string fontName)
-		{
-			if (text != null)
-			{
-				app.ActiveDocument.Bookmarks[bookmark].Select();
-				if (!string.IsNullOrEmpty(fontName))
-				{
-					app.Selection.Font.Name = fontName;
-				}
-				app.Selection.TypeText(text.ToString());
-			}
-		}
-
-		private void InsertText(Microsoft.Office.Interop.Word.Application app, object bookmark, object text, string fontName, float fontsize)
-		{
-			if (text != null)
-			{
-				app.ActiveDocument.Bookmarks[bookmark].Select();
-				if (!string.IsNullOrEmpty(fontName))
-				{
-					app.Selection.Font.Name = fontName;
-				}
-				app.Selection.Font.Size = fontsize;
-				app.Selection.TypeText(text.ToString());
-			}
 		}
 
 		public bool ZipDirectory(string folderToZip, string zipedFile, string password)
