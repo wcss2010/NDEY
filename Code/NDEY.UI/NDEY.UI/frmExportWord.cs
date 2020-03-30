@@ -1079,6 +1079,11 @@ namespace NDEY.UI
                 {
                     application.Document.WordDoc.Save(destDocFiless);
                 }
+                else
+                {
+                    File.Move(destDocFiless, Path.Combine(Application.StartupPath, "test.doc"));
+                    destDocFiless = Path.Combine(Application.StartupPath, "test.doc");
+                }
             }
             catch (Exception ex4)
             {
