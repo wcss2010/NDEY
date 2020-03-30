@@ -1075,7 +1075,10 @@ namespace NDEY.UI
             }
             try
             {
-                application.Document.WordDoc.Save(destDocFiless);
+                if (this.userinfo != null && !string.IsNullOrEmpty(this.userinfo.ApplyUserName))
+                {
+                    application.Document.WordDoc.Save(destDocFiless);
+                }
             }
             catch (Exception ex4)
             {
