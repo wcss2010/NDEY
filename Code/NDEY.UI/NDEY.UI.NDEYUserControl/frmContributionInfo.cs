@@ -11,7 +11,7 @@ namespace NDEY.UI.NDEYUserControl
 {
 	public class frmContributionInfo : BaseControl
 	{
-        private string rtfFile = Path.Combine(EntityElement.UserPath, "Files\\军事意义.doc");
+        private string rtfFile = Path.Combine(EntityElement.UserPath, "Files\\主要成绩和突出贡献.doc");
 
 		private bool issaved;
 

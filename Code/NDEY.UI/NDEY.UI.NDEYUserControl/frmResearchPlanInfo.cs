@@ -23,7 +23,7 @@ namespace NDEY.UI.NDEYUserControl
 
 		private HSkinTableLayoutPanel hSkinTableLayoutPanel1;
 
-        private string rtfFile = Path.Combine(EntityElement.UserPath, "Files\\主要研究.doc");
+        private string rtfFile = Path.Combine(EntityElement.UserPath, "Files\\拟开展的研究工作.doc");
 
         private DocumentPasteEditor dpContent;
 
